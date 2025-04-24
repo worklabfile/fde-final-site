@@ -1,4 +1,3 @@
-// Конфигурация Google Sheets
 const SHEET_ID = "14vQRC16d9MeYal5p5-0gev208nGdupOrhW9LWDdBqts";
 const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
 const RANGE = "A1:E"; // Добавляем столбец E (ID новости)
@@ -25,11 +24,16 @@ async function fetchNews() {
         );
         const data = await response.json();
         
-        if (data.values?.length > 1) {
+        if (data.values && data.values.length > 1) {
             renderNewsDetails(data.values.slice(1));
+        } else {
+            // Если данные не загрузились, показываем HTML-контент
+            document.querySelector('.inner-container').style.display = 'block';
         }
     } catch (error) {
         console.error("Ошибка загрузки новостей:", error);
+        // В случае ошибки показываем HTML-контент
+        document.querySelector('.inner-container').style.display = 'block';
     }
 }
 
@@ -39,22 +43,25 @@ function formatDate(dateString) {
     const date = new Date(dateString);
     if (isNaN(date.getTime())) return dateString;
     
-    const day = date.getDate();
-    const month = date.toLocaleString('ru-RU', { month: 'long' });
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
     const year = date.getFullYear();
     
-    return `${day} ${month} ${year}`;
+    return `${day}.${month}.${year}`;
 }
 
 // Рендер деталей новости
 function renderNewsDetails(newsData) {
-    const newsId = "5"; // Здесь укажи нужный ID
+    // Получаем ID новости из URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const newsId = urlParams.get('id') || "5"; // По умолчанию ID 1
     
     // Находим новость с нужным ID
     const newsItem = newsData.find(item => item[4] === newsId);
     
     if (!newsItem) {
         console.error("Новость не найдена");
+        document.querySelector('.inner-container').style.display = 'block';
         return;
     }
     
@@ -64,14 +71,21 @@ function renderNewsDetails(newsData) {
     const imageElement = document.querySelector('.image img');
     const descriptionElement = document.querySelector('.description');
     
-    if (titleElement) titleElement.textContent = newsItem[0];
-    if (dateElement) dateElement.textContent = formatDate(newsItem[3]);
-    if (imageElement) imageElement.src = convertGoogleImageLink(newsItem[2]);
-    if (descriptionElement) descriptionElement.innerHTML = newsItem[1].replace(/\n/g, '<br>');
+    if (titleElement) titleElement.textContent = newsItem[0] || 'Нет заголовка';
+    if (dateElement) dateElement.textContent = formatDate(newsItem[3]) || 'Дата не указана';
+    if (imageElement) imageElement.src = convertGoogleImageLink(newsItem[2]) || 'https://via.placeholder.com/800x400';
+    if (descriptionElement) descriptionElement.innerHTML = (newsItem[1] || 'Нет описания').replace(/\n/g, '<br>');
+    
+    // Показываем контейнер после загрузки данных
+    document.querySelector('.inner-container').style.display = 'block';
 }
 
 // Инициализация
 document.addEventListener("DOMContentLoaded", () => {
+    // Сначала скрываем контейнер
+    document.querySelector('.inner-container').style.display = 'none';
+    
+    // Затем загружаем данные
     fetchNews();
 });
 
@@ -160,7 +174,7 @@ const translations = {
         'submenu.publications': 'Публікацыі',
         'submenu.science_title': 'Навуковая дзейнасць',
         'submenu.science_desc': 'Дасьледаваньні і распрацоўкі',
-        'submenu.economic_informatics': 'Эканамічная інфарматыка',
+        'submenu.economic_informatics': 'Кафедры',
         'submenu.departments_title': 'Нашы кафедры',
         'submenu.departments_desc': 'Прафесійная адукацыя',
 
@@ -210,7 +224,7 @@ const translations = {
         'submenu.publications': 'Publications',
         'submenu.science_title': 'Research activities',
         'submenu.science_desc': 'Research and development',
-        'submenu.economic_informatics': 'Economic Informatics',
+        'submenu.economic_informatics': 'Departments',
         'submenu.departments_title': 'Our Departments',
         'submenu.departments_desc': 'Professional education',
 
@@ -260,7 +274,7 @@ const translations = {
         'submenu.publications': '出版物',
         'submenu.science_title': '科研活动',
         'submenu.science_desc': '研究与开发',
-        'submenu.economic_informatics': '经济信息学',
+        'submenu.economic_informatics': '我们的部门',
         'submenu.departments_title': '我们的部门',
         'submenu.departments_desc': '专业教育',
 
