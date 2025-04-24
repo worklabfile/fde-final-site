@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вступительная компания</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="introductoryCampaign-style.css">
+</head>
+<body>
+    <div class="container">
+
+      <div class="header-background"></div>
+      <div class="mobile-header">
+          <a href="../../index.html"><img src="images/logo.png" alt="Логотип" class="logo mobile-logo"></a>
+          <div class="burger-menu">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      
+          <!-- Боковое меню -->
+          <div class="side-menu">
+              <div class="menu-item" data-i18n-key="menu.about">
+                  <div class="menu-title" data-i18n="menu.about">О факультете
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="submenu">
+                      <a href="../../about/history/index.html" data-i18n="submenu.history">История</a>
+                      <a href="../../about/deanery/index.html" data-i18n="submenu.deans_office">Деканат</a>
+                      <a href="../../about/student-life/index.html" data-i18n="submenu.student_council">Студенческая жизнь</a>
+                  </div>
+              </div>
+              <div class="menu-item" data-i18n-key="menu.for_students">
+                  <div class="menu-title" data-i18n="menu.for_students">Студенту
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="submenu">
+                      <a href="../../allnews/index.html" data-i18n="submenu.schedule">Новости факультета</a>
+                      <a href="../../students/disciplines/index.html" data-i18n="submenu.courses">Учебные дисциплины</a>
+                      <a href="../../students/hostel/index.html" data-i18n="submenu.hostel">Общежитие</a>
+                  </div>
+              </div>
+              <div class="menu-item" data-i18n-key="menu.for_applicants">
+                  <div class="menu-title" data-i18n="menu.for_applicants">Абитуриенту
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="submenu">
+                      <a href="../../applicants/documentsList/index.html" data-i18n="submenu.admission_rules">Перечень документов</a>
+                      <a href="../../applicants/reveiveDocumentsPeriod/index.html" data-i18n="submenu.open_days">Сроки приема документов</a>
+                      <a href="../../applicants/openDoorDay/index.html" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
+                      <a href="../../applicants/introductoryCampaign/index.html" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
+                  </div>
+              </div>
+              <div class="menu-item" data-i18n-key="menu.science">
+                  <div class="menu-title" data-i18n="menu.science">Наука
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="submenu">
+                      <a href="../../science/science/index.html" data-i18n="submenu.directions">Наука</a>
+                  </div>
+              </div>
+              <div class="menu-item" data-i18n-key="menu.departments">
+                  <div class="menu-title" data-i18n="menu.departments">Кафедры
+                      <div class="arrow"></div>
+                  </div>
+                  <div class="submenu">
+                      <a href="../../departments/faculties/index.html" data-i18n="submenu.economic_informatics">Кафедры</a>
+                  </div>
+              </div>
+              <div class="language-switcher-container">
+                  <img src="../../images/languageicon.png" alt="" class="mobile-language-icon" id="mobileLanguageIcon">
+              </div>
+          </div>
+      
+          <div class="overlay"></div>
+      </div>
+      
+      <div class="container-header">
+          <div class="desktop-header-wrapper">
+              <div class="desktop-header-container">
+                  <a href="../../index.html"><img src="images/logo.png" alt="Логотип" class="logo desktop-logo"></a>
+                  <div class="desktop-menu">
+                      <div class="desktop-menu-item">
+                          <div class="menu-title-wrapper">
+                              <span data-i18n="menu.about">О факультете</span>
+                          </div>
+                          <div class="desktop-submenu">
+                              <div class="submenu-column">
+                                  <a href="../../about/history/index.html" class="submenu-item" data-i18n="submenu.history">История</a>
+                                  <a href="../../about/deanery/index.html" class="submenu-item" data-i18n="submenu.deans_office">Деканат</a>
+                                  <a href="../../about/student-life/index.html" class="submenu-item" data-i18n="submenu.student_council">Студенческая жизнь</a>
+                              </div>
+                              <div class="submenu-column right">
+                                  <div class="submenu-title" data-i18n="submenu.faculty_title">Факультет Цифровой Экономики</div>
+                                  <div class="submenu-description" data-i18n="submenu.faculty_description">Мы лучшие!</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desktop-menu-item">
+                          <div class="menu-title-wrapper">
+                              <span data-i18n="menu.for_students">Студенту</span>
+                          </div>
+                          <div class="desktop-submenu">
+                              <div class="submenu-column">
+                                  <a href="../../allnews/index.html" class="submenu-item" data-i18n="submenu.schedule">Новости факультета</a>
+                                  <a href="../../students/disciplines/index.html" class="submenu-item" data-i18n="submenu.courses">Учебные дисциплины</a>
+                                  <a href="../../students/hostel/index.html" class="submenu-item" data-i18n="submenu.hostel">Общежитие</a>
+                              </div>
+                              <div class="submenu-column right">
+                                  <div class="submenu-title" data-i18n="submenu.for_students_title">Для студентов</div>
+                                  <div class="submenu-description" data-i18n="submenu.for_students_desc">Все необходимое для учебы</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desktop-menu-item">
+                          <div class="menu-title-wrapper">
+                              <span data-i18n="menu.for_applicants">Абитуриенту</span>
+                          </div>
+                          <div class="desktop-submenu">
+                              <div class="submenu-column">
+                                  <a href="../../applicants/documentsList/index.html" class="submenu-item" data-i18n="submenu.admission_rules">Перечень документов</a>
+                                  <a href="../../applicants/reveiveDocumentsPeriod/index.html" class="submenu-item" data-i18n="submenu.open_days">Сроки приема документов</a>
+                                  <a href="../../applicants/openDoorDay/index.html" class="submenu-item" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
+                                  <a href="../../applicants/introductoryCampaign/index.html" class="submenu-item" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
+                              </div>
+                              <div class="submenu-column right">
+                                  <div class="submenu-title" data-i18n="submenu.for_applicants_title">Для абитуриентов</div>
+                                  <div class="submenu-description" data-i18n="submenu.for_applicants_desc">Всё о поступлении</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desktop-menu-item">
+                          <div class="menu-title-wrapper">
+                              <span data-i18n="menu.science">Наука</span>
+                          </div>
+                          <div class="desktop-submenu">
+                              <div class="submenu-column">
+                                  <a href="../../science/science/index.html" class="submenu-item" data-i18n="submenu.directions">Наука</a>
+                              </div>
+                              <div class="submenu-column right">
+                                  <div class="submenu-title" data-i18n="submenu.science_title">Научная деятельность</div>
+                                  <div class="submenu-description" data-i18n="submenu.science_desc">Исследования и разработки</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desktop-menu-item">
+                          <div class="menu-title-wrapper">
+                              <span data-i18n="menu.departments">Кафедры</span>
+                          </div>
+                          <div class="desktop-submenu">
+                              <div class="submenu-column">
+                                  <a href="../../departments/faculties/index.html" class="submenu-item" data-i18n="submenu.economic_informatics">Кафедры</a>
+                              </div>
+                              <div class="submenu-column right">
+                                  <div class="submenu-title" data-i18n="submenu.departments_title">Наши кафедры</div>
+                                  <div class="submenu-description" data-i18n="submenu.departments_desc">Профессиональное образование</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="language-switcher">
+                          <div class="desktop-language-icon" id="desktopLanguageIcon"></div>
+                          <div class="language-dropdown" id="languageDropdown">
+                              <div class="language-dropdown-content">
+                                  <div class="language-dropdown-item active" data-lang="ru">Рус 🇷🇺</div>
+                                  <div class="language-dropdown-item" data-lang="be">Бел 🇧🇾</div>
+                                  <div class="language-dropdown-item" data-lang="en">En 🇬🇧</div>
+                                  <div class="language-dropdown-item" data-lang="zh">Ch 🇨🇳</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- В styles.css надо изменить 
+      -->
+      
+      <!-- script.js надо добавиь под translations
+      
+      -->
+    <div class="inner-container">
+        <div class="campaign-title">
+          <p data-i18n="campaign.title">Вступительная кампания</p>
+        </div>
+      
+        <div class="campaign-desc">
+          <p data-i18n="campaign.desc">
+            Здесь вы найдете всю необходимую информацию о сроках, условиях приема документов, проведении вступительных испытаний и зачислении студентов. Мы стремимся помочь каждому абитуриенту сделать правильный выбор и начать свой путь в области цифровой экономики.
+          </p>
+        </div>
+      
+        <div class="enroll-rools">
+          <div class="rools-bold">
+            <p data-i18n="enroll.rules.title">Правила приема в учреждения, обеспечивающие получение высшего образования:</p>
+          </div>
+          <div class="rools-desc">
+            <p>
+              <a href="" target="_blank" rel="noopener noreferrer" data-i18n-link="enroll.rules.link1.href" data-i18n="enroll.rules.link1.text"></a>:
+              <span data-i18n="enroll.rules.link1.desc"></span>
+            </p>
+            <p>
+              <a href="" target="_blank" rel="noopener noreferrer" data-i18n-link="enroll.rules.link2.href" data-i18n="enroll.rules.link2.text"></a>:
+              <span data-i18n="enroll.rules.link2.desc"></span>
+            </p>
+          </div>
+        </div>
+      
+        <div class="specialization-block">
+          <div class="specialization-text">
+            <p data-i18n="specialization.title">Специальности и вступительные испытания:</p>
+          </div>
+          <div class="blocks">
+            <div class="speciality">
+              <div class="spec-title"><p data-i18n="speciality1.title">Экономическая информатика</p></div>
+              <div class="spec-num"><p data-i18n="speciality1.code">(6-05-0311-05)</p></div>
+              <div class="spec-graduate"><p data-i18n="speciality1.graduate">Экономист. Информатик</p></div>
+              <div class="spec-exams"><p data-i18n="speciality1.exams.title">Вступительные испытания:</p></div>
+              <div class="spec-ex1"><p data-i18n="speciality1.exams.ex1">математика (ЦТ или ЦЭ)</p></div>
+              <div class="spec-ex2"><p data-i18n="speciality1.exams.ex2">иностранный язык  (ЦТ или ЦЭ)</p></div>
+            </div>
+      
+            <div class="speciality">
+              <div class="spec-title"><p data-i18n="speciality2.title">Прикладная математика. Экономическая кибернетика</p></div>
+              <div class="spec-num"><p data-i18n="speciality2.code">(6-05-0533-09)</p></div>
+              <div class="spec-graduate"><p data-i18n="speciality2.graduate">Прикладной математик. Программист</p></div>
+              <div class="spec-exams"><p data-i18n="speciality2.exams.title">Вступительные испытания:</p></div>
+              <div class="spec-ex1"><p data-i18n="speciality2.exams.ex1">математика (ЦТ или ЦЭ)</p></div>
+              <div class="spec-ex2"><p data-i18n="speciality2.exams.ex2">физика (ЦТ или ЦЭ)</p></div>
+            </div>
+      
+            <div class="speciality">
+              <div class="spec-title"><p data-i18n="speciality3.title">Статистика</p></div>
+              <div class="spec-num"><p data-i18n="speciality3.code">(6-05-0541-01)</p></div>
+              <div class="spec-graduate"><p data-i18n="speciality3.graduate">Статистик-аналитик</p></div>
+              <div class="spec-exams"><p data-i18n="speciality3.exams.title">Вступительные испытания:</p></div>
+              <div class="spec-ex1"><p data-i18n="speciality3.exams.ex1">математика (ЦТ или ЦЭ)</p></div>
+              <div class="spec-ex2"><p data-i18n="speciality3.exams.ex2">иностранный язык (ЦТ или ЦЭ)</p></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="conditions">
+          <div class="specialization-text">
+            <p data-i18n="conditions.title">Условия проведения конкурса:</p>
+          </div>
+          <div class="condition1">
+            <p data-i18n="conditions.text1">
+              Абитуриенты, поступающие на дневную и заочную формы получения общего высшего образования в полный срок, сдают три вступительных испытания. Одним из них является учебный предмет «Белорусский язык» или «Русский язык» — по выбору абитуриента. Экзамен проводится в форме централизованного экзамена (ЦЭ) или централизованного тестирования (ЦТ). Оставшиеся два экзамена — профильные, в соответствии с выбранной специальностью. Возможны следующие сочетания форм сдачи: ЦЭ и ЦТ, два ЦТ, ЦЭ и вступительное испытание в университете, либо ЦТ и вступительное испытание в университете.
+            </p>
+          </div>
+          <div class="condition2">
+            <p data-i18n-html="conditions.text2">
+              При <b>отсутствии сертификата ЦЭ</b> абитуриенты сдают вступительные испытания в университете. Форма проведения вступительных испытаний определяется приемной комиссией университета с учетом особенностей психофизического развития абитуриента.
+            </p>
+          </div>
+        </div>
+      
+        <div class="features">
+          <div class="feature">
+            <div class="feature-num">
+              <p data-i18n="features.feature1.num">1</p>
+            </div>
+            <div class="feature-text">
+              <div class="feature-title">
+                <p data-i18n="features.feature1.title">Первочередное право зачисления:</p>
+              </div>
+              <div class="feature-desc">
+                <p data-i18n="features.feature1.desc">
+                  Правом первоочередного зачисления пользуются абитуриенты, поступающие на места, установленные контрольными цифрами приёма на условиях целевой подготовки. Приём осуществляется при наличии конкурса по специальности, то есть при числе абитуриентов больше одного на место. Для участия требуется средний балл документа об образовании не ниже 7, а также договор о целевой подготовке специалиста с высшим образованием, оформленный в трёх экземплярах и подписанный абитуриентом и заказчиком. Абитуриенты, не прошедшие по целевому конкурсу, могут принять участие в общем конкурсе.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="feature">
+            <div class="feature-num">
+              <p data-i18n="features.feature2.num">2</p>
+            </div>
+            <div class="feature-text">
+              <div class="feature-title">
+                <p data-i18n="features.feature2.title">Без вступительных испытаний:</p>
+              </div>
+              <div class="feature-desc">
+                <p data-i18n="features.feature2.desc">
+                  Без вступительных испытаний зачисляются победители международных и республиканских олимпиад по учебным предметам, проведённых Министерством образования Республики Беларусь в учебном году, завершившемся в год приёма. Для специальностей факультета цифровой экономики таким предметом является математика. Также без экзаменов принимаются лица, награждённые нагрудным знаком «Лаўрэат спецыяльнага фонду Прэзідэнта Рэспублікі Беларусь» за высокие достижения в предметных сферах, соответствующих избранной специальности, например, в области экономики — для факультета цифровой экономики. Кроме того, без экзаменов принимаются иностранные граждане и лица без гражданства, поступающие в рамках международных или межведомственных договоров Республики Беларусь.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="more-info">
+          <p>
+            <span data-i18n="moreInfo.text.part1">Узнать более подробно о </span>
+            <a href="https://bseu.by/russian/abiturient/pravila2025.pdf" target="_blank" rel="noopener noreferrer" data-i18n="moreInfo.link.text"></a>
+          </p>
+        </div>
+      </div>
+      
+
+      <div class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column-1">
+                    <div class="footer-column">
+                        <p><span class="underlined" data-i18n="footer.questions">Если у Вас возникли вопросы, обращайтесь по адресу</span> <strong>fde@bseu.by</strong></p>
+                        <div style="width: 186px; height: 181px; background: white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="186" height="181" viewBox="0 0 186 181" fill="none">
+                                <rect width="186" height="181" fill="white"/>
+                                <rect x="15" y="12" width="25" height="25" fill="#0094FF"/>
+                                <rect x="40" y="37" width="25" height="25" fill="#0094FF"/>
+                                <rect x="40" y="37" width="25" height="25" fill="#0094FF"/>
+                                <rect x="65" y="62" width="25" height="25" fill="#0094FF"/>
+                                <rect x="65" y="12" width="25" height="25" fill="#0094FF"/>
+                                <rect x="15" y="62" width="25" height="25" fill="#0094FF"/>
+                                <rect x="90" y="87" width="25" height="25" fill="#0094FF"/>
+                                <rect x="115" y="12" width="25" height="25" fill="#0094FF"/>
+                                <rect x="140" y="12" width="25" height="25" fill="#0094FF"/>
+                                <rect x="115" y="62" width="25" height="25" fill="#0094FF"/>
+                                <rect x="90" y="112" width="25" height="25" fill="#0094FF"/>
+                                <rect x="65" y="137" width="25" height="25" fill="#0094FF"/>
+                                <rect x="115" y="137" width="25" height="25" fill="#0094FF"/>
+                                <rect x="15" y="137" width="25" height="25" fill="#0094FF"/>
+                                <rect x="40" y="112" width="25" height="25" fill="#0094FF"/>
+                                <rect x="40" y="137" width="25" height="25" fill="#0094FF"/>
+                              </svg>
+                        </div>
+                        <p data-i18n="footer.suggestions">Если есть предложения, можете написать нам</p>
+                    </div>
+                </div>
+    
+                <div class="footer-column-2">
+                    <div class="footer-column">
+                        <p data-i18n="menu.links">Ссылки</p>
+                        <a href="../../about/history/index.html" data-i18n="menu.about">Деканат</a>
+                        <a href="../../students/disciplines/index.html" data-i18n="menu.for_students">Новости</a>
+                        <a href="../../applicants/documentsList/index.html" data-i18n="menu.for_applicants">Абитуриенту</a>
+                        <a href="../../science/science/index.html" data-i18n="menu.science">Наука</a>
+                        <a href="../../departments/faculties/index.html" data-i18n="menu.departments">Кафедры</a>
+                        <a href="../../footer/map/index.html" data-i18n="menu.sitemap">Карта сайта</a>
+                    </div>
+                </div>
+    
+                <div class="footer-column-3">
+                    <div class="footer-column">
+                        <h3>
+                            <a href="../../footer/contacts/index.html" style="text-decoration: none; color: inherit;" data-i18n="footer.contacts">
+                              Контакты
+                            </a>
+                          </h3>
+                        <p>+375(17) 209-52-45</p>
+                        <p>fdebseu@gmail.com</p>
+                        <p data-i18n="footer.address">220070, г. Минск, пр. Партизанский 26,</br> корпус 1, ауд. 120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" data-i18n="footer.copyright">© 2019-2025 БГЭУ ФЦЭ</div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="introductoryCampaign.js"></script>
+</body>
+</html>

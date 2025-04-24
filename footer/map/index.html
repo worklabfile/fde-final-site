@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карта сайта</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="map-style.css">
+</head>
+<body>
+    <div class="container">
+
+		<div class="header-background"></div>
+		<div class="mobile-header">
+			<a href="../../index.html"><img src="images/logo.png" alt="Логотип" class="logo mobile-logo"></a>
+			<div class="burger-menu">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		
+			<!-- Боковое меню -->
+			<div class="side-menu">
+				<div class="menu-item" data-i18n-key="menu.about">
+					<div class="menu-title" data-i18n="menu.about">О факультете
+						<div class="arrow"></div>
+					</div>
+					<div class="submenu">
+						<a href="../../about/history/index.html" data-i18n="submenu.history">История</a>
+						<a href="../../about/deanery/index.html" data-i18n="submenu.deans_office">Деканат</a>
+						<a href="../../about/student-life/index.html" data-i18n="submenu.student_council">Студенческая жизнь</a>
+					</div>
+				</div>
+				<div class="menu-item" data-i18n-key="menu.for_students">
+					<div class="menu-title" data-i18n="menu.for_students">Студенту
+						<div class="arrow"></div>
+					</div>
+					<div class="submenu">
+						<a href="../../allnews/index.html" data-i18n="submenu.schedule">Новости факультета</a>
+						<a href="../../students/disciplines/index.html" data-i18n="submenu.courses">Учебные дисциплины</a>
+						<a href="../../students/hostel/index.html" data-i18n="submenu.hostel">Общежитие</a>
+					</div>
+				</div>
+				<div class="menu-item" data-i18n-key="menu.for_applicants">
+					<div class="menu-title" data-i18n="menu.for_applicants">Абитуриенту
+						<div class="arrow"></div>
+					</div>
+					<div class="submenu">
+						<a href="../../applicants/documentsList/index.html" data-i18n="submenu.admission_rules">Перечень документов</a>
+						<a href="../../applicants/reveiveDocumentsPeriod/index.html" data-i18n="submenu.open_days">Сроки приема документов</a>
+						<a href="../../applicants/openDoorDay/index.html" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
+						<a href="../../applicants/introductoryCampaign/index.html" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
+					</div>
+				</div>
+				<div class="menu-item" data-i18n-key="menu.science">
+					<div class="menu-title" data-i18n="menu.science">Наука
+						<div class="arrow"></div>
+					</div>
+					<div class="submenu">
+						<a href="../../science/science/index.html" data-i18n="submenu.directions">Наука</a>
+					</div>
+				</div>
+				<div class="menu-item" data-i18n-key="menu.departments">
+					<div class="menu-title" data-i18n="menu.departments">Кафедры
+						<div class="arrow"></div>
+					</div>
+					<div class="submenu">
+						<a href="../../departments/faculties/index.html" data-i18n="submenu.economic_informatics">Кафедры</a>
+					</div>
+				</div>
+				<div class="language-switcher-container">
+					<img src="../../images/languageicon.png" alt="" class="mobile-language-icon" id="mobileLanguageIcon">
+				</div>
+			</div>
+		
+			<div class="overlay"></div>
+		</div>
+		
+		<div class="container-header">
+			<div class="desktop-header-wrapper">
+				<div class="desktop-header-container">
+					<a href="../../index.html"><img src="images/logo.png" alt="Логотип" class="logo desktop-logo"></a>
+					<div class="desktop-menu">
+						<div class="desktop-menu-item">
+							<div class="menu-title-wrapper">
+								<span data-i18n="menu.about">О факультете</span>
+							</div>
+							<div class="desktop-submenu">
+								<div class="submenu-column">
+									<a href="../../about/history/index.html" class="submenu-item" data-i18n="submenu.history">История</a>
+									<a href="../../about/deanery/index.html" class="submenu-item" data-i18n="submenu.deans_office">Деканат</a>
+									<a href="../../about/student-life/index.html" class="submenu-item" data-i18n="submenu.student_council">Студенческая жизнь</a>
+								</div>
+								<div class="submenu-column right">
+									<div class="submenu-title" data-i18n="submenu.faculty_title">Факультет Цифровой Экономики</div>
+									<div class="submenu-description" data-i18n="submenu.faculty_description">Мы лучшие!</div>
+								</div>
+							</div>
+						</div>
+						<div class="desktop-menu-item">
+							<div class="menu-title-wrapper">
+								<span data-i18n="menu.for_students">Студенту</span>
+							</div>
+							<div class="desktop-submenu">
+								<div class="submenu-column">
+									<a href="../../allnews/index.html" class="submenu-item" data-i18n="submenu.schedule">Новости факультета</a>
+									<a href="../../students/disciplines/index.html" class="submenu-item" data-i18n="submenu.courses">Учебные дисциплины</a>
+									<a href="../../students/hostel/index.html" class="submenu-item" data-i18n="submenu.hostel">Общежитие</a>
+								</div>
+								<div class="submenu-column right">
+									<div class="submenu-title" data-i18n="submenu.for_students_title">Для студентов</div>
+									<div class="submenu-description" data-i18n="submenu.for_students_desc">Все необходимое для учебы</div>
+								</div>
+							</div>
+						</div>
+						<div class="desktop-menu-item">
+							<div class="menu-title-wrapper">
+								<span data-i18n="menu.for_applicants">Абитуриенту</span>
+							</div>
+							<div class="desktop-submenu">
+								<div class="submenu-column">
+									<a href="../../applicants/documentsList/index.html" class="submenu-item" data-i18n="submenu.admission_rules">Перечень документов</a>
+									<a href="../../applicants/reveiveDocumentsPeriod/index.html" class="submenu-item" data-i18n="submenu.open_days">Сроки приема документов</a>
+									<a href="../../applicants/openDoorDay/index.html" class="submenu-item" data-i18n="submenu.open_door_day">Дни открытых дверей</a>
+									<a href="../../applicants/introductoryCampaign/index.html" class="submenu-item" data-i18n="submenu.introductory_campaign">Вступительная компания</a>
+								</div>
+								<div class="submenu-column right">
+									<div class="submenu-title" data-i18n="submenu.for_applicants_title">Для абитуриентов</div>
+									<div class="submenu-description" data-i18n="submenu.for_applicants_desc">Всё о поступлении</div>
+								</div>
+							</div>
+						</div>
+						<div class="desktop-menu-item">
+							<div class="menu-title-wrapper">
+								<span data-i18n="menu.science">Наука</span>
+							</div>
+							<div class="desktop-submenu">
+								<div class="submenu-column">
+									<a href="../../science/science/index.html" class="submenu-item" data-i18n="submenu.directions">Наука</a>
+								</div>
+								<div class="submenu-column right">
+									<div class="submenu-title" data-i18n="submenu.science_title">Научная деятельность</div>
+									<div class="submenu-description" data-i18n="submenu.science_desc">Исследования и разработки</div>
+								</div>
+							</div>
+						</div>
+						<div class="desktop-menu-item">
+							<div class="menu-title-wrapper">
+								<span data-i18n="menu.departments">Кафедры</span>
+							</div>
+							<div class="desktop-submenu">
+								<div class="submenu-column">
+									<a href="../../departments/faculties/index.html" class="submenu-item" data-i18n="submenu.economic_informatics">Кафедры</a>
+								</div>
+								<div class="submenu-column right">
+									<div class="submenu-title" data-i18n="submenu.departments_title">Наши кафедры</div>
+									<div class="submenu-description" data-i18n="submenu.departments_desc">Профессиональное образование</div>
+								</div>
+							</div>
+						</div>
+						<div class="language-switcher">
+							<div class="desktop-language-icon" id="desktopLanguageIcon"></div>
+							<div class="language-dropdown" id="languageDropdown">
+								<div class="language-dropdown-content">
+									<div class="language-dropdown-item active" data-lang="ru">Рус 🇷🇺</div>
+									<div class="language-dropdown-item" data-lang="be">Бел 🇧🇾</div>
+									<div class="language-dropdown-item" data-lang="en">En 🇬🇧</div>
+									<div class="language-dropdown-item" data-lang="zh">Ch 🇨🇳</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- В styles.css надо изменить 
+		.submenu-item {
+		margin-bottom: 20px !important;
+		color: black !important;
+		font-size: 16px !important;
+		font-weight: 500 !important;
+		line-height: 16.21px !important;
+		cursor: pointer !important;
+		white-space: normal !important;
+		} -->
+		
+		<!-- script.js надо добавиь под translations
+		
+		const translationUpdates = {
+			'ru': {
+				'submenu.student_council': 'Студенческая жизнь',
+				'submenu.schedule': 'Новости факультета',
+				'submenu.admission_rules': 'Перечень документов',
+				'submenu.courses': 'Учебные дисциплины',
+				'submenu.open_days': 'Сроки приема документов',
+				'submenu.hostel': 'Общежитие',
+				'submenu.open_door_day': 'Дни открытых дверей',
+				'submenu.introductory_campaign': 'Вступительная компания',
+				'submenu.directions': 'Наука',
+				'submenu.economic_informatics': 'Кафедры'
+			},
+			'be': {
+				'submenu.student_council': 'Студэнцкае жыццё',
+				'submenu.schedule': 'Навіны факультэта',
+				'submenu.admission_rules': 'Пералік дакументаў',
+				'submenu.courses': 'Вучэбныя дысцыпліны',
+				'submenu.open_days': 'Тэрміны прыёму дакументаў',
+				'submenu.hostel': 'Інтэрнат',
+				'submenu.open_door_day': 'Дні адкрытых дзвярэй',
+				'submenu.introductory_campaign': 'Уступная кампанія',
+				'submenu.directions': 'Навука',
+				'submenu.economic_informatics': 'Кафедры'
+			},
+			'en': {
+				'submenu.student_council': 'Student Life',
+				'submenu.schedule': 'Faculty News',
+				'submenu.admission_rules': 'List of documents',
+				'submenu.courses': 'Academic disciplines',
+				'submenu.open_days': 'Document submission deadlines',
+				'submenu.hostel': 'Dormitory',
+				'submenu.open_door_day': 'Open days',
+				'submenu.introductory_campaign': 'Admission campaign',
+				'submenu.directions': 'Science',
+				'submenu.economic_informatics': 'Departments'
+			},
+			'zh': {
+				'submenu.student_council': '学生生活',
+				'submenu.schedule': '学院新闻',
+				'submenu.admission_rules': '文件清单',
+				'submenu.courses': '学科',
+				'submenu.open_days': '文件提交截止日期',
+				'submenu.hostel': '宿舍',
+				'submenu.open_door_day': '开放日',
+				'submenu.introductory_campaign': '招生活动',
+				'submenu.directions': '科学',
+				'submenu.economic_informatics': '部门'
+			}
+		};
+		
+		// Объединяем обновления с существующими переводами
+		for (const lang in translationUpdates) {
+			if (translations[lang]) {
+				Object.assign(translations[lang], translationUpdates[lang]);
+			} else {
+				translations[lang] = translationUpdates[lang];
+			}
+		} -->
+
+    <div class="inner-container">
+
+        <div class="inner-title">
+            <p data-i18n="sitemap.title">Карта сайта</p>
+        </div>
+
+        <div class="blocks">
+            <div class="block1">
+                <div class="section-faculty">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.faculty">О факультете</p>
+                    </div>
+                    <div class="tail-map">
+                        <a href="" data-i18n="sitemap.faculty_history">История</a>
+                        <a href="" data-i18n="sitemap.faculty_deanery">Деканат</a>
+                        <a href="" data-i18n="sitemap.student_life">Студенческая жизнь</a>
+                    </div>
+                </div>
+
+                <div class="section-society">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.science">Наука</p>
+                    </div>
+                </div>
+
+                <div class="section-library">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.library">Электронная библиотека</p>
+                    </div>
+                </div>
+
+                <div class="section-deanery">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.faculty_deanery">Деканат</p>
+                    </div>
+                </div>
+
+                <div class="section-contacts">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.contacts">Контакты</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block2">
+                <div class="section-student">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.student">Студенту</p>
+                    </div>
+                    <div class="tail-map">
+                        <a href="" data-i18n="sitemap.schedule">Расписание</a>
+                        <a href="" data-i18n="sitemap.disciplines">Учебные дисциплины</a>
+                        <a href="" data-i18n="sitemap.forms">Бланки заявлений</a>
+                        <a href="" data-i18n="sitemap.portal">Образовательный портал</a>
+                    </div>
+                </div>
+
+                <div class="section-faculties">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.departments">Кафедры</p>
+                    </div>
+                    <div class="tail-map">
+                        <a href="" data-i18n="sitemap.higher_math">Высшей математики</a>
+                        <a href="" data-i18n="sitemap.it">Информационных технологий</a>
+                        <a href="" data-i18n="sitemap.math_methods">Математических методов в экономике</a>
+                        <a href="" data-i18n="sitemap.statistics">Статистики</a>
+                        <a href="" data-i18n="submenu.economic_informatics">Экономической информатики</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block3">
+                <div class="applicant-applicant">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.applicant">Абитуриенту</p>
+                    </div>
+                    <div class="tail-map">
+                        <a href="" data-i18n="sitemap.admission">Вступительная кампания</a>
+                        <a href="" data-i18n="sitemap.specialties">Специальности</a>
+                        <a href="" data-i18n="sitemap.scores">Проходные баллы прошлых лет</a>
+                        <a href="" data-i18n="sitemap.docs_deadlines">Сроки приема документов</a>
+                        <a href="" data-i18n="sitemap.docs_list">Перечень документов</a>
+                        <a href="" data-i18n="sitemap.study_terms">Сроки обучения</a>
+                        <a href="" data-i18n="sitemap.open_days">График Дней открытых дверей</a>
+                        <a href="" data-i18n="sitemap.dormitory">Общежитие</a>
+                        <a href="" data-i18n="sitemap.paid_education">Платная форма обучения</a>
+                    </div>
+                </div>
+
+                <div class="section-internal-links">
+                    <div class="head-map">
+                        <p data-i18n="sitemap.international">Международные связи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	<div class="footer">
+		<div class="footer-container">
+			<div class="footer-content">
+				<div class="footer-column-1">
+					<div class="footer-column">
+						<p><span class="underlined" data-i18n="footer.questions">Если у Вас возникли вопросы, обращайтесь по адресу</span> <strong>fde@bseu.by</strong></p>
+						<div style="width: 186px; height: 181px; background: white;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="186" height="181" viewBox="0 0 186 181" fill="none">
+								<rect width="186" height="181" fill="white"/>
+								<rect x="15" y="12" width="25" height="25" fill="#0094FF"/>
+								<rect x="40" y="37" width="25" height="25" fill="#0094FF"/>
+								<rect x="40" y="37" width="25" height="25" fill="#0094FF"/>
+								<rect x="65" y="62" width="25" height="25" fill="#0094FF"/>
+								<rect x="65" y="12" width="25" height="25" fill="#0094FF"/>
+								<rect x="15" y="62" width="25" height="25" fill="#0094FF"/>
+								<rect x="90" y="87" width="25" height="25" fill="#0094FF"/>
+								<rect x="115" y="12" width="25" height="25" fill="#0094FF"/>
+								<rect x="140" y="12" width="25" height="25" fill="#0094FF"/>
+								<rect x="115" y="62" width="25" height="25" fill="#0094FF"/>
+								<rect x="90" y="112" width="25" height="25" fill="#0094FF"/>
+								<rect x="65" y="137" width="25" height="25" fill="#0094FF"/>
+								<rect x="115" y="137" width="25" height="25" fill="#0094FF"/>
+								<rect x="15" y="137" width="25" height="25" fill="#0094FF"/>
+								<rect x="40" y="112" width="25" height="25" fill="#0094FF"/>
+								<rect x="40" y="137" width="25" height="25" fill="#0094FF"/>
+							  </svg>
+						</div>
+						<p data-i18n="footer.suggestions">Если есть предложения, можете написать нам</p>
+					</div>
+				</div>
+	
+				<div class="footer-column-2">
+					<div class="footer-column">
+						<p data-i18n="menu.links">Ссылки</p>
+						<a href="../../about/history/index.html" data-i18n="menu.about">Деканат</a>
+						<a href="../../students/disciplines/index.html" data-i18n="menu.for_students">Новости</a>
+						<a href="../../applicants/documentsList/index.html" data-i18n="menu.for_applicants">Абитуриенту</a>
+						<a href="../../science/science/index.html" data-i18n="menu.science">Наука</a>
+						<a href="../../departments/faculties/index.html" data-i18n="menu.departments">Кафедры</a>
+						<a href="../../footer/map/index.html" data-i18n="menu.sitemap">Карта сайта</a>
+					</div>
+				</div>
+	
+				<div class="footer-column-3">
+					<div class="footer-column">
+						<h3>
+							<a href="../../footer/contacts/index.html" style="text-decoration: none; color: inherit;" data-i18n="footer.contacts">
+							  Контакты
+							</a>
+						  </h3>
+						<p>+375(17) 209-52-45</p>
+						<p>fdebseu@gmail.com</p>
+						<p data-i18n="footer.address">220070, г. Минск, пр. Партизанский 26,</br> корпус 1, ауд. 120</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom" data-i18n="footer.copyright">© 2019-2025 БГЭУ ФЦЭ</div>
+		</div>
+	</div>
+    </div>
+
+    <script src="map.js"></script>
+</body>
+</html>
