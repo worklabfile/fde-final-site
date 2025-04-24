@@ -251,6 +251,18 @@ body {
     margin-bottom: 15px; /* отступ после заголовка */
 }
 
+.head-map a {
+    color: #0094FF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 101.336%;
+    letter-spacing: -0.66px;
+    margin-bottom: 15px; /* отступ после заголовка */
+    text-decoration: none;
+}
+
 .tail-map {
     display: flex;
     flex-direction: column;
