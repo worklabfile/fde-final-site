@@ -201,7 +201,6 @@ body {
         background: rgba(173, 216, 230, 1);
     }
 
-    /* Скрываем мобильную версию на десктопе */
     .header-background,
     .mobile-header,
     .side-menu {
@@ -224,7 +223,7 @@ body {
     font-size: 52px;
     font-style: normal;
     font-weight: 600;
-    line-height: 101.336%; /* 52.695px */
+    line-height: 101.336%; 
     letter-spacing: -1.56px;
 }
 
@@ -234,7 +233,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 101.336%; /* 32.427px */
+    line-height: 101.336%; 
     letter-spacing: -0.96px;
 }
 
@@ -255,7 +254,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 30px; /* или нужный вам отступ */
+    margin-bottom: 30px; 
 }
 
 .info-2019 p:first-child, 
@@ -266,7 +265,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 101.336%; /* 32.427px */
+    line-height: 101.336%; 
     letter-spacing: -0.96px;
     display: flex;
     width: 148px;
@@ -296,7 +295,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 101.336%; /* 32.427px */
+    line-height: 101.336%; 
     letter-spacing: -0.96px;
 }
 
@@ -306,7 +305,7 @@ body {
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 101.336%; /* 22.294px */
+    line-height: 101.336%; 
     letter-spacing: -0.66px;
     width: 1200px;
 }
@@ -628,7 +627,6 @@ body {
         visibility: visible;
     }
 
-    /* Скрываем десктопную версию на мобильных */
     .desktop-header-wrapper {
         display: none;
     }
@@ -644,12 +642,11 @@ body {
 
     .inner-container {
         margin-top: 50px !important;
-        padding: 0 15px 0 25px !important; /* Больший отступ слева */
+        padding: 0 15px 0 25px !important; 
         box-sizing: border-box !important;
         width: 100% !important;
     }
 
-    /* Стили для заголовка истории */
     .history-title p {
         color: #2E3146 !important;
         font-family: Montserrat !important;
@@ -663,7 +660,6 @@ body {
         width: 100% !important;
     }
 
-    /* Стили для блока создания */
     .creation {
         margin-bottom: 30px !important;
     }
@@ -709,7 +705,6 @@ body {
         width: 100%;
     }
 
-    /* Исправленные стили для квадрата с годом */
     .info-2019 p:first-child, 
     .info-2020 p:first-child, 
     .info-2022 p:first-child {
@@ -718,11 +713,10 @@ body {
         font-size: 28px;
         font-style: normal;
         font-weight: 600;
-        line-height: 101.336%; /* 28.374px */
+        line-height: 101.336%; 
         letter-spacing: -0.84px;
     }
 
-    /* Остальные стили остаются прежними */
     .info-2019 p:last-child, 
     .info-2020 p:last-child, 
     .info-2022 p:last-child {
@@ -731,7 +725,7 @@ body {
         font-size: 22px;
         font-style: normal;
         font-weight: 400 !important;
-        line-height: 101.336%; /* 22.294px */
+        line-height: 101.336%; 
         letter-spacing: -0.66px;
         width: calc(100% - 95px);
         margin: 0;
@@ -740,7 +734,6 @@ body {
         overflow-wrap: break-word;
     }
 
-    /* Стили для миссии */
     .mission {
         margin-top: 30px !important;
     }

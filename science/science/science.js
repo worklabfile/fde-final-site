@@ -21,7 +21,7 @@ const translations = {
         'menu.science-desc': 'Исследования и разработки',
         'menu.faculty-tit': 'Наши кафедры',
         'menu.faculty-desc': 'Профессиональное образование',
-        
+
         'submenu.history': 'История',
         'submenu.deans_office': 'Деканат',
         'submenu.student_council': 'Студсовет',
@@ -77,7 +77,7 @@ const translations = {
         'menu.science-desc': 'Дасьледаваньні і распрацоўкі',
         'menu.faculty-tit': 'Нашы кафедры',
         'menu.faculty-desc': 'Прафесійная адукацыя',
-        
+
         'submenu.history': 'Гісторыя',
         'submenu.deans_office': 'Дэканат',
         'submenu.student_council': 'Студсавет',
@@ -93,7 +93,7 @@ const translations = {
         'submenu.conferences': 'Канферэнцыі',
         'submenu.publications': 'Публікацыі',
         'submenu.economic_informatics': 'Эканамічная інфарматыка',
-        
+
         'contacts.title': 'Кантакты',
         'contacts.dean': 'дэкан',
         'contacts.vice_dean': 'намеснік дэкана',
@@ -132,7 +132,7 @@ const translations = {
         'menu.science-desc': 'Research and development',
         'menu.faculty-tit': 'Our Departments',
         'menu.faculty-desc': 'Professional education',
-        
+
         'submenu.history': 'History',
         'submenu.deans_office': 'Dean\'s Office',
         'submenu.student_council': 'Student Council',
@@ -160,7 +160,7 @@ const translations = {
         'science.fce-desc': 'was established in response to the rapid digital transformation of society and, consequently, the acute need for highly qualified IT specialists. The main goal of the FDE is to help students enhance their knowledge and skills to become in-demand professionals. We conduct scientific research and implement international educational programs to prepare a new generation of specialists with up-to-date knowledge in IT and economics, ready to compete in the labor market and actively participate in the digital transformation of our country.',
         'science.fce-contacts': 'Learning at the FDE is built in close contact with leading companies, including residents of the High-Tech Park. The educational process involves both experienced university teachers and experts from the real sector who conduct guest lectures and workshops. Our departments’ branches, located in major IT companies, allow students to deeply study the specifics of these companies and adapt curricula to current market demands. English-language content is actively used in the learning process.',
         'science.fce-modern': 'It is important for us that education at the FDE keeps pace with the times. Therefore, we constantly adapt curricula and programs to labor market changes, combine university education with real business experience, implement modern teaching methods, develop digital and entrepreneurial literacy among students and teachers, strive for international cooperation, and contribute to the digital transformation of the economy.',
-    
+
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
         'footer.copyright': '© 2019-2025 BSEU FDE',
@@ -187,7 +187,7 @@ const translations = {
         'menu.science-desc': '研究与开发',
         'menu.faculty-tit': '我们的部门',
         'menu.faculty-desc': '专业教育',
-        
+
         'submenu.history': '历史',
         'submenu.deans_office': '院长办公室',
         'submenu.student_council': '学生会',
@@ -202,7 +202,7 @@ const translations = {
         'submenu.directions': '研究方向',
         'submenu.conferences': '会议',
         'submenu.publications': '出版物',
-        'submenu.economic_informatics': '经济信息学',   
+        'submenu.economic_informatics': '经济信息学',
 
         'contacts.title': '联系方式',
         'contacts.dean': '院长',
@@ -282,7 +282,7 @@ for (const lang in translationUpdates) {
     } else {
         translations[lang] = translationUpdates[lang];
     }
-} 
+}
 
 // Функция для перевода текста
 function translatePage(language) {
@@ -294,7 +294,7 @@ function translatePage(language) {
             element.textContent = translations[language][key];
         }
     });
-    
+
     // Для атрибутов placeholder, title и т.д. можно добавить дополнительную обработку
     const elementsWithAttr = document.querySelectorAll('[data-i18n-attr]');
     elementsWithAttr.forEach(element => {

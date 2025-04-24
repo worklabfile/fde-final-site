@@ -20,7 +20,7 @@ const translations = {
         'menu.science-desc': 'Исследования и разработки',
         'menu.faculty-tit': 'Наши кафедры',
         'menu.faculty-desc': 'Профессиональное образование',
-        
+
         // Подменю (уже есть)
         'submenu.history': 'История',
         'submenu.deans_office': 'Деканат',
@@ -37,7 +37,7 @@ const translations = {
         'submenu.conferences': 'Конференции',
         'submenu.publications': 'Публикации',
         'submenu.economic_informatics': 'Экономическая информатика',
-        
+
         // Карта сайта
         'sitemap.title': 'Карта сайта',
         'sitemap.faculty': 'О факультете',
@@ -68,7 +68,7 @@ const translations = {
         'sitemap.dormitory': 'Общежитие',
         'sitemap.paid_education': 'Платная форма обучения',
         'sitemap.international': 'Международные связи',
-        
+
         // Футер
         'footer.questions': 'Если у Вас возникли вопросы, обращайтесь по адресу',
         'footer.suggestions': 'Если есть предложения, можете написать нам',
@@ -96,7 +96,7 @@ const translations = {
         'menu.science-desc': 'Дасьледаваньні і распрацоўкі',
         'menu.faculty-tit': 'Нашы кафедры',
         'menu.faculty-desc': 'Прафесійная адукацыя',
-        
+
         // Подменю
         'submenu.history': 'Гісторыя',
         'submenu.deans_office': 'Дэканат',
@@ -113,7 +113,7 @@ const translations = {
         'submenu.conferences': 'Канферэнцыі',
         'submenu.publications': 'Публікацыі',
         'submenu.economic_informatics': 'Эканамічная інфарматыка',
-        
+
         // Карта сайта
         'sitemap.title': 'Карта сайта',
         'sitemap.faculty': 'Аб факультэце',
@@ -144,7 +144,7 @@ const translations = {
         'sitemap.dormitory': 'Інтэрнат',
         'sitemap.paid_education': 'Платная форма навучання',
         'sitemap.international': 'Міжнародныя сувязі',
-        
+
         // Футер
         'footer.questions': 'Калі ў вас узніклі пытанні, звяртайцеся па адрасе',
         'footer.suggestions': 'Калі ёсць прапановы, можаце напісаць нам',
@@ -172,7 +172,7 @@ const translations = {
         'menu.science-desc': 'Research and development',
         'menu.faculty-tit': 'Our Departments',
         'menu.faculty-desc': 'Professional education',
-        
+
         // Подменю
         'submenu.history': 'History',
         'submenu.deans_office': 'Dean\'s Office',
@@ -189,7 +189,7 @@ const translations = {
         'submenu.conferences': 'Conferences',
         'submenu.publications': 'Publications',
         'submenu.economic_informatics': 'Economic Informatics',
-        
+
         // Карта сайта
         'sitemap.title': 'Site Map',
         'sitemap.faculty': 'About Faculty',
@@ -220,7 +220,7 @@ const translations = {
         'sitemap.dormitory': 'Dormitory',
         'sitemap.paid_education': 'Paid Education',
         'sitemap.international': 'International Relations',
-        
+
         // Футер
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
@@ -248,7 +248,7 @@ const translations = {
         'menu.science-desc': '研究与开发',
         'menu.faculty-tit': '我们的部门',
         'menu.faculty-desc': '专业教育',
-        
+
         // Подменю
         'submenu.history': '历史',
         'submenu.deans_office': '院长办公室',
@@ -265,7 +265,7 @@ const translations = {
         'submenu.conferences': '会议',
         'submenu.publications': '出版物',
         'submenu.economic_informatics': '经济信息学',
-        
+
         // Карта сайта
         'sitemap.title': '网站地图',
         'sitemap.faculty': '关于学院',
@@ -296,7 +296,7 @@ const translations = {
         'sitemap.dormitory': '宿舍',
         'sitemap.paid_education': '付费教育',
         'sitemap.international': '国际关系',
-        
+
         // Футер
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',
@@ -376,7 +376,7 @@ function translatePage(language) {
             element.textContent = translations[language][key];
         }
     });
-    
+
     // Для атрибутов placeholder, title и т.д. можно добавить дополнительную обработку
     const elementsWithAttr = document.querySelectorAll('[data-i18n-attr]');
     elementsWithAttr.forEach(element => {

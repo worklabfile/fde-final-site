@@ -21,7 +21,7 @@ const translations = {
         'menu.science-desc': 'Исследования и разработки',
         'menu.faculty-tit': 'Наши кафедры',
         'menu.faculty-desc': 'Профессиональное образование',
-        
+
         'submenu.history': 'История',
         'submenu.deans_office': 'Деканат',
         'submenu.student_council': 'Студсовет',
@@ -43,7 +43,7 @@ const translations = {
         'contacts.vice_dean': 'заместитель декана',
         'contacts.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Как добраться',
-        
+
         // Футер
         'footer.questions': 'Если у Вас возникли вопросы, обращайтесь по адресу',
         'footer.suggestions': 'Если есть предложения, можете написать нам',
@@ -71,7 +71,7 @@ const translations = {
         'menu.science-desc': 'Дасьледаваньні і распрацоўкі',
         'menu.faculty-tit': 'Нашы кафедры',
         'menu.faculty-desc': 'Прафесійная адукацыя',
-        
+
         'submenu.history': 'Гісторыя',
         'submenu.deans_office': 'Дэканат',
         'submenu.student_council': 'Студсавет',
@@ -87,7 +87,7 @@ const translations = {
         'submenu.conferences': 'Канферэнцыі',
         'submenu.publications': 'Публікацыі',
         'submenu.economic_informatics': 'Эканамічная інфарматыка',
-        
+
         'contacts.title': 'Кантакты',
         'contacts.dean': 'дэкан',
         'contacts.vice_dean': 'намеснік дэкана',
@@ -120,7 +120,7 @@ const translations = {
         'menu.science-desc': 'Research and development',
         'menu.faculty-tit': 'Our Departments',
         'menu.faculty-desc': 'Professional education',
-        
+
         'submenu.history': 'History',
         'submenu.deans_office': 'Dean\'s Office',
         'submenu.student_council': 'Student Council',
@@ -142,7 +142,7 @@ const translations = {
         'contacts.vice_dean': 'Vice Dean',
         'contacts.address': '220070, Minsk, Partizansky Ave. 26, building 1, room 1205',
         'contacts.how_to_get': 'How to get there',
-        
+
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
         'footer.copyright': '© 2019-2025 BSEU FDE',
@@ -169,7 +169,7 @@ const translations = {
         'menu.science-desc': '研究与开发',
         'menu.faculty-tit': '我们的部门',
         'menu.faculty-desc': '专业教育',
-        
+
         'submenu.history': '历史',
         'submenu.deans_office': '院长办公室',
         'submenu.student_council': '学生会',
@@ -184,14 +184,14 @@ const translations = {
         'submenu.directions': '研究方向',
         'submenu.conferences': '会议',
         'submenu.publications': '出版物',
-        'submenu.economic_informatics': '经济信息学',   
+        'submenu.economic_informatics': '经济信息学',
 
         'contacts.title': '联系方式',
         'contacts.dean': '院长',
         'contacts.vice_dean': '副院长',
         'contacts.address': '220070, 明斯克市, 游击队大街26号, 1号楼, 1205',
         'contacts.how_to_get': '如何到达',
-        
+
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',
         'footer.copyright': '© 2019-2025 白俄罗斯国立经济大学数字经济学院',
@@ -258,7 +258,7 @@ for (const lang in translationUpdates) {
     } else {
         translations[lang] = translationUpdates[lang];
     }
-} 
+}
 
 // Функция для перевода текста
 function translatePage(language) {
@@ -270,7 +270,7 @@ function translatePage(language) {
             element.textContent = translations[language][key];
         }
     });
-    
+
     // Для атрибутов placeholder, title и т.д. можно добавить дополнительную обработку
     const elementsWithAttr = document.querySelectorAll('[data-i18n-attr]');
     elementsWithAttr.forEach(element => {

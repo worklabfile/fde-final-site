@@ -21,7 +21,7 @@ const translations = {
         'menu.science-desc': 'Исследования и разработки',
         'menu.faculty-tit': 'Наши кафедры',
         'menu.faculty-desc': 'Профессиональное образование',
-        
+
         'submenu.history': 'История',
         'submenu.deans_office': 'Деканат',
         'submenu.student_council': 'Студсовет',
@@ -76,7 +76,7 @@ const translations = {
         'menu.science-desc': 'Дасьледаваньні і распрацоўкі',
         'menu.faculty-tit': 'Нашы кафедры',
         'menu.faculty-desc': 'Прафесійная адукацыя',
-        
+
         'submenu.history': 'Гісторыя',
         'submenu.deans_office': 'Дэканат',
         'submenu.student_council': 'Студсавет',
@@ -92,7 +92,7 @@ const translations = {
         'submenu.conferences': 'Канферэнцыі',
         'submenu.publications': 'Публікацыі',
         'submenu.economic_informatics': 'Эканамічная інфарматыка',
-        
+
         'contacts.title': 'Кантакты',
         'contacts.dean': 'дэкан',
         'contacts.vice_dean': 'намеснік дэкана',
@@ -130,7 +130,7 @@ const translations = {
         'menu.science-desc': 'Research and development',
         'menu.faculty-tit': 'Our Departments',
         'menu.faculty-desc': 'Professional education',
-        
+
         'submenu.history': 'History',
         'submenu.deans_office': 'Dean\'s Office',
         'submenu.student_council': 'Student Council',
@@ -157,7 +157,7 @@ const translations = {
         'disciplines.text1': 'The specialization "Economic Informatics" trains specialists with knowledge and skills for developing, implementing and using information technologies in economics and business. The curriculum includes: programming, design and operation of information systems, analysis and modeling of business processes, business analysis and business analytics. Students study corporate information systems, business analytics tools, decision support systems, and also acquire skills in internet marketing, IT project management and knowledge management. Special attention is paid to the economic efficiency of information systems and information security. The acquired knowledge enables graduates to successfully solve problems of business process automation, data analysis and management decision-making in various economic sectors.',
         'disciplines.text2': 'The specialization "Economic Cybernetics" trains specialists who combine economic knowledge with advanced mathematical methods and IT tools. The emphasis is on economic-mathematical modeling, optimization methods and operations research, econometrics and statistical analysis. Students master programming languages, databases, computer networks, study computer modeling of economic systems, data analysis and information visualization. This enables graduates to successfully solve problems of analysis, forecasting and management of economic systems.',
         'disciplines.text3': 'The specialization "Statistics" trains specialists with knowledge and skills for collecting, processing, analyzing and interpreting data in various spheres of economy and public life. The curriculum includes: general theory of statistics, economic and social statistics, statistics of activities, finance, prices, population and other industry-specific areas. Special attention is paid to statistical analysis of relationships, multivariate statistical methods, econometric modeling methods, processing and visualization of statistical data. Students study statistical information systems, SQL and high-level programming languages, as well as business analytics tools. All this enables graduates to conduct comprehensive statistical research, identify patterns and trends, as well as develop forecasts and recommendations for management decision-making.',
-        
+
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
         'footer.copyright': '© 2019-2025 BSEU FDE',
@@ -184,7 +184,7 @@ const translations = {
         'menu.science-desc': '研究与开发',
         'menu.faculty-tit': '我们的部门',
         'menu.faculty-desc': '专业教育',
-        
+
         'submenu.history': '历史',
         'submenu.deans_office': '院长办公室',
         'submenu.student_council': '学生会',
@@ -199,7 +199,7 @@ const translations = {
         'submenu.directions': '研究方向',
         'submenu.conferences': '会议',
         'submenu.publications': '出版物',
-        'submenu.economic_informatics': '经济信息学',   
+        'submenu.economic_informatics': '经济信息学',
 
         'contacts.title': '联系方式',
         'contacts.dean': '院长',
@@ -211,7 +211,7 @@ const translations = {
         'disciplines.text1': '专业"经济信息学"培养具备在经济学和商业中开发、实施和使用信息技术的知识和技能的专家。课程包括：编程、信息系统设计与运行、业务流程分析与建模、业务分析和商业分析。学生学习企业信息系统、商业分析工具、决策支持系统，并获得互联网营销、IT项目管理和知识管理方面的技能。特别关注信息系统的经济效率和信息安全。所获得的知识使毕业生能够成功解决各经济领域中业务流程自动化、数据分析和管理决策的任务。',
         'disciplines.text2': '专业"经济控制论"培养将经济学知识与先进数学方法和IT工具相结合的专家。重点在于经济数学建模、优化方法和运筹学、计量经济学和统计分析。学生掌握编程语言、数据库、计算机网络，学习经济系统的计算机建模、数据分析和信息可视化。这使毕业生能够成功解决经济系统分析、预测和管理的问题。',
         'disciplines.text3': '专业"统计学"培养具备在经济学和社会生活各领域中收集、处理、分析和解释数据的知识和技能的专家。课程包括：统计学一般理论、经济和社会统计、活动统计、金融、价格、人口和其他行业方向。特别关注统计关系分析、多元统计方法、计量经济建模方法、统计数据处理和可视化。学生学习统计信息系统、SQL语言和高级编程语言，以及商业分析工具。所有这些使毕业生能够进行全面的统计研究，发现规律和趋势，并为管理决策制定预测和建议。',
- 
+
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',
         'footer.copyright': '© 2019-2025 白俄罗斯国立经济大学数字经济学院',
@@ -278,7 +278,7 @@ for (const lang in translationUpdates) {
     } else {
         translations[lang] = translationUpdates[lang];
     }
-} 
+}
 
 // Функция для перевода текста
 function translatePage(language) {
@@ -290,7 +290,7 @@ function translatePage(language) {
             element.textContent = translations[language][key];
         }
     });
-    
+
     // Для атрибутов placeholder, title и т.д. можно добавить дополнительную обработку
     const elementsWithAttr = document.querySelectorAll('[data-i18n-attr]');
     elementsWithAttr.forEach(element => {
