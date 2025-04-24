@@ -46,30 +46,29 @@ const translations = {
 
         'hostel.title': 'Общежитие',
 
-        'hostel.text.block1': 'Студенческий городок Белорусского государственного экономического университета предоставляет комфортные условия проживания для студентов, включая студентов факультета цифровой экономики.',
-        'hostel.text.block2': 'Студенческий городок– это своеобразный структурный комплекс, включающий в себя 9 общежитий, расположенных в Заводском, Ленинском, Первомайском, Октябрьском и Московском районах города Минска, с закрепленной территорией, зданиями и штатом квалифицированных сотрудников.',
+        'hostel.text.block1': 'Студенческий городок Белорусского государственного экономического университета предоставляет комфортные условия проживания для студентов.',
+        'hostel.text.block2': 'Студенческий городок – это своеобразный структурный комплекс, включающий в себя 9 общежитий, расположенных в Заводском, Ленинском, Первомайском, Октябрьском и Московском районах города Минска, с закрепленной территорией, зданиями и штатом квалифицированных сотрудников. Студентам ФЦЭ предоставляются места в общежитиях № 2, №7, №9.',
         'hostel.text.block3': 'В общежитиях функционируют тренажёрные залы, теннисные комнаты, залы для занятий фитнесом, конференц-залы и комнаты отдыха, комнаты для самоподготовки и работы студенческого самоуправления. Во всех зданиях расположены прачечные самообслуживания, оборудованные стиральными машинами, сушильные и гладильные комнаты.',
 
-        'hostel.keyInfo.title': 'Ключевая информация:',
+        'hostel.keyInfo.who.title': 'Кто может претендовать на место.',
+        'hostel.keyInfo.who.text': 'Места в общежитиях предоставляются иногородним студентам дневной формы обучения, а также иностранным студентам. Всем студентам первого курса предоставляются места в общежитиях.',
 
-        'hostel.keyInfo.who.title': 'Кто может претендовать на место:',
-        'hostel.keyInfo.who.text': 'Места в общежитиях предоставляются иногородним студентам дневной формы обучения, а также иностранным студентам.',
-
-        'hostel.keyInfo.settlement.title': 'Порядок заселения:',
+        'hostel.keyInfo.settlement.title': 'Порядок заселения.',
         'hostel.keyInfo.settlement.text.part1': 'Заселение осуществляется на основании приказа о заселении и заключенного договора найма жилого помещения. Для заселения необходимо предоставить документы, указанные в ',
         'hostel.keyInfo.settlement.linkText': 'памятке для заселения',
         'hostel.keyInfo.settlement.text.part2': '.',
 
-        'hostel.keyInfo.conditions.title': 'Условия проживания:',
+        'hostel.keyInfo.conditions.title': 'Условия проживания.',
         'hostel.keyInfo.conditions.text.part1': 'В общежитиях разрешено использование бытовой техники, такой как холодильники и телевизоры, при соблюдении ',
         'hostel.keyInfo.conditions.linkText': 'установленных правил',
         'hostel.keyInfo.conditions.text.part2': '. Также предоставляется доступ к необходимой инфраструктуре для комфортного обучения и отдыха.',
 
-        'hostel.keyInfo.advantages.title': 'Преимущества:',
+        'hostel.keyInfo.advantages.title': 'Преимущества.',
         'hostel.keyInfo.advantages.text': 'Общежития расположены вблизи учебных корпусов, что позволяет экономить время на дорогу. Кроме того, студенты имеют возможность участвовать в культурных и спортивных мероприятиях, организуемых университетом.',
 
         'hostel.complimentInfo.text.part1': 'Дополнительную информацию о порядке заселения, необходимых документах и условиях проживания можно найти на ',
-        'hostel.complimentInfo.linkText': 'официальном сайте БГЭУ',
+        'hostel.complimentInfo.linkText': 'официальном сайте БГЭУ.',
+        'hostel.complimentInfo.text.part2': '',
 
         // Вариант с точкой после ссылки для удобства
         'hostel.complimentInfo.text.part2': '',
@@ -124,33 +123,30 @@ const translations = {
         'contacts.address': '220070, г. Мінск, пр. Партызанскі 26,<br>корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Як дабрацца',
 
-        'hostel.title': 'Гуртожытак',
+        'hostel.title': 'Iнтернат',
 
-        'hostel.text.block1': 'Студэнцкі гарадок Беларускага дзяржаўнага эканамічнага ўніверсітэта забяспечвае камфортныя ўмовы пражывання для студэнтаў, у тым ліку студэнтаў факультэта лічбавай эканомікі.',
-        'hostel.text.block2': 'Студэнцкі гарадок — гэта своеасаблівы структурны комплекс, які ўключае 9 інтэрнатаў, размешчаных у Заводскім, Ленінскім, Першамайскім, Кастрычніцкім і Маскоўскім раёнах горада Мінска, з замацаванай тэрыторыяй, будынкамі і штатам кваліфікаваных супрацоўнікаў.',
-        'hostel.text.block3': 'У інтэрнатах функцыянуюць трэнажорныя залы, тэнісныя пакоі, залы для заняткаў фітнесам, канферэнц-залы і пакоі адпачынку, пакоі для самападрыхтоўкі і працы студэнцкага самакіравання. Ва ўсіх будынках размешчаны пральні самазабеспячэння, абсталяваныя пральнымі машынамі, сушыльныя і гладзільныя пакоі.',
+        'hostel.text.block1': 'Студэнцкі гарадок Беларускага дзяржаўнага эканамічнага ўніверсітэта забяспечвае камфортныя ўмовы пражывання для студэнтаў.',
+        'hostel.text.block2': 'Студэнцкі гарадок — гэта своеасаблівы структурны комплекс, які ўключае 9 інтэрнатаў, размешчаных у Заводскім, Ленінскім, Першамайскім, Кастрычніцкім і Маскоўскім раёнах Мінска, з замацаванай тэрыторыяй, будынкамі і штатам кваліфікаваных супрацоўнікаў. Студэнтам ФЦЭ прадастаўляюцца месцы ў інтэрнатах №2, №7, №9.',
+        'hostel.text.block3': 'У інтэрнатах функцыянуюць трэнажорныя залы, тэнісныя пакоі, залы для заняткаў фітнесам, канферэнц-залы і пакоі адпачынку, пакоі для самападрыхтоўкі і працы студэнцкага самакіравання. Ва ўсіх будынках размешчаны пральні самазабеспячэння, абсталяваныя пральнымі машынамі, сушыльнымі і гладзільнымі пакоямі.',
 
-        'hostel.keyInfo.title': 'Ключавая інфармацыя:',
+        'hostel.keyInfo.who.title': 'Хто можа прэтэндаваць на месца.',
+        'hostel.keyInfo.who.text': 'Месцы ў інтэрнатах прадастаўляюцца іншагароднім студэнтам дзённай формы навучання, а таксама замежным студэнтам. Усім студэнтам першага курса прадастаўляюцца месцы ў інтэрнатах.',
 
-        'hostel.keyInfo.who.title': 'Хто можа прэтэндаваць на месца:',
-        'hostel.keyInfo.who.text': 'Месцы ў інтэрнатах прадастаўляюцца іншагароднім студэнтам дзённай формы навучання, а таксама замежным студэнтам.',
-
-        'hostel.keyInfo.settlement.title': 'Парадак заселення:',
-        'hostel.keyInfo.settlement.text.part1': 'Заселение ажыццяўляецца на падставе загаду аб заселенні і заключанага дагавора найму жылога памяшкання. Для заселення неабходна прадставіць дакументы, указаныя ў ',
+        'hostel.keyInfo.settlement.title': 'Парадак заселення.',
+        'hostel.keyInfo.settlement.text.part1': 'Заселение ажыццяўляецца на падставе загаду аб заселении і заключанага дагавора найму жылога памяшкання. Для заселення неабходна прадставіць дакументы, указаныя ў ',
         'hostel.keyInfo.settlement.linkText': 'памятцы для заселення',
         'hostel.keyInfo.settlement.text.part2': '.',
 
-        'hostel.keyInfo.conditions.title': 'Умовы пражывання:',
+        'hostel.keyInfo.conditions.title': 'Умовы пражывання.',
         'hostel.keyInfo.conditions.text.part1': 'У інтэрнатах дазволена выкарыстанне бытавой тэхнікі, такой як халадзільнікі і тэлевізары, пры выкананні ',
         'hostel.keyInfo.conditions.linkText': 'ўстаноўленых правілаў',
         'hostel.keyInfo.conditions.text.part2': '. Таксама прадастаўляецца доступ да неабходнай інфраструктуры для камфортнага навучання і адпачынку.',
 
-        'hostel.keyInfo.advantages.title': 'Перавагі:',
+        'hostel.keyInfo.advantages.title': 'Перавагі.',
         'hostel.keyInfo.advantages.text': 'Інтэрнаты размешчаны побач з вучэбнымі корпусамі, што дазваляе эканоміць час на дарогу. Акрамя таго, студэнты маюць магчымасць удзельнічаць у культурных і спартыўных мерапрыемствах, арганізаваных універсітэтам.',
 
         'hostel.complimentInfo.text.part1': 'Дадатковую інфармацыю пра парадак заселення, неабходныя дакументы і ўмовы пражывання можна знайсці на ',
-        'hostel.complimentInfo.linkText': 'афіцыйным сайце БДЭУ',
-
+        'hostel.complimentInfo.linkText': 'афіцыйным сайце БДЭУ.',
         'hostel.complimentInfo.text.part2': '',
 
         'footer.questions': 'Калі ў вас узніклі пытанні, звяртайцеся па адрасе',
@@ -202,33 +198,30 @@ const translations = {
         'contacts.address': '220070, Minsk, Partizansky Ave. 26,<br>building 1, room 1205',
         'contacts.how_to_get': 'How to get there',
 
-        'hostel.title': 'Hostel',
+        'hostel.title': 'Dormitory',
 
-        'hostel.text.block1': 'The student campus of the Belarusian State Economic University provides comfortable living conditions for students, including those of the Faculty of Digital Economy.',
-        'hostel.text.block2': 'The student campus is a unique structural complex that includes 9 hostels located in the Zavodski, Leninski, Pervomaiski, Oktyabrski, and Moskovski districts of Minsk, with assigned territory, buildings, and a staff of qualified employees.',
-        'hostel.text.block3': 'The hostels feature gyms, tennis rooms, fitness halls, conference rooms, recreation rooms, self-study rooms, and student self-government offices. All buildings have self-service laundries equipped with washing machines, drying, and ironing rooms.',
+        'hostel.text.block1': 'The student campus of the Belarusian State Economic University provides comfortable living conditions for students.',
+        'hostel.text.block2': 'The student campus is a unique structural complex that includes 9 dormitories located in the Zavodski, Leninski, Pervomaiski, Oktyabrski, and Moskovski districts of Minsk, with assigned territory, buildings, and a staff of qualified employees. FDE students are accommodated in dormitories No. 2, No. 7, and No. 9.',
+        'hostel.text.block3': 'The dormitories feature gyms, tennis rooms, fitness halls, conference rooms, recreation rooms, self-study rooms, and student self-government offices. All buildings have self-service laundries equipped with washing machines, drying, and ironing rooms.',
 
-        'hostel.keyInfo.title': 'Key Information:',
+        'hostel.keyInfo.who.title': 'Who is eligible for a place.',
+        'hostel.keyInfo.who.text': 'Places in the dormitories are provided to non-resident full-time students, as well as international students. All first-year students are provided with places in the dormitories.',
 
-        'hostel.keyInfo.who.title': 'Who can claim a place:',
-        'hostel.keyInfo.who.text': 'Places in the hostels are provided to out-of-town full-time students, as well as international students.',
-
-        'hostel.keyInfo.settlement.title': 'Settlement procedure:',
-        'hostel.keyInfo.settlement.text.part1': 'Settlement is carried out based on a settlement order and a concluded residential lease agreement. To settle in, you need to provide the documents specified in the ',
+        'hostel.keyInfo.settlement.title': 'Settlement procedure.',
+        'hostel.keyInfo.settlement.text.part1': 'Settlement is carried out on the basis of a settlement order and a concluded residential lease agreement. To settle in, you need to provide the documents specified in the ',
         'hostel.keyInfo.settlement.linkText': 'settlement memo',
         'hostel.keyInfo.settlement.text.part2': '.',
 
-        'hostel.keyInfo.conditions.title': 'Living conditions:',
-        'hostel.keyInfo.conditions.text.part1': 'Use of household appliances such as refrigerators and televisions is allowed in the hostels, subject to the ',
+        'hostel.keyInfo.conditions.title': 'Living conditions.',
+        'hostel.keyInfo.conditions.text.part1': 'The use of household appliances such as refrigerators and televisions is allowed in the dormitories, subject to the ',
         'hostel.keyInfo.conditions.linkText': 'established rules',
-        'hostel.keyInfo.conditions.text.part2': '. Access to the necessary infrastructure for comfortable study and rest is also provided.',
+        'hostel.keyInfo.conditions.text.part2': '. Access to the necessary infrastructure for comfortable study and leisure is also provided.',
 
-        'hostel.keyInfo.advantages.title': 'Advantages:',
-        'hostel.keyInfo.advantages.text': 'The hostels are located near the academic buildings, which saves travel time. In addition, students have the opportunity to participate in cultural and sports events organized by the university.',
+        'hostel.keyInfo.advantages.title': 'Advantages.',
+        'hostel.keyInfo.advantages.text': 'The dormitories are located near the academic buildings, which saves travel time. In addition, students have the opportunity to participate in cultural and sports events organized by the university.',
 
         'hostel.complimentInfo.text.part1': 'Additional information about the settlement procedure, required documents, and living conditions can be found on the ',
-        'hostel.complimentInfo.linkText': 'official BSEU website',
-
+        'hostel.complimentInfo.linkText': 'official BSEU website.',
         'hostel.complimentInfo.text.part2': '',
 
         'footer.questions': 'If you have any questions, please contact',
@@ -282,32 +275,29 @@ const translations = {
 
         'hostel.title': '宿舍',
 
-        'hostel.text.block1': '白俄罗斯国立经济大学学生城为学生提供舒适的住宿条件，包括数字经济学院的学生。',
-        'hostel.text.block2': '学生城是一个独特的结构综合体，包括位于明斯克扎沃德斯基区、列宁区、第一五月区、十月区和莫斯科区的9个宿舍，拥有固定的区域、建筑和合格员工队伍。',
+        'hostel.text.block1': '白俄罗斯国立经济大学学生城为学生提供舒适的住宿条件。',
+        'hostel.text.block2': '学生城是一个独特的结构综合体，包括位于明斯克扎沃德斯基区、列宁区、第一五月区、十月区和莫斯科区的9个宿舍，拥有固定的区域、建筑和合格员工队伍。数字经济学院学生可入住2号、7号、9号宿舍。',
         'hostel.text.block3': '宿舍内设有健身房、网球室、健身厅、会议室、休息室、自习室和学生自治办公室。所有建筑内均设有自助洗衣房，配备洗衣机、烘干和熨烫室。',
-
-        'hostel.keyInfo.title': '关键信息：',
-
-        'hostel.keyInfo.who.title': '谁可以申请住宿：',
-        'hostel.keyInfo.who.text': '宿舍名额提供给外地全日制学生以及国际学生。',
-
-        'hostel.keyInfo.settlement.title': '入住程序：',
+    
+        'hostel.keyInfo.who.title': '谁可以申请住宿。',
+        'hostel.keyInfo.who.text': '宿舍名额提供给外地全日制学生以及国际学生。所有一年级学生都可入住宿舍。',
+    
+        'hostel.keyInfo.settlement.title': '入住程序。',
         'hostel.keyInfo.settlement.text.part1': '入住基于入住命令和签订的住宅租赁合同。入住时需提供',
         'hostel.keyInfo.settlement.linkText': '入住须知',
         'hostel.keyInfo.settlement.text.part2': '中指定的文件。',
-
-        'hostel.keyInfo.conditions.title': '住宿条件：',
+    
+        'hostel.keyInfo.conditions.title': '住宿条件。',
         'hostel.keyInfo.conditions.text.part1': '宿舍允许使用冰箱和电视等家用电器，但须遵守',
         'hostel.keyInfo.conditions.linkText': '规定的规则',
         'hostel.keyInfo.conditions.text.part2': '。同时提供必要的基础设施以保障舒适的学习和休息。',
-
-        'hostel.keyInfo.advantages.title': '优势：',
+    
+        'hostel.keyInfo.advantages.title': '优势。',
         'hostel.keyInfo.advantages.text': '宿舍靠近教学楼，节省了通勤时间。此外，学生还有机会参加大学组织的文化和体育活动。',
-
+    
         'hostel.complimentInfo.text.part1': '有关入住程序、所需文件及住宿条件的更多信息，请访问',
-        'hostel.complimentInfo.linkText': '白俄罗斯国立经济大学官方网站',
-
-        'hostel.complimentInfo.text.part2': '。',
+        'hostel.complimentInfo.linkText': '白俄罗斯国立经济大学官方网站。',
+        'hostel.complimentInfo.text.part2': '',
 
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',

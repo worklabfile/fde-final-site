@@ -45,7 +45,7 @@ const translations = {
         'contacts.how_to_get': 'Как добраться',
 
         'science.title': 'Наука',
-        'science.fce-span': 'Факультет цифровой экономики (ФЦЭ)',
+        'science.fce-span': 'Ведется разработка данной страницы',
         'science.fce-desc': 'создан в ответ на стремительную цифровую трансформацию общества и, как следствие, острую потребность в высококвалифицированных IT-специалистах. Главная цель ФЦЭ – помочь приумножить знания и навыки студентов, чтобы они стали востребованными профессионалами. Мы проводим научные исследования и реализуем международные образовательные программы, чтобы подготовить новое поколение специалистов, обладающих современными знаниями в IT и экономике, готовых к конкуренции на рынке труда и активно участвующих в цифровой трансформации нашей страны.',
         'science.fce-contacts': 'Обучение на ФЦЭ строится в тесном контакте с ведущими компаниями, включая резидентов Парка высоких технологий. В учебном процессе участвуют как опытные преподаватели университета, так и эксперты из реального сектора, которые проводят гостевые лекции и мастер-классы. Филиалы наших кафедр, расположенные на базе крупных IT-компаний, позволяют студентам глубоко изучать особенности работы этих компаний и адаптировать учебные программы к актуальным требованиям рынка. В процессе обучения активно используется англоязычный контент.',
         'science.fce-modern': 'Для нас важно, чтобы обучение на ФЦЭ шло в ногу со временем. Поэтому мы постоянно адаптируем учебные планы и программы к изменениям на рынке труда, объединяем университетское образование с опытом реального бизнеса, внедряем современные методы обучения, развиваем цифровую и предпринимательскую грамотность студентов и преподавателей, стремимся к международному сотрудничеству и вносим свой вклад в цифровую трансформацию экономики.',
@@ -101,7 +101,7 @@ const translations = {
         'contacts.how_to_get': 'Як дабрацца',
 
         'science.title': 'Навука',
-        'science.fce-span': 'Факультэт лічбавай эканомікі (ФЛЭ)',
+        'science.fce-span': 'Працягваецца распрацоўка гэтай старонкі',
         'science.fce-desc': 'створаны ў адказ на імклівую лічбавую трансфармацыю грамадства і, як вынік, вострую патрэбу ў высокакваліфікаваных IT-спецыялістах. Галоўная мэта ФЛЭ — дапамагчы павялічыць веды і навыкі студэнтаў, каб яны сталі запатрабаванымі прафесіяналамі. Мы праводзім навуковыя даследаванні і рэалізуем міжнародныя адукацыйныя праграмы, каб падрыхтаваць новае пакаленне спецыялістаў з сучаснымі ведамі ў IT і эканоміцы, гатовых да канкурэнцыі на рынку працы і актыўнага ўдзелу ў лічбавай трансфармацыі нашай краіны.',
         'science.fce-contacts': 'Навучанне на ФЛЭ будуецца ў цесным кантакце з вядучымі кампаніямі, у тым ліку рэзідэнтамі Парку высокіх тэхналогій. У навучальным працэсе ўдзельнічаюць як вопытныя выкладчыкі ўніверсітэта, так і эксперты з рэальнага сектара, якія праводзяць гасцявыя лекцыі і майстар-класы. Філіялы нашых кафедраў, размешчаныя на базе буйных IT-кампаній, дазваляюць студэнтам глыбока вывучаць асаблівасці працы гэтых кампаній і адаптаваць навучальныя праграмы да актуальных патрабаванняў рынку. У працэсе навучання актыўна выкарыстоўваецца англамоўны кантэнт.',
         'science.fce-modern': 'Для нас важна, каб навучанне на ФЛЭ ішло ў нагу з часам. Таму мы пастаянна адаптуем навучальныя планы і праграмы да зменаў на рынку працы, аб’ядноўваем універсітэцкую адукацыю з вопытам рэальнага бізнесу, укараняем сучасныя метады навучання, развіваем лічбавую і прадпрымальніцкую граматнасць студэнтаў і выкладчыкаў, імкнемся да міжнароднага супрацоўніцтва і ўносім свой уклад у лічбавую трансфармацыю эканомікі.',
@@ -156,7 +156,7 @@ const translations = {
         'contacts.how_to_get': 'How to get there',
 
         'science.title': 'Science',
-        'science.fce-span': 'Faculty of Digital Economy (FDE)',
+        'science.fce-span': 'This page is under development',
         'science.fce-desc': 'was established in response to the rapid digital transformation of society and, consequently, the acute need for highly qualified IT specialists. The main goal of the FDE is to help students enhance their knowledge and skills to become in-demand professionals. We conduct scientific research and implement international educational programs to prepare a new generation of specialists with up-to-date knowledge in IT and economics, ready to compete in the labor market and actively participate in the digital transformation of our country.',
         'science.fce-contacts': 'Learning at the FDE is built in close contact with leading companies, including residents of the High-Tech Park. The educational process involves both experienced university teachers and experts from the real sector who conduct guest lectures and workshops. Our departments’ branches, located in major IT companies, allow students to deeply study the specifics of these companies and adapt curricula to current market demands. English-language content is actively used in the learning process.',
         'science.fce-modern': 'It is important for us that education at the FDE keeps pace with the times. Therefore, we constantly adapt curricula and programs to labor market changes, combine university education with real business experience, implement modern teaching methods, develop digital and entrepreneurial literacy among students and teachers, strive for international cooperation, and contribute to the digital transformation of the economy.',
@@ -211,7 +211,7 @@ const translations = {
         'contacts.how_to_get': '如何到达',
 
         'science.title': '科学',
-        'science.fce-span': '数字经济学院',
+        'science.fce-span': '此页面正在开发中',
         'science.fce-desc': '为应对社会的快速数字化转型以及对高素质IT专业人才的迫切需求而设立。数字经济学院的主要目标是帮助学生提升知识和技能，使其成为受欢迎的专业人才。我们开展科学研究并实施国际教育项目，培养具备现代IT与经济知识的新一代专业人才，使其能够在就业市场上具有竞争力并积极参与我国的数字化转型。',
         'science.fce-contacts': '数字经济学院的教学与领先企业紧密合作，包括高科技园区的企业。教学过程中既有经验丰富的大学教师，也有来自实际行业的专家开设讲座和大师班。我们在大型IT公司设有系分部，使学生能够深入了解这些公司的运作特点，并根据市场需求调整课程。学习过程中积极使用英文内容。',
         'science.fce-modern': '我们重视数字经济学院的教学紧跟时代步伐。因此，我们不断根据劳动力市场的变化调整课程计划，将大学教育与实际商业经验结合，采用现代教学方法，提升学生和教师的数字与创业素养，积极开展国际合作，为经济的数字化转型贡献力量。',

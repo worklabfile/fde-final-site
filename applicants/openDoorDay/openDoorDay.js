@@ -48,15 +48,15 @@ const translations = {
         'page.description': '22 марта 2025 года Белорусский государственный экономический университет приглашает выпускников и учащихся учреждений общего среднего и среднего специального образования на Единый день открытых дверей с участием организаций заказчиков кадров.',
         'addition.text': 'Для желающих принять участие предусмотрена предварительная регистрация.',
 
-        'form.uniqueOpportunity.title': 'День открытых дверей в БГЭУ– это уникальная возможность:',
+        'form.uniqueOpportunity.title': 'День открытых дверей в БГЭУ – это уникальная возможность',
         'form.uniqueOpportunity.point1': '1. Ознакомиться со специальностями и профилизациями БГЭУ.',
         'form.uniqueOpportunity.point2': '2. Узнать особенности проведения приемной кампании, включая обучение на условиях целевой подготовки.',
         'form.uniqueOpportunity.point3': '3. Встретиться с членами приемной комиссии, деканами факультетов и студенческим активом.',
         'form.uniqueOpportunity.point4': '4. Лично пообщаться с представителями организаций-заказчиков кадров.',
         'form.uniqueOpportunity.point5': '5. Погрузиться в атмосферу студенческой жизни.',
-        'form.uniqueOpportunity.point6': '6. Получить ответы на все интересующие вопросы',
+        'form.uniqueOpportunity.point6': '6. Получить ответы на все интересующие вопросы.',
 
-        'form.place.title': 'Место проведения:',
+        'form.place.title': 'Место проведения',
         'form.place.address': 'г. Минск, пр-т Партизанский, 26, 2-ой учебный корпус, актовый зал',
 
         'form.participation.title': 'Для участия просто заполните форму',
@@ -120,15 +120,15 @@ const translations = {
         'page.description': '22 сакавіка 2025 года Беларускі дзяржаўны эканамічны ўніверсітэт запрашае выпускнікоў і навучэнцаў устаноў агульнай сярэдняй і сярэдняй спецыяльнай адукацыі на Адзіны дзень адкрытых дзвярэй з удзелам арганізацый-заказчыкаў кадраў.',
         'addition.text': 'Для жадаючых прыняць удзел прадугледжана папярэдняя рэгістрацыя.',
 
-        'form.uniqueOpportunity.title': 'Дзень адкрытых дзвярэй у БДЭУ – гэта унікальная магчымасць:',
+        'form.uniqueOpportunity.title': 'Дзень адкрытых дзвярэй у БДЭУ – гэта унікальная магчымасць',
         'form.uniqueOpportunity.point1': '1. Азнаёміцца са спецыяльнасцямі і профілізацыямі БДЭУ.',
         'form.uniqueOpportunity.point2': '2. Даведавацца пра асаблівасці правядзення прыёмнай кампаніі, у тым ліку навучанне на ўмовах мэтавай падрыхтоўкі.',
         'form.uniqueOpportunity.point3': '3. Сустрэцца з членамі прыёмнай камісіі, дэканаў факультэтаў і студэнцкім актывам.',
         'form.uniqueOpportunity.point4': '4. Асабіста паразмаўляць з прадстаўнікамі арганізацый-заказчыкаў кадраў.',
         'form.uniqueOpportunity.point5': '5. Пагрузіцца ў атмасферу студэнцкага жыцця.',
-        'form.uniqueOpportunity.point6': '6. Атрымаць адказы на ўсе цікавыя пытанні',
+        'form.uniqueOpportunity.point6': '6. Атрымаць адказы на ўсе цікавыя пытанні.',
 
-        'form.place.title': 'Месца правядзення:',
+        'form.place.title': 'Месца правядзення',
         'form.place.address': 'г. Мінск, пр-т Партызанскі, 26, 2-і вучэбны корпус, актавая зала',
 
         'form.participation.title': 'Для ўдзелу проста запоўніце форму',
@@ -191,15 +191,15 @@ const translations = {
         'page.description': 'On March 22, 2025, the Belarusian State Economic University invites graduates and students of general secondary and secondary specialized education institutions to the Unified Open Doors Day with participation of personnel customer organizations.',
         'addition.text': 'Pre-registration is provided for those wishing to participate.',
 
-        'form.uniqueOpportunity.title': 'Open Doors Day at BSEU is a unique opportunity to:',
+        'form.uniqueOpportunity.title': 'Open Doors Day at BSEU is a unique opportunity to',
         'form.uniqueOpportunity.point1': '1. Get acquainted with BSEU specialties and profiles.',
         'form.uniqueOpportunity.point2': '2. Learn about the features of the admission campaign, including training under targeted preparation conditions.',
         'form.uniqueOpportunity.point3': '3. Meet members of the admissions committee, deans of faculties, and student activists.',
         'form.uniqueOpportunity.point4': '4. Personally communicate with representatives of personnel customer organizations.',
         'form.uniqueOpportunity.point5': '5. Immerse yourself in the atmosphere of student life.',
-        'form.uniqueOpportunity.point6': '6. Get answers to all your questions',
+        'form.uniqueOpportunity.point6': '6. Get answers to all your questions.',
 
-        'form.place.title': 'Venue:',
+        'form.place.title': 'Venue',
         'form.place.address': 'Minsk, Partizansky Ave, 26, 2nd academic building, assembly hall',
 
         'form.participation.title': 'To participate, simply fill out the form',
@@ -262,15 +262,15 @@ const translations = {
         'page.description': '2025年3月22日，白俄罗斯国立经济大学邀请普通中等和中等专业教育机构的毕业生和学生参加统一开放日，届时将有用人单位参与。',
         'addition.text': '为有意参加者提供预先注册。',
 
-        'form.uniqueOpportunity.title': '白俄罗斯国立经济大学开放日是一个独特的机会：',
+        'form.uniqueOpportunity.title': '白俄罗斯国立经济大学开放日是一个独特的机会',
         'form.uniqueOpportunity.point1': '1. 了解白俄罗斯国立经济大学的专业和方向。',
         'form.uniqueOpportunity.point2': '2. 了解招生活动的特点，包括定向培养条件下的学习。',
         'form.uniqueOpportunity.point3': '3. 会见招生委员会成员、院系主任和学生代表。',
         'form.uniqueOpportunity.point4': '4. 亲自与用人单位代表交流。',
         'form.uniqueOpportunity.point5': '5. 沉浸在学生生活的氛围中。',
-        'form.uniqueOpportunity.point6': '6. 获得所有感兴趣问题的答案',
+        'form.uniqueOpportunity.point6': '6. 获得所有感兴趣问题的答案。',
 
-        'form.place.title': '举办地点：',
+        'form.place.title': '举办地点',
         'form.place.address': '明斯克，游击队大道26号，第2教学楼，礼堂',
 
         'form.participation.title': '参与方式：只需填写表格',

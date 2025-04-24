@@ -79,7 +79,7 @@ const translations = {
         'documentsList.item8.title': 'Документы, подтверждающие право на льготы',
         'documentsList.item8.text': 'Подтверждающие право абитуриента на льготы при зачислении для получения высшего образования.',
 
-        'documentsList.item9.title': 'Фотографии:',
+        'documentsList.item9.title': 'Фотографии',
         'documentsList.item9.text': '6 фотографий размером 3x4',
 
         'documentsList.note': 'К перечисленным выше документам, исполненным на иностранном языке, одновременно прилагается удостоверенный нотариально их перевод на белорусский или русский язык.',
@@ -173,7 +173,7 @@ const translations = {
         'documentsList.item8.title': 'Дакументы, якія пацвярджаюць права на льготы',
         'documentsList.item8.text': 'Пацвярджаюць права абітурыента на льготы пры залічэнні для атрымання вышэйшай адукацыі.',
 
-        'documentsList.item9.title': 'Фатаграфіі:',
+        'documentsList.item9.title': 'Фатаграфіі',
         'documentsList.item9.text': '6 фатаграфій памерам 3x4',
 
         'documentsList.note': 'Да пералічаных вышэй дакументаў, выкананых на замежнай мове, адначасова прыкладаецца нотарыяльна завераны пераклад на беларускую або рускую мову.',
@@ -266,7 +266,7 @@ const translations = {
         'documentsList.item8.title': 'Documents Confirming the Right to Benefits',
         'documentsList.item8.text': 'Confirming the applicant’s right to benefits when enrolling for higher education.',
 
-        'documentsList.item9.title': 'Photographs:',
+        'documentsList.item9.title': 'Photographs',
         'documentsList.item9.text': '6 photographs sized 3x4',
 
         'documentsList.note': 'Notarized translations into Belarusian or Russian are attached simultaneously to the above documents executed in a foreign language.',
@@ -359,7 +359,7 @@ const translations = {
         'documentsList.item8.title': '证明享受优惠权利的文件',
         'documentsList.item8.text': '证明申请人在入学时享受优惠权利的文件。',
 
-        'documentsList.item9.title': '照片：',
+        'documentsList.item9.title': '照片',
         'documentsList.item9.text': '6张3x4尺寸的照片',
 
         'documentsList.note': '对上述以外语书写的文件，同时附有经过公证的白俄罗斯语或俄语译文。',

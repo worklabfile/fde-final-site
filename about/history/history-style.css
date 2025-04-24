@@ -707,6 +707,7 @@ body {
         gap: 15px;
         margin-bottom: 25px;
         width: 100%;
+        font-size: 10px !important;
     }
 
     .info-2019 p:first-child, 
@@ -726,7 +727,7 @@ body {
     .info-2022 p:last-child {
         color: #000;
         font-family: Montserrat;
-        font-size: 22px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400 !important;
         line-height: 101.336%; 

@@ -14,6 +14,10 @@ body {
     z-index: 100;
 }
 
+.inner-container p {
+    text-align: justify;
+}
+
 /* ================= HEADER ДЕСКТОПНАЯ ВЕРСИЯ ================= */
 @media (min-width: 1000px) {
     .container {
@@ -239,6 +243,24 @@ body {
     letter-spacing: -0.66px;
 }
 
+.key-info {
+    margin-top: 100px;
+}
+
+.block {
+    margin-top: 10px;
+}
+
+.bold {
+    color: #0094FF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 101.336%; /* 32.427px */
+    letter-spacing: -0.96px;
+}
+
 .key-info-title {
     color: #0094FF;
     font-family: Montserrat;
@@ -260,7 +282,7 @@ body {
 }
 
 .block a {
-    color: #007AFF;
+    color: #0094FF;
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
@@ -273,6 +295,7 @@ body {
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
+    text-decoration: none;
 }
 
 .compliment-info {
@@ -639,6 +662,16 @@ body {
         word-break: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+    }
+
+    .bold {
+        color: #0094FF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%; /* 32.427px */
+        letter-spacing: -0.96px;
     }
 
     .compliment-info {
