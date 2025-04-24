@@ -43,6 +43,10 @@ const translations = {
         'contacts.vice_dean': 'заместитель декана',
         'contacts.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Как добраться',
+        'contacts.dean': 'декан',
+        'contacts.vice_dean': 'заместитель декана',
+        'contacts.head_spec': 'ведущий специалист',
+        'contacts.specialist': 'специалист',
 
         // Футер
         'footer.questions': 'Если у Вас возникли вопросы, обращайтесь по адресу',
@@ -93,6 +97,10 @@ const translations = {
         'contacts.vice_dean': 'намеснік дэкана',
         'contacts.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Як дабрацца',
+        'contacts.dean': 'дэкан',
+        'contacts.vice_dean': 'намеснік дэканата',
+        'contacts.head_spec': 'вядучы спецыяліст',
+        'contacts.specialist': 'спецыяліст',
 
         'footer.questions': 'Калі ў вас узніклі пытанні, звяртайцеся па адрасе',
         'footer.suggestions': 'Калі ёсць прапановы, можаце напісаць нам',
@@ -142,6 +150,10 @@ const translations = {
         'contacts.vice_dean': 'Vice Dean',
         'contacts.address': '220070, Minsk, Partizansky Ave. 26, building 1, room 1205',
         'contacts.how_to_get': 'How to get there',
+        'contacts.dean': 'dean',
+        'contacts.vice_dean': 'deputy dean',
+        'contacts.head_spec': 'leading specialist',
+        'contacts.specialist': 'specialist',
 
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
@@ -191,6 +203,10 @@ const translations = {
         'contacts.vice_dean': '副院长',
         'contacts.address': '220070, 明斯克市, 游击队大街26号, 1号楼, 1205',
         'contacts.how_to_get': '如何到达',
+        'contacts.dean': '院长',
+        'contacts.vice_dean': '副院长',
+        'contacts.head_spec': '高级专员',
+        'contacts.specialist': '专员',
 
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',

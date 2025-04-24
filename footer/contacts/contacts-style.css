@@ -289,6 +289,7 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 135px;
+    margin-top: 80px;
 }
 
 .address p {
@@ -331,7 +332,7 @@ body {
     letter-spacing: -3%;
     vertical-align: middle;
     color: #0094FF;
-    margin-top: 190px;
+    margin-top: 90px;
     margin-bottom: 550px;
 }
 
@@ -353,7 +354,7 @@ body {
     position: absolute;
     width: 297.4px;
     height: 293.2px;
-    top: 905.51px;
+    top: 1395.51px;
     left: 1157px;
 
     transform: rotate(26.46deg);

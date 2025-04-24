@@ -45,10 +45,19 @@ const translations = {
         'contacts.how_to_get': 'Как добраться',
 
         'disciplines.title': 'Учебные дисциплины',
-        'disciplines.text1': 'Специальность "Экономическая информатика" формирует специалистов, обладающих знаниями и навыками для разработки, внедрения и использования информационных технологий в экономике и бизнесе. В учебный план входят: программирование, проектирование и эксплуатация информационных систем, анализ и моделирование бизнес-процессов, бизнес-анализ и бизнес-аналитика. Студенты изучают корпоративные информационные системы, инструментальные системы бизнес-аналитики, системы поддержки принятия решений, а также приобретают навыки в интернет-маркетинге, управлении IT-проектами и управлении знаниями. Особое внимание уделяется экономической эффективности информационных систем и информационной безопасности. Полученные знания позволяют выпускникам успешно решать задачи автоматизации бизнес-процессов, анализа данных и принятия управленческих решений в различных отраслях экономики.',
-        'disciplines.text2': 'Специальность "Экономическая кибернетика" формирует специалистов, сочетающих экономические знания с передовыми математическими методами и IT-инструментами. Акцент делается на экономико-математическом моделировании, методах оптимизации и исследования операций, эконометрике и статистическом анализе. Студенты овладевают языками программирования, базами данных, компьютерными сетями, изучают компьютерное моделирование экономических систем, анализ данных и визуализацию информации. Это позволяет выпускникам успешно решать задачи анализа, прогнозирования и управления экономическими системами.',
-        'disciplines.text3': 'Специальность "Статистика" формирует специалистов, обладающих знаниями и навыками для сбора, обработки, анализа и интерпретации данных в различных сферах экономики и общественной жизни. В учебный план входят: общая теория статистики, экономическая и социальная статистика, статистика видов деятельности, финансов, цен, населения и другие отраслевые направления. Особое внимание уделяется статистическому анализу взаимосвязей, многомерным статистическим методам, методам эконометрического моделирования, обработке и визуализации статистических данных. Студенты изучают информационные системы статистики, язык SQL и языки программирования высокого уровня, а также инструментальные системы бизнес-аналитики. Все это позволяет выпускникам проводить комплексные статистические исследования, выявлять закономерности и тренды, а также разрабатывать прогнозы и рекомендации для принятия управленческих решений.',
 
+        'disciplines.text1.part1': 'На специальности ',
+        'disciplines.text1.bold': '"Экономическая информатика"',
+        'disciplines.text1.part2': ' осуществляется подготовка специалистов, обладающих знаниями и навыками для разработки, внедрения и использования информационных технологий в экономике и бизнесе. В учебный план входят: программирование, проектирование и эксплуатация информационных систем, анализ и моделирование бизнес-процессов, системный анализ и бизнес-аналитика. Студенты изучают корпоративные информационные системы, инструментальные системы бизнес-аналитики, системы поддержки принятия решений, а также приобретают навыки в интернет-маркетинге, управлении IT-проектами и управлении знаниями. Особое внимание уделяется экономической эффективности информационных систем и информационной безопасности. Полученные знания позволяют выпускникам успешно решать задачи автоматизации бизнес-процессов, анализа данных и принятия управленческих решений в различных отраслях экономики.',
+
+        'disciplines.text2.part1': 'На специальности ',
+        'disciplines.text2.bold': '"Прикладная математика"',
+        'disciplines.text2.part2': ' осуществляется подготовка специалистов, сочетающих экономические знания с передовыми математическими методами и IT-инструментами. Акцент делается на экономико-математическом моделировании, методах оптимизации и исследования операций, эконометрике и статистическом анализе. Студенты овладевают языками программирования, базами данных, компьютерными сетями, изучают компьютерное моделирование экономических систем, анализ данных и визуализацию информации. Это позволяет выпускникам успешно решать задачи анализа, прогнозирования и управления экономическими системами.',
+
+        'disciplines.text3.part1': 'На специальности ',
+        'disciplines.text3.bold': '"Статистика"',
+        'disciplines.text3.part2': ' осуществляется подготовка специалистов, обладающих знаниями и навыками для сбора, обработки, анализа и интерпретации данных в различных сферах экономики и общественной жизни. В учебный план входят: общая теория статистики, экономическая и социальная статистика, статистика видов деятельности, финансов, цен, населения и другие отраслевые направления. Особое внимание уделяется статистическому анализу взаимосвязей, многомерным статистическим методам, методам эконометрического моделирования, обработке и визуализации статистических данных. Студенты изучают информационные системы статистики, язык SQL и языки программирования высокого уровня, а также инструментальные системы бизнес-аналитики. Все это позволяет выпускникам проводить комплексные статистические исследования, выявлять закономерности и тренды, а также разрабатывать прогнозы и рекомендации для принятия управленческих решений.',
+        
         // Футер
         'footer.questions': 'Если у Вас возникли вопросы, обращайтесь по адресу',
         'footer.suggestions': 'Если есть предложения, можете написать нам',
@@ -100,9 +109,18 @@ const translations = {
         'contacts.how_to_get': 'Як дабрацца',
 
         'disciplines.title': 'Вучэбныя дысцыпліны',
-        'disciplines.text1': 'Спецыяльнасць "Эканамічная інфарматыка" фарміруе спецыялістаў, якія валодаюць ведамі і навыкамі для распрацоўкі, укаранення і выкарыстання інфармацыйных тэхналогій у эканоміцы і бізнэсе. У вучэбны план уваходзяць: праграмаванне, праектаванне і эксплуатацыя інфармацыйных сістэм, аналіз і мадэляванне бізнэс-працэсаў, бізнэс-аналіз і бізнэс-аналітыка. Студэнты вывучаюць карпаратыўныя інфармацыйныя сістэмы, інструментальныя сістэмы бізнэс-аналітыкі, сістэмы падтрымкі прыняцця рашэнняў, а таксама набываюць навыкі ў інтэрнэт-маркетынгу, кіраванні IT-праектамі і кіраванні ведамі. Асаблівая ўвага ўдзяляецца эканамічнай эфектыўнасці інфармацыйных сістэм і інфармацыйнай бяспецы. Атрыманыя веды дазваляюць выпускнікам паспяхова вырашаць задачы аўтаматызацыі бізнэс-працэсаў, аналізу даных і прыняцця кіраўніцкіх рашэнняў у розных галінах эканомікі.',
-        'disciplines.text2': 'Спецыяльнасць "Эканамічная кібернетыка" фарміруе спецыялістаў, якія спалучаюць эканамічныя веды з перадавымі матэматычнымі метадамі і IT-інструментамі. Акцэнт робіцца на эканоміка-матэматычным мадэляванні, метадах аптымізацыі і даследавання аперацый, эканаметрыцы і статыстычным аналізе. Студэнты авалодваюць мовамі праграмавання, базамі даных, камп\'ютарнымі сеткамі, вывучаюць камп\'ютарнае мадэляванне эканамічных сістэм, аналіз даных і візуалізацыю інфармацыі. Гэта дазваляе выпускнікам паспяхова вырашаць задачы аналізу, прагназавання і кіравання эканамічнымі сістэмамі.',
-        'disciplines.text3': 'Спецыяльнасць "Статыстыка" фарміруе спецыялістаў, якія валодаюць ведамі і навыкамі для збору, апрацоўкі, аналізу і інтэрпрэтацыі даных у розных сферах эканомікі і грамадскага жыцця. У вучэбны план уваходзяць: агульная тэорыя статыстыкі, эканамічная і сацыяльная статыстыка, статыстыка відаў дзейнасці, фінансаў, коштаў, насельніцтва і іншыя галіновыя напрамкі. Асаблівая ўвага ўдзяляецца статыстычнаму аналізу ўзаемасувязяў, шматмерным статыстычным метадам, метадам эканаметрычнага мадэлявання, апрацоўцы і візуалізацыі статыстычных даных. Студэнты вывучаюць інфармацыйныя сістэмы статыстыкі, мову SQL і мовы праграмавання высокага ўзроўню, а таксама інструментальныя сістэмы бізнэс-аналітыкі. Усё гэта дазваляе выпускнікам праводзіць комплексныя статыстычныя даследаванні, выяўляць заканамернасці і тэндэнцыі, а таксама распрацоўваць прагнозы і рэкамендацыі для прыняцця кіраўніцкіх рашэнняў.',
+
+        'disciplines.text1.part1': 'Па спецыяльнасці ',
+        'disciplines.text1.bold': '"Эканамічная інфарматыка"',
+        'disciplines.text1.part2': ' ажыццяўляецца падрыхтоўка спецыялістаў, якія валодаюць ведамі і навыкамі для распрацоўкі, упроваджвання і выкарыстання інфармацыйных тэхналогій у эканоміцы і бізнэсе. У вучэбны план уваходзяць: праграмаванне, праектаванне і эксплуатацыя інфармацыйных сістэм, аналіз і мадэляванне бізнес-працэсаў, сістэмны аналіз і бізнес-аналітыка. Студэнты вывучаюць карпаратыўныя інфармацыйныя сістэмы, інструментальныя сістэмы бізнес-аналітыкі, сістэмы падтрымкі прыняцця рашэнняў, а таксама набываюць навыкі ў інтэрнэт-маркетынгу, кіраванні IT-праектамі і кіраванні ведамі. Асаблівая ўвага надаецца эканамічнай эфектыўнасці інфармацыйных сістэм і інфармацыйнай бяспецы. Атрыманая інфармацыя дазваляе выпускнікам паспяхова вырашаць задачы аўтаматызацыі бізнес-працэсаў, аналізу даных і прыняцця кіраваных рашэнняў у розных галінах эканомікі.',
+
+        'disciplines.text2.part1': 'Па спецыяльнасці ',
+        'disciplines.text2.bold': '"Прыкладная матэматыка"',
+        'disciplines.text2.part2': ' ажыццяўляецца падрыхтоўка спецыялістаў, якія спалучаюць эканамічныя веды з перадавымі матэматычнымі метадамі і IT-інструментамі. Акцэнт робіцца на эканамічна-матэматычным мадэляванні, метадах аптымізацыі і даследавання аперацый, эканаметрыцы і статыстычным аналізе. Студэнты авалодваюць мовамі праграмавання, базамі даных, камп’ютарнымі сеткамі, вывучаюць камп’ютарнае мадэляванне эканамічных сістэм, аналіз даных і візуалізацыю інфармацыі. Гэта дазваляе выпускнікам паспяхова вырашаць задачы аналізу, прагназавання і кіравання эканамічнымі сістэмамі.',
+
+        'disciplines.text3.part1': 'Па спецыяльнасці ',
+        'disciplines.text3.bold': '"Статыстыка"',
+        'disciplines.text3.part2': ' ажыццяўляецца падрыхтоўка спецыялістаў, якія валодаюць ведамі і навыкамі для збору, апрацоўкі, аналізу і інтэрпрэтацыі даных у розных сферах эканомікі і грамадскага жыцця. У вучэбны план уваходзяць: агульная тэорыя статыстыкі, эканамічная і сацыяльная статыстыка, статыстыка відаў дзейнасці, фінансаў, цэн, насельніцтва і іншыя галіновыя напрамкі. Асаблівая ўвага надаецца статыстычнаму аналізу ўзаемасувязей, шматмерным статыстычным метадам, метадам эканаметрычнага мадэлявання, апрацоўцы і візуалізацыі статыстычных даных. Студэнты вывучаюць інфармацыйныя сістэмы статыстыкі, мову SQL і мовы праграмавання высокага ўзроўню, а таксама інструментальныя сістэмы бізнес-аналітыкі. Усё гэта дазваляе выпускнікам праводзіць комплексныя статыстычныя даследаванні, выяўляць заканамернасці і тэндэнцыі, а таксама распрацоўваць прагнозы і рэкамендацыі для прыняцця кіраваных рашэнняў.',
 
         'footer.questions': 'Калі ў вас узніклі пытанні, звяртайцеся па адрасе',
         'footer.suggestions': 'Калі ёсць прапановы, можаце напісаць нам',
@@ -154,10 +172,19 @@ const translations = {
         'contacts.how_to_get': 'How to get there',
 
         'disciplines.title': 'Academic Disciplines',
-        'disciplines.text1': 'The specialization "Economic Informatics" trains specialists with knowledge and skills for developing, implementing and using information technologies in economics and business. The curriculum includes: programming, design and operation of information systems, analysis and modeling of business processes, business analysis and business analytics. Students study corporate information systems, business analytics tools, decision support systems, and also acquire skills in internet marketing, IT project management and knowledge management. Special attention is paid to the economic efficiency of information systems and information security. The acquired knowledge enables graduates to successfully solve problems of business process automation, data analysis and management decision-making in various economic sectors.',
-        'disciplines.text2': 'The specialization "Economic Cybernetics" trains specialists who combine economic knowledge with advanced mathematical methods and IT tools. The emphasis is on economic-mathematical modeling, optimization methods and operations research, econometrics and statistical analysis. Students master programming languages, databases, computer networks, study computer modeling of economic systems, data analysis and information visualization. This enables graduates to successfully solve problems of analysis, forecasting and management of economic systems.',
-        'disciplines.text3': 'The specialization "Statistics" trains specialists with knowledge and skills for collecting, processing, analyzing and interpreting data in various spheres of economy and public life. The curriculum includes: general theory of statistics, economic and social statistics, statistics of activities, finance, prices, population and other industry-specific areas. Special attention is paid to statistical analysis of relationships, multivariate statistical methods, econometric modeling methods, processing and visualization of statistical data. Students study statistical information systems, SQL and high-level programming languages, as well as business analytics tools. All this enables graduates to conduct comprehensive statistical research, identify patterns and trends, as well as develop forecasts and recommendations for management decision-making.',
 
+        'disciplines.text1.part1': 'The ',
+        'disciplines.text1.bold': '"Economic Informatics"',
+        'disciplines.text1.part2': ' specialty prepares specialists with knowledge and skills for the development, implementation, and use of information technologies in economics and business. The curriculum includes programming, design and operation of information systems, business process analysis and modeling, systems analysis, and business analytics. Students study corporate information systems, business analytics tools, decision support systems, as well as acquire skills in internet marketing, IT project management, and knowledge management. Special attention is paid to the economic efficiency of information systems and information security. The knowledge gained enables graduates to successfully solve tasks of business process automation, data analysis, and managerial decision-making in various economic sectors.',
+
+        'disciplines.text2.part1': 'The ',
+        'disciplines.text2.bold': '"Applied Mathematics"',
+        'disciplines.text2.part2': ' specialty prepares specialists combining economic knowledge with advanced mathematical methods and IT tools. The focus is on economic-mathematical modeling, optimization methods, operations research, econometrics, and statistical analysis. Students master programming languages, databases, computer networks, study computer modeling of economic systems, data analysis, and information visualization. This allows graduates to successfully solve problems of analysis, forecasting, and management of economic systems.',
+
+        'disciplines.text3.part1': 'The ',
+        'disciplines.text3.bold': '"Statistics"',
+        'disciplines.text3.part2': ' specialty prepares specialists with knowledge and skills for collecting, processing, analyzing, and interpreting data in various fields of economics and public life. The curriculum includes general statistics theory, economic and social statistics, statistics of activities, finance, prices, population, and other sectoral directions. Special attention is paid to statistical analysis of relationships, multivariate statistical methods, econometric modeling methods, processing and visualization of statistical data. Students study statistical information systems, SQL language, high-level programming languages, and business analytics tools. All this enables graduates to conduct comprehensive statistical research, identify patterns and trends, and develop forecasts and recommendations for managerial decision-making.',
+        
         'footer.questions': 'If you have any questions, please contact',
         'footer.suggestions': 'If you have suggestions, you can write to us',
         'footer.copyright': '© 2019-2025 BSEU FDE',
@@ -207,10 +234,19 @@ const translations = {
         'contacts.address': '220070, 明斯克市, 游击队大街26号,<br>1号楼, 1205',
         'contacts.how_to_get': '如何到达',
 
-        'disciplines.title': '教学科目',
-        'disciplines.text1': '专业"经济信息学"培养具备在经济学和商业中开发、实施和使用信息技术的知识和技能的专家。课程包括：编程、信息系统设计与运行、业务流程分析与建模、业务分析和商业分析。学生学习企业信息系统、商业分析工具、决策支持系统，并获得互联网营销、IT项目管理和知识管理方面的技能。特别关注信息系统的经济效率和信息安全。所获得的知识使毕业生能够成功解决各经济领域中业务流程自动化、数据分析和管理决策的任务。',
-        'disciplines.text2': '专业"经济控制论"培养将经济学知识与先进数学方法和IT工具相结合的专家。重点在于经济数学建模、优化方法和运筹学、计量经济学和统计分析。学生掌握编程语言、数据库、计算机网络，学习经济系统的计算机建模、数据分析和信息可视化。这使毕业生能够成功解决经济系统分析、预测和管理的问题。',
-        'disciplines.text3': '专业"统计学"培养具备在经济学和社会生活各领域中收集、处理、分析和解释数据的知识和技能的专家。课程包括：统计学一般理论、经济和社会统计、活动统计、金融、价格、人口和其他行业方向。特别关注统计关系分析、多元统计方法、计量经济建模方法、统计数据处理和可视化。学生学习统计信息系统、SQL语言和高级编程语言，以及商业分析工具。所有这些使毕业生能够进行全面的统计研究，发现规律和趋势，并为管理决策制定预测和建议。',
+        'disciplines.title': '学科课程',
+
+        'disciplines.text1.part1': ' ',
+        'disciplines.text1.bold': '经济信息学',
+        'disciplines.text1.part2': '专业培养具备在经济和商业领域开发、实施和使用信息技术知识与技能的专业人才。课程包括编程、信息系统设计与运行、业务流程分析与建模、系统分析和商业分析。学生学习企业信息系统、商业分析工具、决策支持系统，并掌握互联网营销、IT项目管理和知识管理技能。特别关注信息系统的经济效益和信息安全。所学知识使毕业生能够成功解决业务流程自动化、数据分析和管理决策等任务。',
+
+        'disciplines.text2.part1': ' ',
+        'disciplines.text2.bold': '应用数学',
+        'disciplines.text2.part2': '专业培养将经济学知识与先进数学方法和IT工具相结合的专业人才。重点是经济数学建模、优化方法、运筹学、计量经济学和统计分析。学生掌握编程语言、数据库、计算机网络，学习经济系统的计算机建模、数据分析和信息可视化。这使毕业生能够成功解决经济系统的分析、预测和管理问题。',
+
+        'disciplines.text3.part1': ' ',
+        'disciplines.text3.bold': '统计学',
+        'disciplines.text3.part2': '专业培养具备在经济和社会生活各领域收集、处理、分析和解释数据知识与技能的专业人才。课程包括统计学理论、经济和社会统计、活动统计、金融、价格、人口统计及其他行业方向。特别关注关系的统计分析、多元统计方法、计量经济学建模方法、统计数据处理和可视化。学生学习统计信息系统、SQL语言、高级编程语言及商业分析工具。这些知识使毕业生能够进行综合统计研究，识别规律和趋势，制定预测和管理决策建议。',
 
         'footer.questions': '如果您有任何问题，请联系',
         'footer.suggestions': '如果您有建议，可以写信给我们',

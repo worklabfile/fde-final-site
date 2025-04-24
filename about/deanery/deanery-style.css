@@ -15,6 +15,10 @@ body {
     z-index: 100;
 }
 
+.inner-container p {
+    text-align: justify;
+}
+
 /* ================= HEADER DESKTOP VERSION ================= */
 @media (min-width: 1000px) {
     .container-header {
@@ -245,27 +249,8 @@ body {
 .deans {
     display: flex;
     justify-content: flex-start;
-    gap: 80px;
+    gap: 5px;
     margin-top: 70px;
-}
-
-.decor-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    /* Помещаем на задний план */
-    overflow: hidden;
-    /* Обрезаем всё, что выходит за границы */
-    margin-top: 650px;
-}
-
-.decor-line img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Растягиваем изображение на всю область */
 }
 
 .deans p {

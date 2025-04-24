@@ -15,6 +15,7 @@ body {
     z-index: 100;
 }
 
+
 /* ================= HEADER DESKTOP VERSION ================= */
 @media (min-width: 1000px) {
     .container-header {
@@ -240,6 +241,7 @@ body {
     line-height: 1.4;
     letter-spacing: -0.66px;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 /* Основной контейнер с двумя колонками */
