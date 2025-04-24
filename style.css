@@ -7,7 +7,7 @@ body {
 }
 
 /* Стили для десктопного хедера */
-@media (min-width: 1000px) {
+@media (min-width: 1220px) {
     .container {
         width: 100%;
     }
@@ -203,7 +203,7 @@ body {
 }
 
 /* Стили для мобильного хедера */
-@media (max-width: 999px) {
+@media (max-width: 1220px) {
     .header-background {
         position: fixed;
         background: #FFFFFF;
@@ -251,7 +251,7 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #99CCFF;
+        background: white;
         transition: all 0.3s ease;
     }
 
@@ -403,8 +403,6 @@ body {
         display: none;
     }
 }
-
-/* Мобильная версия новостей (по умолчанию) */
 
 /* Мобильная версия блока "Все новости" */
 .mobile-all-news {
@@ -568,7 +566,7 @@ body {
 }
 
 .small-news-text.light {
-    color: #FFF;
+    color: white;
     font-size: 18px;
     line-height: 18.24px;
 }
@@ -587,7 +585,7 @@ body {
 }
 
 .small-news-date.light {
-    color: #FFF;
+    color: white;
 }
 
 .all-news-link {
@@ -647,7 +645,7 @@ body {
 }
 
 /* Десктопная версия новостей (только при ширине больше 1200px) */
-@media (min-width: 1201px) {
+@media (min-width: 1220px) {
     .news-container {
         width: 1200px;
         padding-bottom: 0px;
@@ -925,7 +923,7 @@ body {
 
 
 /* ================= FOOTER MOBILE VERSION ================= */
-@media (max-width: 999px) {
+@media (max-width: 1220px) {
     .footer-column-1 div[style="width: 186px; height: 181px; background: white;"],
     .footer-column-1 p[data-i18n="footer.suggestions"] {
         display: none;
@@ -1057,5 +1055,82 @@ body {
         width: 90%;
         font-size: 28px;
         line-height: 30px;
+    }
+}
+
+
+@media (min-width: 1220px) {
+    .header-text-container {
+        position: absolute;
+        top: 262px;
+        left: calc(50% - 600px); /* Смещаем на половину ширины контейнера (1200px/2) */
+        width: 1200px; /* Фиксированная ширина как у desktop-header-container */
+        text-align: left;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+    
+    .header-title {
+        width: auto; /* Убираем фиксированную ширину */
+        max-width: 1158px; /* Максимальная ширина как в макете */
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%;
+        letter-spacing: -1.95px;
+        margin: 0 0 8px 0; /* Убираем auto */
+    }
+    
+    .header-subtitle {
+        width: auto; /* Убираем фиксированную ширину */
+        max-width: 1078px; /* Максимальная ширина как в макете */
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%;
+        letter-spacing: -1.2px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1220px) {
+    /* ... существующие стили ... */
+    
+    .header-text-container {
+        position: absolute;
+        top: 195px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .header-title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%;
+        margin: 0 auto 8px;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-subtitle {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%;
+        margin: 0 auto;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
