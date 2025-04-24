@@ -110,7 +110,7 @@ const translations = {
         'submenu.publications': 'Публикации',
         'submenu.science_title': 'Научная деятельность',
         'submenu.science_desc': 'Исследования и разработки',
-        'submenu.economic_informatics': 'Экономическая информатика',
+        'submenu.economic_informatics': 'Кафедры',
         'submenu.departments_title': 'Наши кафедры',
         'submenu.departments_desc': 'Профессиональное образование',
 
@@ -160,7 +160,7 @@ const translations = {
         'submenu.publications': 'Публікацыі',
         'submenu.science_title': 'Навуковая дзейнасць',
         'submenu.science_desc': 'Дасьледаваньні і распрацоўкі',
-        'submenu.economic_informatics': 'Эканамічная інфарматыка',
+        'submenu.economic_informatics': 'Кафедры',
         'submenu.departments_title': 'Нашы кафедры',
         'submenu.departments_desc': 'Прафесійная адукацыя',
 
@@ -210,7 +210,7 @@ const translations = {
         'submenu.publications': 'Publications',
         'submenu.science_title': 'Research activities',
         'submenu.science_desc': 'Research and development',
-        'submenu.economic_informatics': 'Economic Informatics',
+        'submenu.economic_informatics': 'Departments',
         'submenu.departments_title': 'Our Departments',
         'submenu.departments_desc': 'Professional education',
 
@@ -260,7 +260,7 @@ const translations = {
         'submenu.publications': '出版物',
         'submenu.science_title': '科研活动',
         'submenu.science_desc': '研究与开发',
-        'submenu.economic_informatics': '经济信息学',
+        'submenu.economic_informatics': '我们的部门',
         'submenu.departments_title': '我们的部门',
         'submenu.departments_desc': '专业教育',
 

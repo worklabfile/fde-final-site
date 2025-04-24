@@ -110,7 +110,7 @@ const translations = {
         'submenu.publications': 'Публикации',
         'submenu.science_title': 'Научная деятельность',
         'submenu.science_desc': 'Исследования и разработки',
-        'submenu.economic_informatics': 'Экономическая информатика',
+        'submenu.economic_informatics': 'Кафедры',
         'submenu.departments_title': 'Наши кафедры',
         'submenu.departments_desc': 'Профессиональное образование',
 
