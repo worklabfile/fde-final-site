@@ -6,6 +6,11 @@ body {
     background-color: #f9f9f9;
 }
 
+html, body {
+    overflow-x: hidden; /* Отключает горизонтальный скролл */
+    width: 100%; /* Гарантирует, что body занимает 100% ширины */
+}
+
 /* Стили для десктопного хедера */
 @media (min-width: 1220px) {
     .container {
@@ -227,9 +232,9 @@ body {
     .mobile-logo {
         position: absolute;
         left: 20px;
-        top: 26px;
-        width: 100px;
-        height: 40px;
+        top: 30px;
+        width: 80px;
+        height: 33px;
         z-index: 100;
         object-fit: cover;
     }
@@ -618,7 +623,7 @@ body {
 
 .up-arrow {
     position: fixed;
-    right: calc(50% - 175px + 20px);
+    right: 20px;
     bottom: -100px;
     width: 55px;
     height: 55px;
