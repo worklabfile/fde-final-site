@@ -344,64 +344,56 @@ const translations= {
 
 ;
 
-const translationUpdates= {
+const translationUpdates = {
     'ru': {
         'submenu.student_council': 'Студенческая жизнь',
-            'submenu.schedule': 'Новости факультета',
-            'submenu.admission_rules': 'Перечень документов',
-            'submenu.courses': 'Учебные дисциплины',
-            'submenu.open_days': 'Сроки приема документов',
-            'submenu.hostel': 'Общежитие',
-            'submenu.open_door_day': 'Дни открытых дверей',
-            'submenu.introductory_campaign': 'Вступительная компания',
-            'submenu.directions': 'Наука',
-            'submenu.economic_informatics': 'Кафедры'
-    }
-
-    ,
+        'submenu.schedule': 'Новости факультета',
+        'submenu.admission_rules': 'Перечень документов',
+        'submenu.courses': 'Специальности',
+        'submenu.open_days': 'Сроки приема документов',
+        'submenu.hostel': 'Общежитие',
+        'submenu.open_door_day': 'Дни открытых дверей',
+        'submenu.introductory_campaign': 'Вступительная компания',
+        'submenu.directions': 'Наука',
+        'submenu.economic_informatics': 'Кафедры'
+    },
     'be': {
         'submenu.student_council': 'Студэнцкае жыццё',
-            'submenu.schedule': 'Навіны факультэта',
-            'submenu.admission_rules': 'Пералік дакументаў',
-            'submenu.courses': 'Вучэбныя дысцыпліны',
-            'submenu.open_days': 'Тэрміны прыёму дакументаў',
-            'submenu.hostel': 'Інтэрнат',
-            'submenu.open_door_day': 'Дні адкрытых дзвярэй',
-            'submenu.introductory_campaign': 'Уступная кампанія',
-            'submenu.directions': 'Навука',
-            'submenu.economic_informatics': 'Кафедры'
-    }
-
-    ,
+        'submenu.schedule': 'Навіны факультэта',
+        'submenu.admission_rules': 'Пералік дакументаў',
+        'submenu.courses': 'Спецыяльнасці',
+        'submenu.open_days': 'Тэрміны прыёму дакументаў',
+        'submenu.hostel': 'Інтэрнат',
+        'submenu.open_door_day': 'Дні адкрытых дзвярэй',
+        'submenu.introductory_campaign': 'Уступная кампанія',
+        'submenu.directions': 'Навука',
+        'submenu.economic_informatics': 'Кафедры'
+    },
     'en': {
         'submenu.student_council': 'Student Life',
-            'submenu.schedule': 'Faculty News',
-            'submenu.admission_rules': 'List of documents',
-            'submenu.courses': 'Academic disciplines',
-            'submenu.open_days': 'Document submission deadlines',
-            'submenu.hostel': 'Dormitory',
-            'submenu.open_door_day': 'Open days',
-            'submenu.introductory_campaign': 'Admission campaign',
-            'submenu.directions': 'Science',
-            'submenu.economic_informatics': 'Departments'
-    }
-
-    ,
+        'submenu.schedule': 'Faculty News',
+        'submenu.admission_rules': 'List of documents',
+        'submenu.courses': 'Specialties',
+        'submenu.open_days': 'Document submission deadlines',
+        'submenu.hostel': 'Dormitory',
+        'submenu.open_door_day': 'Open days',
+        'submenu.introductory_campaign': 'Admission campaign',
+        'submenu.directions': 'Science',
+        'submenu.economic_informatics': 'Departments'
+    },
     'zh': {
         'submenu.student_council': '学生生活',
-            'submenu.schedule': '学院新闻',
-            'submenu.admission_rules': '文件清单',
-            'submenu.courses': '学科',
-            'submenu.open_days': '文件提交截止日期',
-            'submenu.hostel': '宿舍',
-            'submenu.open_door_day': '开放日',
-            'submenu.introductory_campaign': '招生活动',
-            'submenu.directions': '科学',
-            'submenu.economic_informatics': '部门'
+        'submenu.schedule': '学院新闻',
+        'submenu.admission_rules': '文件清单',
+        'submenu.courses': '专业',
+        'submenu.open_days': '文件提交截止日期',
+        'submenu.hostel': '宿舍',
+        'submenu.open_door_day': '开放日',
+        'submenu.introductory_campaign': '招生活动',
+        'submenu.directions': '科学',
+        'submenu.economic_informatics': '部门'
     }
-}
-
-;
+};
 
 // Объединяем обновления с существующими переводами
 for (const lang in translationUpdates) {

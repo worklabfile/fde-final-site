@@ -44,7 +44,7 @@ const translations = {
         'contacts.address': '220070, г. Минск, пр. Партизанский 26,<br>корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Как добраться',
 
-        'disciplines.title': 'Учебные дисциплины',
+        'disciplines.title': 'Специальности',
 
         'disciplines.text1.part1': 'На специальности ',
         'disciplines.text1.bold': '"Экономическая информатика"',
@@ -108,7 +108,7 @@ const translations = {
         'contacts.address': '220070, г. Мінск, пр. Партызанскі 26,<br>корпус 1, ауд. 1205',
         'contacts.how_to_get': 'Як дабрацца',
 
-        'disciplines.title': 'Вучэбныя дысцыпліны',
+        'disciplines.title': 'Спецыяльнасці',
 
         'disciplines.text1.part1': 'Па спецыяльнасці ',
         'disciplines.text1.bold': '"Эканамічная інфарматыка"',
@@ -171,7 +171,7 @@ const translations = {
         'contacts.address': '220070, Minsk, Partizansky Ave. 26,<br>building 1, room 1205',
         'contacts.how_to_get': 'How to get there',
 
-        'disciplines.title': 'Academic Disciplines',
+        'disciplines.title': 'Specialties',
 
         'disciplines.text1.part1': 'The ',
         'disciplines.text1.bold': '"Economic Informatics"',
@@ -234,7 +234,7 @@ const translations = {
         'contacts.address': '220070, 明斯克市, 游击队大街26号,<br>1号楼, 1205',
         'contacts.how_to_get': '如何到达',
 
-        'disciplines.title': '学科课程',
+        'disciplines.title': '专业',
 
         'disciplines.text1.part1': ' ',
         'disciplines.text1.bold': '经济信息学',
@@ -261,7 +261,7 @@ const translationUpdates = {
         'submenu.student_council': 'Студенческая жизнь',
         'submenu.schedule': 'Новости факультета',
         'submenu.admission_rules': 'Перечень документов',
-        'submenu.courses': 'Учебные дисциплины',
+        'submenu.courses': 'Специальности',
         'submenu.open_days': 'Сроки приема документов',
         'submenu.hostel': 'Общежитие',
         'submenu.open_door_day': 'Дни открытых дверей',
@@ -273,7 +273,7 @@ const translationUpdates = {
         'submenu.student_council': 'Студэнцкае жыццё',
         'submenu.schedule': 'Навіны факультэта',
         'submenu.admission_rules': 'Пералік дакументаў',
-        'submenu.courses': 'Вучэбныя дысцыпліны',
+        'submenu.courses': 'Спецыяльнасці',
         'submenu.open_days': 'Тэрміны прыёму дакументаў',
         'submenu.hostel': 'Інтэрнат',
         'submenu.open_door_day': 'Дні адкрытых дзвярэй',
@@ -285,7 +285,7 @@ const translationUpdates = {
         'submenu.student_council': 'Student Life',
         'submenu.schedule': 'Faculty News',
         'submenu.admission_rules': 'List of documents',
-        'submenu.courses': 'Academic disciplines',
+        'submenu.courses': 'Specialties',
         'submenu.open_days': 'Document submission deadlines',
         'submenu.hostel': 'Dormitory',
         'submenu.open_door_day': 'Open days',
@@ -297,7 +297,7 @@ const translationUpdates = {
         'submenu.student_council': '学生生活',
         'submenu.schedule': '学院新闻',
         'submenu.admission_rules': '文件清单',
-        'submenu.courses': '学科',
+        'submenu.courses': '专业',
         'submenu.open_days': '文件提交截止日期',
         'submenu.hostel': '宿舍',
         'submenu.open_door_day': '开放日',

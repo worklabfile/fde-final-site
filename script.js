@@ -36,7 +36,7 @@ const translations = {
         'submenu.deans_office': 'Деканат',
         'submenu.student_council': 'Студенческая жизнь',
         'submenu.schedule': 'Новости факультета',
-        'submenu.courses': 'Учебные дисциплины',
+        'submenu.courses': 'Специальности',
         'submenu.hostel': 'Общежитие',
         'submenu.admission_rules': 'Перечень документов',
         'submenu.open_days': 'Сроки приема документов',
@@ -61,7 +61,9 @@ const translations = {
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Контакты',
         'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 120',
-        'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ'
+        'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ',
+        'submenu.faculty_title_main': 'Факультет Цифровой Экономики',
+        'header.subtitle': 'Мы делаем умных успешнее, а успешных — мудрее'
     },
     'be': {
         'header.title': 'Мы робім разумных больш паспяховымі, а паспяховых — мудрэйшымі',
@@ -75,7 +77,7 @@ const translations = {
         'submenu.deans_office': 'Дэканат',
         'submenu.student_council': 'Студэнцкае жыццё',
         'submenu.schedule': 'Навіны факультэта',
-        'submenu.courses': 'Вучэбныя дысцыпліны',
+        'submenu.courses': 'Спецыяльнасці',
         'submenu.hostel': 'Інтэрнат',
         'submenu.admission_rules': 'Пералік дакументаў',
         'submenu.open_days': 'Тэрміны прыёму дакументаў',
@@ -100,7 +102,9 @@ const translations = {
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Кантакты',
         'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 120',
-        'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ'
+        'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ',
+        'submenu.faculty_title_main': 'Факультэт лічбавай эканомікі',
+        'header.subtitle': 'Мы робім разумных больш паспяховымі, а паспяховых — мудрэйшымі'
     },
     'en': {
         'header.title': 'We make the smart more successful, and the successful wiser',
@@ -114,7 +118,7 @@ const translations = {
         'submenu.deans_office': 'Dean\'s Office',
         'submenu.student_council': 'Student Life',
         'submenu.schedule': 'Faculty News',
-        'submenu.courses': 'Academic disciplines',
+        'submenu.courses': 'Specialties',
         'submenu.hostel': 'Dormitory',
         'submenu.admission_rules': 'List of documents',
         'submenu.open_days': 'Document submission deadlines',
@@ -139,7 +143,9 @@ const translations = {
         'menu.sitemap': 'Sitemap',
         'footer.contacts': 'Contacts',
         'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 120',
-        'footer.copyright': '© 2019-2025 BSEU FDE'
+        'footer.copyright': '© 2019-2025 BSEU FDE',
+        'submenu.faculty_title_main': 'Faculty of Digital Economy',
+        'header.subtitle': 'We make the smart more successful, and the successful — wiser'
     },
     'zh': {
         'header.title': '我们让聪明人更成功，让成功者更智慧',
@@ -153,7 +159,7 @@ const translations = {
         'submenu.deans_office': '院长办公室',
         'submenu.student_council': '学生生活',
         'submenu.schedule': '学院新闻',
-        'submenu.courses': '学科',
+        'submenu.courses': '专业',
         'submenu.hostel': '宿舍',
         'submenu.admission_rules': '文件清单',
         'submenu.open_days': '文件提交截止日期',
@@ -178,7 +184,9 @@ const translations = {
         'menu.sitemap': '网站地图',
         'footer.contacts': '联系方式',
         'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 120室',
-        'footer.copyright': '© 2019-2025 BSEU FDE'
+        'footer.copyright': '© 2019-2025 BSEU FDE',
+        'submenu.faculty_title_main': '数字经济学院',
+        'header.subtitle': '我们让聪明的人更成功，让成功的人更睿智'
     }
 };
 
