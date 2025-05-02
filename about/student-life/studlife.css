@@ -738,7 +738,7 @@ body {
 /* ================= CONTENT MOBILE VERSION ================= */
 @media (max-width: 999px) {
     .inner-container {
-        margin-top: 60px;
+        margin-top: 120px;
         padding: 0 15px;
     }
     

@@ -215,30 +215,25 @@ body {
 @media (max-width: 999px) {
     .header-background {
         position: fixed;
-        background: rgba(255, 255, 255, 0.95); /* Changed to semi-transparent white */
+        background: #FFFFFF;
         top: 0;
         left: 0;
         width: 100%;
         height: 75px;
-        z-index: 998;
+        z-index: -1;
         transition: transform 0.3s ease;
     }
 
     .mobile-header {
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        position: fixed; /* Changed from relative to fixed */
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100%;
         height: 75px;
-        z-index: 999; /* Ensure it’s above header-background */
     }
 
     .mobile-logo {
-        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
+        position: fixed;
         left: 20px;
-        top: 25px;
+        top: 26px;
         width: 100px;
         height: 40px;
         z-index: 100;
@@ -246,7 +241,7 @@ body {
     }
 
     .burger-menu {
-        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
+        position: fixed;
         top: 29px;
         right: 20px;
         width: 26px;
@@ -257,12 +252,6 @@ body {
         z-index: 1000;
         cursor: pointer;
         transition: transform 0.3s ease;
-    }
-
-    .inner-container {
-        margin-top: 60px;
-        padding: 0 16px;
-        max-width: 100%;
     }
 
     .burger-menu div {

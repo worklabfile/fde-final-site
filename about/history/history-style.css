@@ -648,10 +648,11 @@ body {
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
+    
 
     .inner-container {
         margin-top: 50px !important;
-        padding: 0 15px 0 25px !important; 
+        padding: 60px 15px 0 25px !important; 
         box-sizing: border-box !important;
         width: 100% !important;
     }

@@ -664,7 +664,7 @@ body {
 /* ================= CONTENT MOBILE ================= */
 @media (max-width: 999px) {
     .inner-container {
-        margin-top: 60px;
+        margin-top: 120px;
         padding: 0 16px;
         max-width: 100%;
     }
