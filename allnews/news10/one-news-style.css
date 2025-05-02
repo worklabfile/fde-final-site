@@ -461,35 +461,38 @@ body {
     /* Фон */
     .header-background {
         position: fixed;
-        background: #FFFFFF;
+        background: rgba(255, 255, 255, 0.95); /* Changed to semi-transparent white */
         top: 0;
         left: 0;
         width: 100%;
         height: 75px;
-        z-index: -1;
+        z-index: 998;
         transition: transform 0.3s ease;
     }
 
     .mobile-header {
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
-        position: relative;
+        position: fixed; /* Changed from relative to fixed */
+        top: 0;
+        left: 0;
         width: 100%;
         height: 75px;
+        z-index: 999; /* Ensure it’s above header-background */
     }
 
     .mobile-logo {
-        position: fixed;
+        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
         left: 20px;
         top: 25px;
         width: 100px;
         height: 40px;
         z-index: 100;
-        object-fit:cover;
+        object-fit: cover;
     }
 
     .burger-menu {
-        position: fixed;
+        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
         top: 29px;
         right: 20px;
         width: 26px;
@@ -660,10 +663,11 @@ body {
 
 /* ================= CONTENT MOBILE ================= */
 @media (max-width: 999px) {
-.inner-container {
-    margin-top: 50px;
-    padding: 0 15px;
-}
+    .inner-container {
+        margin-top: 60px;
+        padding: 0 16px;
+        max-width: 100%;
+    }
 
 .inner-title {
     width: 100%;
