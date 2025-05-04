@@ -70,7 +70,7 @@ body {
     .desktop-menu a {
         color: #007AFF;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
         display: block;
         padding: 10px 0;
@@ -132,7 +132,7 @@ body {
     }
 
     .submenu-title {
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 10px;
         white-space: normal;
     }
@@ -228,7 +228,7 @@ body {
     font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     /* 52.695px */
     letter-spacing: -1.56px;
@@ -291,7 +291,7 @@ body {
     top: 706px;
     left: 120px;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
     line-height: 101%;
     letter-spacing: -3%;
@@ -318,7 +318,7 @@ body {
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -0.66px;
 }
@@ -347,7 +347,7 @@ body {
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     /* 22.294px */
     letter-spacing: -0.66px;
@@ -422,7 +422,7 @@ body {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -0.75px;
 }
@@ -447,7 +447,7 @@ body {
 .footer-column-3 h3 {
     margin-top: 0;
     margin-bottom: 25px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     color: white;
 }
@@ -713,7 +713,7 @@ body {
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 101.336%;
         letter-spacing: -0.54px;
     }
@@ -724,7 +724,7 @@ body {
     }
 
     .deans-text .dean-span {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .deans {
@@ -789,7 +789,7 @@ body {
         font-family: Montserrat;
         font-size: 22px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 101.336%;
         letter-spacing: -0.66px;
         margin-top: 5px;
@@ -854,7 +854,7 @@ body {
         font-family: Montserrat;
         font-size: 18px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 101.336%;
         letter-spacing: -0.54px;
         margin: 0;

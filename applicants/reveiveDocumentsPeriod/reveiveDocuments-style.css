@@ -65,7 +65,7 @@ body {
     .desktop-menu a {
         color: #007AFF;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
         display: block;
         padding: 10px 0;
@@ -127,7 +127,7 @@ body {
     }
 
     .submenu-title {
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 10px;
         white-space: normal;
     }
@@ -224,7 +224,7 @@ body {
     font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -1.56px;
     margin-bottom: 30px; /* Добавим отступ после заголовка */
@@ -235,7 +235,7 @@ body {
     font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -0.96px;
     margin-bottom: 30px; /* Отступ между blockBold и blockText */
@@ -331,7 +331,7 @@ body {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 101.336%;
     letter-spacing: -0.75px;
 }
@@ -356,7 +356,7 @@ body {
 .footer-column-3 h3 {
     margin-top: 0;
     margin-bottom: 25px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     color: white;
 }
