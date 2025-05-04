@@ -274,7 +274,7 @@ body {
 }
 
 .form-title-desc {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
@@ -289,7 +289,7 @@ body {
     height: 582px;
     flex-shrink: 0;
     border-radius: 32px;    
-    background: #0094FF;
+    background: #1651A2;
     padding: 40px;
     box-sizing: border-box;
 }
@@ -323,7 +323,7 @@ body {
 }
 
 .place-title p {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
@@ -372,7 +372,7 @@ button[type="submit"] {
     height: 70px;
     border-radius: 12px;
     background: #FFF;
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 28px;
     font-style: normal;
@@ -402,8 +402,8 @@ button[type="submit"]::after {
     transform: translateY(-50%) rotate(45deg);
     width: 20px;
     height: 20px;
-    border-right: 4px solid #0094FF;
-    border-top: 4px solid #0094FF;
+    border-right: 4px solid #1651A2;
+    border-top: 4px solid #1651A2;
 }
 }
 
@@ -580,13 +580,13 @@ button[type="submit"]::after {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #1651A2;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -595,7 +595,7 @@ button[type="submit"]::after {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .side-menu {
@@ -790,7 +790,7 @@ button[type="submit"]::after {
     }
 
     .form-title-desc {
-        color: #0094FF;
+        color: #1651A2;
         font-family: Ubuntu;
         font-size: 22px; /* Уменьшенный размер */
         font-weight: 500;
@@ -805,7 +805,7 @@ button[type="submit"]::after {
         min-width: 400px; /* Минимальная ширина */
         max-width: 588px;
         border-radius: 32px;
-        background: #0094FF;
+        background: #1651A2;
         padding: 40px;
         box-sizing: border-box;
     }
@@ -838,7 +838,7 @@ button[type="submit"]::after {
     }
 
     .place-title p {
-        color: #0094FF;
+        color: #1651A2;
         font-family: Ubuntu;
         font-size: 22px; /* Уменьшенный размер */
         font-weight: 500;
@@ -887,7 +887,7 @@ button[type="submit"]::after {
         height: 60px;
         border-radius: 12px;
         background: #FFF;
-        color: #0094FF;
+        color: #1651A2;
         font-family: Ubuntu;
         font-size: 22px; /* Уменьшенный размер */
         font-weight: 500;
@@ -916,8 +916,8 @@ button[type="submit"]::after {
         transform: translateY(-50%) rotate(45deg);
         width: 16px;
         height: 16px;
-        border-right: 3px solid #0094FF;
-        border-top: 3px solid #0094FF;
+        border-right: 3px solid #1651A2;
+        border-top: 3px solid #1651A2;
         transition: all 0.3s ease;
     }
 

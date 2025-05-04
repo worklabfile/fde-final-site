@@ -302,13 +302,13 @@ body {
 
 .button {
     display: inline-block;
-    background: #007AFF;
+    background: #1651A2;
     color: white;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
     text-decoration: none;
-    border-radius: 8px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -516,13 +516,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #1651A2;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -531,7 +531,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .side-menu {

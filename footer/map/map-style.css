@@ -252,7 +252,7 @@ body {
 }
 
 .head-map {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
@@ -263,7 +263,7 @@ body {
 }
 
 .head-map a {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
@@ -292,7 +292,7 @@ body {
 }
 
 .bold-section {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu;
     font-size: 28px;
     font-style: normal;
@@ -483,13 +483,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #1651A2;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -498,7 +498,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .side-menu {

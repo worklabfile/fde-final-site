@@ -293,7 +293,7 @@ body {
     line-height: 101%;
     letter-spacing: -3%;
     vertical-align: middle;
-    color:  #0094FF;
+    color:  #1651A2;
 }
 
 .address {
@@ -342,7 +342,7 @@ body {
     line-height: 101%;
     letter-spacing: -3%;
     vertical-align: middle;
-    color: #0094FF;
+    color: #1651A2;
     margin-top: 90px;
     margin-bottom: 550px;
 }
@@ -560,13 +560,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #1651A2;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -575,7 +575,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .side-menu {
@@ -794,7 +794,7 @@ body {
     }
     
     .dean-title p {
-        color: #0094FF;
+        color: #1651A2;
         font-family: Ubuntu;
         font-size: 22px;
         font-style: normal;
@@ -862,7 +862,7 @@ body {
 
     .location p {   
         margin-top: 30px;
-        color: #0094FF;
+        color: #1651A2;
         font-family: Ubuntu;
         font-size: 32px;
         font-style: normal;

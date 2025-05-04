@@ -282,7 +282,7 @@ body {
 }
 
 .decor-text {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
@@ -305,8 +305,8 @@ body {
     justify-content: center;
     width: 62px;
     height: 62px;
-    background: #0094FF;
-    border-radius: 8px;
+    background: #1651A2;
+    
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -367,7 +367,7 @@ body {
 }
 
 .final-block {
-    color: #0094FF;
+    color: #1651A2;
     font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
@@ -401,7 +401,7 @@ body {
 
 .list li::before {
     content: "•";
-    color: #0094FF;
+    color: #1651A2;
     font-size: 28px;
     position: absolute;
     left: 0;
@@ -589,13 +589,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #144280;
+        background: #1651A2;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -604,7 +604,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #144280;
+        background: #1651A2;
     }
 
     .side-menu {
