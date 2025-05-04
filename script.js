@@ -373,6 +373,7 @@ function generateNewsGrid(newsData, version) {
     const gridConfig = GRID_CONFIG[version];
     
     if (version === "mobile") {
+        // Мобильная версия (оставляем без изменений)
         const configLength = gridConfig.length;
         while (newsIndex < newsData.length) {
             for (let i = 0; i < configLength && newsIndex < newsData.length; i++) {
@@ -400,27 +401,34 @@ function generateNewsGrid(newsData, version) {
             }
         }
     } else {
-        while (newsIndex < newsData.length) {
-            for (const rowConfig of gridConfig) {
-                if (rowConfig.type === "row") {
-                    html += `<div class="news-row">`;
-                    let localIndex = newsIndex + 1;
-                    for (const itemConfig of rowConfig.items) {
-                        const itemsToTake = Math.min(itemConfig.count, newsData.length - newsIndex);
-                        const items = newsData.slice(newsIndex, newsIndex + itemsToTake);
-                        newsIndex += itemsToTake;
-                        
-                        for (const item of items) {
-                            html += generateNewsBlock(item, version, itemConfig.type, localIndex);
-                            localIndex++;
-                        }
-                        for (let j = items.length; j < itemConfig.count; j++) {
-                            html += generateNewsBlock([], version, itemConfig.type, localIndex);
-                            localIndex++;
-                        }
+        // Десктопная версия (ограничиваем 2 рядами)
+        const maxRows = 2;
+        let rowsCreated = 0;
+        
+        for (const rowConfig of gridConfig) {
+            if (rowsCreated >= maxRows) break;
+            
+            if (rowConfig.type === "row") {
+                html += `<div class="news-row">`;
+                let localIndex = newsIndex + 1;
+                
+                for (const itemConfig of rowConfig.items) {
+                    const itemsToTake = Math.min(itemConfig.count, newsData.length - newsIndex);
+                    const items = newsData.slice(newsIndex, newsIndex + itemsToTake);
+                    newsIndex += itemsToTake;
+                    
+                    for (const item of items) {
+                        html += generateNewsBlock(item, version, itemConfig.type, localIndex);
+                        localIndex++;
                     }
-                    html += `</div>`;
+                    for (let j = items.length; j < itemConfig.count; j++) {
+                        html += generateNewsBlock([], version, itemConfig.type, localIndex);
+                        localIndex++;
+                    }
                 }
+                
+                html += `</div>`;
+                rowsCreated++;
             }
         }
     }
