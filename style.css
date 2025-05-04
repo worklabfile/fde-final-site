@@ -70,6 +70,7 @@ html, body {
         display: none !important;
         transform: translateX(-50%) translateY(10px) !important;
         transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
+        
     }
     
     .desktop-menu-item:hover .desktop-submenu {
@@ -101,6 +102,9 @@ html, body {
         display: none !important;
         transform: translateX(-50%) translateY(10px) !important;
         transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
+
+        text-align: left; /* Выравнивание заголовка по левому краю */
+        display: block; /* Блочный элемент для правильного выравнивания */
     }
     
     .desktop-menu-item:hover .desktop-submenu {
