@@ -45,7 +45,7 @@ body {
         top: 76px;
         left: 0;
         width: 127px;
-        height: 51px;
+        height: 53px;
     }
 
     .desktop-menu {
@@ -501,13 +501,10 @@ body {
     }
 
     .mobile-logo {
-        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
         left: 20px;
-        top: 25px;
+        top: 20px;
         width: 100px;
-        height: 40px;
-        z-index: 100;
-        object-fit: cover;
+        height: 42px;
     }
 
     .burger-menu {
@@ -646,15 +643,15 @@ body {
     .mobile-language-icon {
         width: 35px;
         height: 35px;
-        cursor: pointer;
-        transition: all 0.3s;
-        filter: invert(30%) sepia(100%) saturate(1000%) hue-rotate(190deg);
+        /* cursor: pointer;
+        transition: all 0.3s; */
+        /* filter: invert(30%) sepia(100%) saturate(1000%) hue-rotate(190deg); */
     }
 
-    .mobile-language-icon:hover {
+    /* .mobile-language-icon:hover {
         transform: scale(1.1);
         filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(180deg);
-    }
+    } */
 
     .overlay {
         position: fixed;

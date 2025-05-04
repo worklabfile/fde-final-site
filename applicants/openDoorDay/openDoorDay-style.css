@@ -41,7 +41,7 @@ body {
         top: 76px;
         left: 0;
         width: 127px;
-        height: 51px;
+        height: 53px;
     }
 
     .desktop-menu {
@@ -546,13 +546,10 @@ button[type="submit"]::after {
     }
 
     .mobile-logo {
-        position: absolute; /* Changed from fixed to absolute to stay within mobile-header */
         left: 20px;
-        top: 25px;
+        top: 20px;
         width: 100px;
-        height: 40px;
-        z-index: 100;
-        object-fit: cover;
+        height: 42px;
     }
 
     .burger-menu {
