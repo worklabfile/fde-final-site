@@ -63,7 +63,7 @@ body {
     }
 
     .desktop-menu a {
-        color: #007AFF;
+        color: #144280;
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
@@ -241,7 +241,7 @@ body {
 }
 
 .styled {
-    color: #007AFF;
+    color: #144280;
     font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;

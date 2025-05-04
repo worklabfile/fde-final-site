@@ -63,7 +63,7 @@ body {
     }
 
     .desktop-menu a {
-        color: #007AFF;
+        color: #144280;
         font-size: 18px;
         font-weight: 500;
         text-decoration: none;
@@ -289,7 +289,7 @@ body {
 }
 
 .rools-desc a {
-    color: #007AFF;
+    color: #144280;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -305,7 +305,7 @@ body {
 }
 
 .specialization-text p {
-    color: #007AFF;
+    color: #144280;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -386,7 +386,7 @@ body {
     align-items: center;
     flex-shrink: 0;
     border-radius: 26px;
-    background: #007AFF;
+    background: #144280;
     color: #FFF;
     font-size: 16px;
     font-style: normal;
@@ -436,7 +436,7 @@ body {
 }
 
 .feature-num p {
-    color: #007AFF;
+    color: #144280;
     font-family: Ubuntu;
     font-size: 100px;
     font-style: normal;
@@ -490,7 +490,7 @@ body {
 }
 
 .more-info a {
-    color: #007AFF;
+    color: #144280;
     font-weight: 500;
     text-decoration: underline;
 }
