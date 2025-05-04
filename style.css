@@ -60,8 +60,80 @@ html, body {
         text-align: center;
     }
 
-    .desktop-menu-item:last-child {
-        margin-right: 0;
+    .desktop-menu-item {
+        position: relative !important;
+    }
+    
+    .desktop-submenu {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        display: none !important;
+        transform: translateX(-50%) translateY(10px) !important;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
+    }
+    
+    .desktop-menu-item:hover .desktop-submenu {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateX(-50%) translateY(0) !important;
+        transition-delay: 0.2s !important;
+    }
+    
+    .desktop-menu-item::before {
+        content: '' !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 15px !important;
+        background: transparent !important;
+        z-index: 1001 !important;
+    }
+
+    .desktop-menu-item {
+        position: relative !important;
+    }
+    
+    .desktop-submenu {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        display: none !important;
+        transform: translateX(-50%) translateY(10px) !important;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease !important;
+    }
+    
+    .desktop-menu-item:hover .desktop-submenu {
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateX(-50%) translateY(0) !important;
+        transition-delay: 0.2s !important;
+    }
+    
+    .desktop-menu-item::before {
+        content: '' !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 15px !important;
+        background: transparent !important;
+        z-index: 1001 !important;
+    }
+
+    
+
+    .desktop-menu-item:nth-last-child(2) .desktop-submenu,
+    .desktop-menu-item:nth-last-child(1) .desktop-submenu {
+        left: -20% !important;
+        right: auto !important;
+        transform: translateX(-50%) translateY(10px) !important; /* Восстанавливаем центрирование */
+    }
+
+    .desktop-menu-item:nth-last-child(2):hover .desktop-submenu,
+    .desktop-menu-item:nth-last-child(1):hover .desktop-submenu {
+        transform: translateX(-50%) translateY(0) !important; /* Анимация при наведении */
     }
 
     .desktop-menu a {
