@@ -696,7 +696,7 @@ body {
     
     .news-row {
         display: flex;
-        margin-top: 42px;
+        margin-top: 26px;
         gap: 24px;
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -752,7 +752,7 @@ body {
     }
     
     .small-news {
-        width: 386px;
+        width: calc(33.333% - 16px);
         height: 345px;
         flex-shrink: 0;
     }
