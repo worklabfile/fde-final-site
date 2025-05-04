@@ -464,7 +464,7 @@ body {
 }
 
 .footer-column-1 p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     text-decoration: none;
     color: white;
@@ -483,7 +483,7 @@ body {
     margin-top: 0;
     margin-bottom: 30px;
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     color: #FFF;
     font-family: Ubuntu;
     font-size: 18px;
@@ -496,7 +496,7 @@ body {
 .footer-column-2 a {
     margin-bottom: 10px;
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     text-decoration: none;
     color: white;
@@ -521,7 +521,7 @@ body {
 .footer-column-3 p {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     color: white;
     text-decoration: none;
