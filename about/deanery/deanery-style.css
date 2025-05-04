@@ -643,15 +643,15 @@ body {
     .mobile-language-icon {
         width: 35px;
         height: 35px;
-        /* cursor: pointer;
-        transition: all 0.3s; */
-        /* filter: invert(30%) sepia(100%) saturate(1000%) hue-rotate(190deg); */
+        cursor: pointer;
+        transition: all 0.3s;
+        filter: brightness(0) saturate(100%) invert(25%) sepia(90%) saturate(2000%) hue-rotate(200deg) brightness(90%) contrast(90%);
     }
 
-    /* .mobile-language-icon:hover {
+    .mobile-language-icon:hover {
         transform: scale(1.1);
-        filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(180deg);
-    } */
+        filter: brightness(0) saturate(100%) invert(25%) sepia(90%) saturate(2000%) hue-rotate(200deg) brightness(90%) contrast(90%);
+    } 
 
     .overlay {
         position: fixed;
