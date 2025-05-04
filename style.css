@@ -262,7 +262,7 @@ html, body {
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #99CCFF;
+        background: #144280;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -271,7 +271,7 @@ html, body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #99CCFF;
+        background: #144280;
     }
 
     .side-menu {
@@ -423,7 +423,7 @@ html, body {
 }
 
 .mobile-all-news .all-news-text {
-    color: #0094FF;
+    color: #1651A2;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -605,7 +605,7 @@ html, body {
 }
 
 .all-news-text {
-    color: #0094FF;
+    color: #1651A2;
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;

@@ -77,6 +77,17 @@ body {
         color: #0066cc;
     }
 
+    .menu-title-wrapper{
+        color: #1651A2;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.336%; /* 20.267px */
+        letter-spacing: -0.6px;
+    }
+
     .desktop-submenu {
         position: absolute;
         top: 100%;
@@ -432,13 +443,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #99CCFF;
+        background: #144280;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #99CCFF;
+        background: #144280;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -447,7 +458,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #99CCFF;
+        background: #144280;
     }
 
     .side-menu {
