@@ -827,7 +827,7 @@ body {
 
 /* ================= FOOTER MOBILE ================= */
 @media (max-width: 999px) {
-    .footer-column-1 div[style="width: 186px; height: 181px; background: white;"],
+    .footer-column-1 div[style="width: 186px; height: 181px; background: white; margin: 27px 0 27px 0;"],
     .footer-column-1 p[data-i18n="footer.suggestions"] {
         display: none;
     }

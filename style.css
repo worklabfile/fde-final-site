@@ -1004,7 +1004,7 @@ html, body {
 
 /* ================= FOOTER MOBILE VERSION ================= */
 @media (max-width: 1220px) {
-    .footer-column-1 div[style="width: 186px; height: 181px; background: white;"],
+    .footer-column-1 div[style="width: 186px; height: 181px; background: white; margin: 27px 0 27px 0;"],
     .footer-column-1 p[data-i18n="footer.suggestions"] {
         display: none;
     }
@@ -1107,6 +1107,7 @@ html, body {
     .underlined {
         text-decoration: none !important;
         display: inline; 
+        margin-top: 27px;
     }
 }
 
