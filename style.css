@@ -223,7 +223,7 @@ html, body {
     .mobile-header {
         background-image: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%), url("background.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: calc(50% + 70px) center;
         height: 455px;
         width: 100%;
         position: relative;
