@@ -483,13 +483,13 @@ body {
     .burger-menu div {
         width: 26px;
         height: 2px;
-        background: #1651A2;
+        background: #144280;
         transition: all 0.3s ease;
     }
 
     .burger-menu.active div:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
-        background: #1651A2;
+        background: #144280;
     }
 
     .burger-menu.active div:nth-child(2) {
@@ -498,7 +498,7 @@ body {
 
     .burger-menu.active div:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
-        background: #1651A2;
+        background: #144280;
     }
 
     .side-menu {
