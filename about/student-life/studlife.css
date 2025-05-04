@@ -28,7 +28,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -223,7 +223,7 @@ body {
 
 .inner-title p {
     color: #2E3146;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -234,7 +234,7 @@ body {
 
 .stud-desc {
     color: #2E3146;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -262,7 +262,7 @@ body {
 
 .block-text {
     color: #2E3146;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -272,7 +272,7 @@ body {
 
 .decor-text {
     color: #0094FF;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -321,7 +321,7 @@ body {
 
 .blocks-info div {
     color: #2E3146;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.4;
@@ -357,7 +357,7 @@ body {
 
 .final-block {
     color: #0094FF;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -368,7 +368,7 @@ body {
 
 .list {
     color: #000;
-    font-family: Montserrat, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -417,7 +417,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -472,7 +472,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -519,7 +519,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -545,7 +545,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;

@@ -27,7 +27,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -221,7 +221,7 @@ body {
 
 .inner-title p {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -232,7 +232,7 @@ body {
 
 .block1 {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -242,7 +242,7 @@ body {
 
 .block2 {
     color: #000;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -264,7 +264,7 @@ body {
 
 .faculties-block .cont p {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -303,7 +303,7 @@ body {
 
 .faculties-block .cont .desc {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -338,7 +338,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -393,7 +393,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -440,7 +440,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -465,7 +465,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;

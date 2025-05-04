@@ -31,7 +31,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -225,7 +225,7 @@ body {
 
 .deanery-title {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -236,7 +236,7 @@ body {
 
 .deans-text {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -258,7 +258,7 @@ body {
     height: 22px;
     top: 669px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 22px;
     line-height: 101%;
@@ -290,7 +290,7 @@ body {
     height: 28px;
     top: 706px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 28px;
     line-height: 101%;
@@ -301,7 +301,7 @@ body {
 
 .deanery-text p {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -315,7 +315,7 @@ body {
     display: flex;
     align-items: center;
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -344,7 +344,7 @@ body {
 
 .dean-span {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -364,7 +364,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -419,7 +419,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -466,7 +466,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -491,7 +491,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;
@@ -699,7 +699,7 @@ body {
     .deans-text {
         width: 100%;
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -710,7 +710,7 @@ body {
 
     .dean-span {
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -773,7 +773,7 @@ body {
 
     .image-text {
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -786,7 +786,7 @@ body {
 
     .dean-title {
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 22px;
         font-style: normal;
         font-weight: 500;
@@ -824,7 +824,7 @@ body {
     .deanery-text .block3 {
         width: 100%;
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px !important;
         font-style: normal;
         font-weight: 400;
@@ -851,7 +851,7 @@ body {
 
     .contacts p {
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;

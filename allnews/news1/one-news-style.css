@@ -27,7 +27,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -224,7 +224,7 @@ body {
     height: 106px;
     top: 221px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 52px;
     line-height: 101%;
@@ -239,7 +239,7 @@ body {
     margin-top: 20px;
     top: 347px;
     left: 119px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 25px;
     line-height: 101%;
@@ -264,7 +264,7 @@ body {
     height: 547;
     top: 423px;
     left: 730px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 400;
     font-size: 25px;
     line-height: 101%;
@@ -285,7 +285,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     flex-wrap: nowrap;
 }
 
@@ -345,7 +345,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -400,7 +400,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -447,7 +447,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -472,7 +472,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;

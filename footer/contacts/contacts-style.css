@@ -27,7 +27,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -223,7 +223,7 @@ body {
     height: 53px;
     top: 321px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 52px;
     line-height: 101%;
@@ -244,7 +244,7 @@ body {
     height: 22px;
     top: 669px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 22px;
     line-height: 101%;
@@ -276,7 +276,7 @@ body {
     height: 28px;
     top: 706px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 28px;
     line-height: 101%;
@@ -297,7 +297,7 @@ body {
     height: 22px;
     top: 762px;
     left: 458px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 22px;
     line-height: 101%;
@@ -311,7 +311,7 @@ body {
     height: 44px;
     top: 820px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 22px;
     line-height: 101%;
@@ -325,7 +325,7 @@ body {
     height: 53px;
     top: 1030px;
     left: 120px;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     font-size: 52px;
     line-height: 101%;
@@ -343,7 +343,7 @@ body {
 }
 
 .dog {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 250px;
     font-weight: bold;
     background: linear-gradient(244.42deg, #007AFF 8.73%, #60C4F4 91.27%);
@@ -390,7 +390,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -445,7 +445,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -492,7 +492,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -516,7 +516,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;
@@ -716,7 +716,7 @@ body {
         margin-bottom: 0 !important;
         margin-top: 10px !important;
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 32px;
         font-style: normal;
         font-weight: 500;
@@ -741,7 +741,7 @@ body {
 
     .deans p {
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -784,7 +784,7 @@ body {
     
     .dean-title p {
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 22px;
         font-style: normal;
         font-weight: 500;
@@ -817,7 +817,7 @@ body {
         font-size: 18px !important;
         margin-bottom: 0px;
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -832,7 +832,7 @@ body {
         height: auto !important;
         margin-top: 30px;
         color: #2E3146;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -852,7 +852,7 @@ body {
     .location p {   
         margin-top: 30px;
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 32px;
         font-style: normal;
         font-weight: 500;

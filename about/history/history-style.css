@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
         position: relative;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .desktop-header-container {
@@ -223,7 +223,7 @@ body {
 
 .history-title p {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -233,7 +233,7 @@ body {
 
 .creation-title p {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -243,7 +243,7 @@ body {
 
 .creation-text p {
     color: #2E3146;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -265,7 +265,7 @@ body {
 .info-2020 p:first-child, 
 .info-2022 p:first-child {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -283,7 +283,7 @@ body {
 .info-2020 p:last-child, 
 .info-2022 p:last-child {
     color: #000;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -295,7 +295,7 @@ body {
 
 .mission-title p {
     color: #0094FF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -305,7 +305,7 @@ body {
 
 .mission-text p {
     color: #000;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -326,7 +326,7 @@ body {
     margin-top: 73px;
     color: white;
     text-align: left;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
 }
 
@@ -381,7 +381,7 @@ body {
     display: block;
     font-weight: 500;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -428,7 +428,7 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -453,7 +453,7 @@ body {
 
     .mobile-header {
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         position: fixed; /* Changed from relative to fixed */
         top: 0;
         left: 0;
@@ -656,7 +656,7 @@ body {
 
     .history-title p {
         color: #2E3146 !important;
-        font-family: Montserrat !important;
+        font-family: Ubuntu !important;
         font-size: 32px !important;
         font-style: normal !important;
         font-weight: 600 !important;
@@ -673,7 +673,7 @@ body {
 
     .creation-title p {
         color: #0094FF !important;
-        font-family: Montserrat !important;
+        font-family: Ubuntu !important;
         font-size: 22px !important;
         font-style: normal !important;
         font-weight: 600 !important;
@@ -684,7 +684,7 @@ body {
 
     .creation-text p {
         color: #2E3146 !important;
-        font-family: Montserrat !important;
+        font-family: Ubuntu !important;
         font-size: 18px !important;
         font-style: normal !important;
         font-weight: 400 !important;
@@ -717,7 +717,7 @@ body {
     .info-2020 p:first-child, 
     .info-2022 p:first-child {
         color: #0094FF;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 28px;
         font-style: normal;
         font-weight: 500;
@@ -729,7 +729,7 @@ body {
     .info-2020 p:last-child, 
     .info-2022 p:last-child {
         color: #000;
-        font-family: Montserrat;
+        font-family: Ubuntu;
         font-size: 18px;
         font-style: normal;
         font-weight: 400 !important;
@@ -748,7 +748,7 @@ body {
 
     .mission-title p {
         color: #0094FF !important;
-        font-family: Montserrat !important;
+        font-family: Ubuntu !important;
         font-size: 22px !important;
         font-style: normal !important;
         font-weight: 400 !important;
@@ -759,7 +759,7 @@ body {
 
     .mission-text p {
         color: #000 !important;
-        font-family: Montserrat !important;
+        font-family: Ubuntu !important;
         font-size: 18px !important;
         font-style: normal !important;
         font-weight: 400 !important;
