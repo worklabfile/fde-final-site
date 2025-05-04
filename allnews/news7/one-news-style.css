@@ -338,7 +338,7 @@ body {
 .footer {
     width: 100%;
     height: 520px;
-    background: linear-gradient(97.19deg, #0094FF 0.78%, #005999 99.22%);
+    background: linear-gradient(97deg, #144280 0.78%, #005999 99.22%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
