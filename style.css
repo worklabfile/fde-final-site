@@ -1214,4 +1214,13 @@ html, body {
         margin: 0 auto;
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
+
+    .footer-column-1 div[style*="background: white"] {
+        display: none !important;
+    }
+    
+    /* Или более конкретный селектор, если у QR-кода есть класс */
+    .qr-code {
+        display: none !important;
+    }
 }
