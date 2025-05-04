@@ -688,7 +688,6 @@ body {
         display: flex;
         justify-content: flex-start;
         padding-left: 20px;
-        border-top: 1px solid #E6F0FA;
     }
 
     .mobile-language-icon {

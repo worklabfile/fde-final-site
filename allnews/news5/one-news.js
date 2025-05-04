@@ -101,6 +101,10 @@ const translations = {
         'menu.contacts': 'Контакты',
         'menu.sitemap': 'Карта сайта',
 
+        'submenu.hostel': 'Общежитие',      
+        'submenu.open_door_day': 'Дни открытых дверей',
+        'submenu.introductory_campaign': 'Вступительная кампания',
+
         // Подменю
         'submenu.history': 'История',
         'submenu.deans_office': 'Деканат',
@@ -150,6 +154,10 @@ const translations = {
         'menu.links': 'Спасылкі',
         'menu.contacts': 'Кантакты',
         'menu.sitemap': 'Карта сайта',
+
+        'submenu.hostel': 'Інтэрнат',
+        'submenu.open_door_day': 'Дні адкрытых дзвярэй',
+        'submenu.introductory_campaign': 'Уступная кампанія',
 
         // Подменю
         'submenu.history': 'Гісторыя',
@@ -201,6 +209,10 @@ const translations = {
         'menu.contacts': 'Contacts',
         'menu.sitemap': 'Site Map',
 
+        'submenu.hostel': 'Dormitory',
+        'submenu.open_door_day': 'Open days',
+        'submenu.introductory_campaign': 'Admission campaign',
+
         // Подменю
         'submenu.history': 'History',
         'submenu.deans_office': 'Dean\'s Office',
@@ -250,6 +262,10 @@ const translations = {
         'menu.links': '链接',
         'menu.contacts': '联系方式',
         'menu.sitemap': '网站地图',
+
+        'submenu.hostel': '宿舍',
+        'submenu.open_door_day': '开放日',
+        'submenu.introductory_campaign': '招生活动',
 
         // Подменю
         'submenu.history': '历史',

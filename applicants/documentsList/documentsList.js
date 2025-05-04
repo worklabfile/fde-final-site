@@ -385,7 +385,7 @@ const translationUpdates = {
         'submenu.open_days': 'Сроки приема документов',
         'submenu.hostel': 'Общежитие',
         'submenu.open_door_day': 'Дни открытых дверей',
-        'submenu.introductory_campaign': 'Вступительная компания',
+        'submenu.introductory_campaign': 'Вступительная кампания',
         'submenu.directions': 'Наука',
         'submenu.economic_informatics': 'Кафедры'
     },

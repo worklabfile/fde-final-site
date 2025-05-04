@@ -21,7 +21,7 @@ const translations = {
         'submenu.admission_rules': 'Перечень документов',
         'submenu.open_days': 'Сроки приема документов',
         'submenu.open_door_day': 'Дни открытых дверей',
-        'submenu.introductory_campaign': 'Вступительная компания',
+        'submenu.introductory_campaign': 'Вступительная кампания',
         'submenu.directions': 'Наука',
         'submenu.economic_informatics': 'Кафедры',
         'submenu.faculty_title': 'Факультет Цифровой Экономики',
