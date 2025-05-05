@@ -288,10 +288,22 @@ body {
     font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 101.336%;
-    letter-spacing: -0.96px;
+    font-weight: 500 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
     margin-bottom: 30px; /* Отступ между blockBold и blockText */
+}
+
+.blockText p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
 }
 
 .blockBold p,
@@ -664,8 +676,31 @@ body {
         margin-bottom: 8px;
     }
 
-    .blockText,
+    .blockBold {
+        color: #144280;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+        margin-bottom: 30px; /* Отступ между blockBold и blockText */
+    }
+    
     .blockText p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+    }
+
+    .blockText,
+    .blockText p {  
         letter-spacing: -0.48px;
         line-height: 1.4;
         margin-bottom: 20px;

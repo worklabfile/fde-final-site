@@ -283,6 +283,28 @@ body {
     padding-top: 60px;
 }
 
+.faculty-text p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
+.desc {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
 .block1 {
     color: #1651A2;
     font-family: Ubuntu;
@@ -710,6 +732,29 @@ body {
     .inner-container {
         margin-top: 50px;
         padding: 0 15px;
+    }
+
+    .faculty-text p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+        width: calc(100% - 25px);
+    }
+    
+    .desc {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
     }
 
     .inner-title p {

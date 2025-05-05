@@ -290,13 +290,47 @@ body {
 }
 
 .docListDesc p {
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 101.336%; /* 22.294px */
-    letter-spacing: -0.66px;
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
+.listDescText {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
+.lastDesc p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
+.moreDetailInfo p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
 }
 
 .docListDesc a {
@@ -797,6 +831,50 @@ body {
     .moreDetailInfo p {
         margin: 0;
         padding: 0;
+    }
+
+    .docListDesc p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+    }
+    
+    .listDescText {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+    }
+    
+    .lastDesc p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+    }
+    
+    .moreDetailInfo p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
     }
 }
 

@@ -451,13 +451,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 /* ================= FOOTER DESKTOP ================= */
 .footer {
     width: 100%;
@@ -815,6 +808,18 @@ body {
     .button.small img {
         width: 26px;
         height: 26px;
+    }
+
+    .decor-text {
+        color: #1651A2;
+        font-family: Ubuntu, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: -0.66px;
+        display: inline;
+        margin-bottom: 10px;
     }
 }
 

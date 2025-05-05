@@ -312,6 +312,28 @@ body {
     width: 1201px;
 }
 
+.deans-text p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
+.deanery-text p {
+    color: #2E3146 !important; 
+    font-family: Ubuntu !important; 
+    font-size: 22px !important; 
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+}
+
 .deans {
     display: flex;
     justify-content: flex-start;
@@ -365,18 +387,6 @@ body {
     color: #1651A2;
 }
 
-.deanery-text p {
-    color: #2E3146;
-    font-family: Ubuntu;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 101.336%;
-    /* 22.294px */
-    letter-spacing: -0.66px;
-    width: 1200px;
-}
-
 .contacts {
     display: flex;
     align-items: center;
@@ -391,7 +401,6 @@ body {
 
 .contacts p {
     margin: 0;
-    /* Убираем стандартные отступы у параграфов */
 }
 
 .contacts p:nth-child(1) {
@@ -759,6 +768,28 @@ body {
         margin-top: 0px;
         padding: 75px 16px 0;
         width: calc(100% - 32px);
+    }
+
+    .deans-text p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
+    }
+    
+    .deanery-text p {
+        color: #2E3146 !important; 
+        font-family: Ubuntu !important; 
+        font-size: 18px !important; 
+        font-style: normal !important; 
+        font-weight: 400 !important; 
+        line-height: 1.4 !important;
+        letter-spacing: -0.66px !important; 
+        text-align: left !important; 
     }
 
     .deans-text {
