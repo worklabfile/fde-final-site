@@ -7,7 +7,9 @@
     <title>ФЦЭ</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="news.css">
-</head>
+
+    
+    <link rel="stylesheet" href="../components/footer/footer.css"></head>
 
 <body>
     <div class="container">
@@ -191,33 +193,7 @@
             </button>
         </div>
 
-        <div class="footer">
-            <div class="footer-container">
-              <div class="footer-content">
-                <div class="footer-column-1">
-                  <div class="footer-column">
-                    <p><span class="underlined" data-i18n="footer.questions">Если у Вас возникли вопросы, обращайтесь по адресу</span> <strong>fde@bseu.by</strong></p>
-                    <div style="width: 186px; height: 181px; background: white; margin: 27px 0 27px 0;">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="186" height="181" viewBox="0 0 186 181" fill="none">
-                        <rect width="186" height="181" fill="white" />
-                        <rect x="15" y="12" width="25" height="25" fill="#1651A2" />
-                        <rect x="40" y="37" width="25" height="25" fill="#1651A2" />
-                        <rect x="40" y="37" width="25" height="25" fill="#1651A2" />
-                        <rect x="65" y="62" width="25" height="25" fill="#1651A2" />
-                        <rect x="65" y="12" width="25" height="25" fill="#1651A2" />
-                        <rect x="15" y="62" width="25" height="25" fill="#1651A2" />
-                        <rect x="90" y="87" width="25" height="25" fill="#1651A2" />
-                        <rect x="115" y="12" width="25" height="25" fill="#1651A2" />
-                        <rect x="140" y="12" width="25" height="25" fill="#1651A2" />
-                        <rect x="115" y="62" width="25" height="25" fill="#1651A2" />
-                        <rect x="90" y="112" width="25" height="25" fill="#1651A2" />
-                        <rect x="65" y="137" width="25" height="25" fill="#1651A2" />
-                        <rect x="115" y="137" width="25" height="25" fill="#1651A2" />
-                        <rect x="15" y="137" width="25" height="25" fill="#1651A2" />
-                        <rect x="40" y="112" width="25" height="25" fill="#1651A2" />
-                        <rect x="40" y="137" width="25" height="25" fill="#1651A2" />
-                      </svg>
-                    </div>
+        
                     <p data-i18n="footer.suggestions">Если есть предложения, можете написать нам</p>
                   </div>
                 </div>
@@ -255,6 +231,16 @@
     </div>
 
     <script src="news.js"></script>
-</body>
 
-</html>
+    <div id="footer-container"></div>
+    
+
+    <div id="footer-container"></div>
+    <script>
+        fetch('../components/footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+</body>

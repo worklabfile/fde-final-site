@@ -6,8 +6,10 @@
     <title>ФЦЭ</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/footer/footer.css">
-</head>
+    
+
+    
+    <link rel="stylesheet" href="components/footer/footer.css"></head>
 <body>
     <div class="container">
         <div class="header-background"></div>
@@ -232,5 +234,16 @@
                 document.getElementById('footer-container').innerHTML = data;
             });
     </script>
+
+    <div id="footer-container"></div>
+    
+
+    <div id="footer-container"></div>
+    <script>
+        fetch('components/footer/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
 </body>
-</html>
