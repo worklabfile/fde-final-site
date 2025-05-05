@@ -2,12 +2,18 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
     width: 100%;
-    overflow-x: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .logo {
@@ -264,12 +270,12 @@ body {
 
 /* ================= CONTENT DESCTOP ================= */
 .inner-container {
-    max-width: 1200px;
     width: 100%;
-    margin: 0 auto; 
-    flex: 1; 
-    box-sizing: border-box;
-    margin-top: 100px;
+    flex: 1;
+    margin-top: 139px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-title {
@@ -541,7 +547,7 @@ body {
         left: 0;
         width: 100%;
         height: 75px;
-        z-index: 999; /* Ensure it’s above header-background */
+        z-index: 999; /* Ensure it's above header-background */
     }
 
     .mobile-logo {
@@ -913,4 +919,11 @@ body {
     text-decoration: none !important;
     display: inline; 
 }
+}
+
+#footer-container {
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
