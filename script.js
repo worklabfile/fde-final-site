@@ -317,7 +317,8 @@ function formatDate(dateString) {
     if (isNaN(date.getTime())) return dateString;
     
     const day = date.getDate();
-    const month = date.toLocaleString('ru-RU', { month: 'long' });
+    let month = date.toLocaleString('ru-RU', { month: 'long' });
+    month = month.slice(0, -1) + 'я';
     const year = date.getFullYear();
     
     return `${day} ${month} ${year}`;
