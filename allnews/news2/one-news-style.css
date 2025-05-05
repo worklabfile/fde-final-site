@@ -272,6 +272,15 @@ body {
     margin-top: 100px;
 }
 
+.news-title {
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+    font-size: 22px !important;
+}
+
 .inner-title {
     width: 1200px;
     height: 106px;
@@ -318,13 +327,14 @@ body {
     top: 423px;
     left: 730px;
     font-family: Ubuntu;
-    font-weight: 400;
     font-size: 25px;
-    line-height: 101%;
-    letter-spacing: -3%;
     vertical-align: middle;
     color: #2E3146;
     text-align: justify;
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
 }
 
 .image img {
@@ -712,11 +722,11 @@ body {
 
 /* ================= CONTENT MOBILE ================= */
 @media (max-width: 999px) {
-    .inner-container {
-        margin-top: 120px;
-        padding: 0 16px;
-        max-width: 100%;
-    }
+.inner-container {
+    margin-top: 120px;
+    padding: 0 16px;
+    max-width: 100%;
+}
 
 .inner-title {
     width: 100%;
@@ -739,6 +749,15 @@ body {
     flex-direction: column;
     margin-top: 30px;
     gap: 20px;
+}
+
+.news-title {
+    font-style: normal !important; 
+    font-weight: 400 !important; 
+    line-height: 1.4 !important;
+    letter-spacing: -0.66px !important; 
+    text-align: left !important; 
+    font-size: 18px !important;
 }
 
 .image img {
