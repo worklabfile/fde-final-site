@@ -448,7 +448,7 @@ function renderNews(newsData) {
         mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `allnews/news${newsId}/index.html`;
+                window.location.href = `allnews/news${newsId}`;
             });
         });
     }
@@ -460,7 +460,7 @@ function renderNews(newsData) {
         desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `allnews/news${newsId}/index.html`;
+                window.location.href = `allnews/news${newsId}`;
             });
         });
     }
@@ -573,11 +573,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelector('.desktop-version .all-news-link')?.addEventListener('click', () => {
-    window.location.href = 'allnews/index.html';
+    window.location.href = 'allnews';
 });
 
 document.querySelector('.mobile-version .mobile-all-news')?.addEventListener('click', () => {
-    window.location.href = 'allnews/index.html';
+    window.location.href = 'allnews';
 });
 
 // Автообновление каждые 5 минут
