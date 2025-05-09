@@ -297,47 +297,9 @@ function translatePage(language) {
     });
 }
 
-// Функция инициализации карты
-function initMap() {
-    // Проверяем, что ymaps загружен
-    if (typeof ymaps === 'undefined') return;
-
-    // Удаляем старую карту, если она существует
-    const mapContainer = document.getElementById('map');
-    while (mapContainer.firstChild) {
-        mapContainer.removeChild(mapContainer.firstChild);
-    }
-
-    // Создаем новую карту
-    const myMap = new ymaps.Map("map", {
-        center: [53.878697, 27.606953],
-        zoom: 15
-    });
-
-    const myPlacemark = new ymaps.Placemark([53.878697, 27.606953], {
-        balloonContent: document.querySelector('[data-i18n="contacts.address"]').innerHTML
-    });
-
-    myMap.geoObjects.add(myPlacemark);
-}
-
+// Инициализация и обработчики событий
 document.addEventListener('DOMContentLoaded', function() {
-    // Инициализация карты при первой загрузке
-    ymaps.ready(initMap);
-
-    // Анимация собачки
-    var dogElement = document.querySelector('.dog');
-    if (dogElement) {
-        dogElement.addEventListener('mouseenter', function() {
-            dogElement.classList.add('rotate');
-        });
-
-        dogElement.addEventListener('mouseleave', function() {
-            dogElement.classList.remove('rotate');
-        });
-    }
-
-    // Переключение языка
+    // Десктопная версия
     const languageItems = document.querySelectorAll('.language-dropdown-item');
     const languageDropdown = document.getElementById('languageDropdown');
     const desktopLanguageIcon = document.getElementById('desktopLanguageIcon');

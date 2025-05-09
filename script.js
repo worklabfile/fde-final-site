@@ -60,7 +60,7 @@ const translations = {
         'menu.links': 'Ссылки',
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Контакты',
-        'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 120',
+        'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205',
         'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ',
         'submenu.faculty_title_main': 'Факультет Цифровой Экономики',
         'header.subtitle': 'Мы делаем умных успешнее, а успешных — мудрее'
@@ -101,7 +101,7 @@ const translations = {
         'menu.links': 'Спасылкі',
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Кантакты',
-        'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 120',
+        'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 1205',
         'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ',
         'submenu.faculty_title_main': 'Факультэт лічбавай эканомікі',
         'header.subtitle': 'Мы робім разумных больш паспяховымі, а паспяховых — мудрэйшымі'
@@ -142,7 +142,7 @@ const translations = {
         'menu.links': 'Links',
         'menu.sitemap': 'Sitemap',
         'footer.contacts': 'Contacts',
-        'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 120',
+        'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 1205',
         'footer.copyright': '© 2019-2025 BSEU FDE',
         'submenu.faculty_title_main': 'Faculty of Digital Economy',
         'header.subtitle': 'We make the smart more successful, and the successful — wiser'
@@ -183,7 +183,7 @@ const translations = {
         'menu.links': '链接',
         'menu.sitemap': '网站地图',
         'footer.contacts': '联系方式',
-        'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 120室',
+        'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 1205室',
         'footer.copyright': '© 2019-2025 BSEU FDE',
         'submenu.faculty_title_main': '数字经济学院',
         'header.subtitle': '我们让聪明的人更成功，让成功的人更睿智'

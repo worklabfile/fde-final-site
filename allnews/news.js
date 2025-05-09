@@ -40,7 +40,7 @@ const translations = {
         'menu.links': 'Ссылки',
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Контакты',
-        'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 120',
+        'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205',
         'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ'
     },
     'be': {
@@ -77,7 +77,7 @@ const translations = {
         'menu.links': 'Спасылкі',
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Кантакты',
-        'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 120',
+        'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 1205',
         'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ'
     },
     'en': {
@@ -114,7 +114,7 @@ const translations = {
         'menu.links': 'Links',
         'menu.sitemap': 'Sitemap',
         'footer.contacts': 'Contacts',
-        'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 120',
+        'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 1205',
         'footer.copyright': '© 2019-2025 BSEU FDE'
     },
     'zh': {
@@ -151,7 +151,7 @@ const translations = {
         'menu.links': '链接',
         'menu.sitemap': '网站地图',
         'footer.contacts': '联系方式',
-        'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 120室',
+        'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 1205室',
         'footer.copyright': '© 2019-2025 BSEU FDE'
     }
 };

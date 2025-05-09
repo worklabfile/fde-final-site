@@ -300,8 +300,6 @@ for (const lang in translationUpdates) {
     }
 }
 
-
-
 // Функция для перевода текста
 function translatePage(language) {
     document.documentElement.lang = language;
