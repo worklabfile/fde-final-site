@@ -25,7 +25,7 @@ body {
 
     .desktop-header-wrapper {
         width: 100%;
-        padding: 0 calc((100% - 1200px) / 2);
+        padding: 0 calc((100% - 1220px) / 2);
         position: relative;
         margin: 0;
         box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
     }
 
     .desktop-header-container {
-        width: 1200px;
+        width: 1220px;
         margin: 0 auto;
         position: relative;
         height: 140px;
@@ -700,10 +700,10 @@ body {
     bottom: 10px;
 }
 
-/* Десктопная версия новостей (только при ширине больше 1200px) */
+/* Десктопная версия новостей (только при ширине больше 1220px) */
 @media (min-width: 1201px) {
     .news-container {
-        width: 1200px;
+        width: 1220px;
         padding-bottom: 100px;
     }
     
@@ -1094,3 +1094,4 @@ body {
         display: inline; 
     }
     }
+

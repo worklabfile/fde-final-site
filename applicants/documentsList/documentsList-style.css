@@ -24,7 +24,7 @@ body {
 
     .desktop-header-wrapper {
         width: 100%;
-        padding: 0 calc((100% - 1200px) / 2);
+        padding: 0 calc((100% - 1220px) / 2);
         position: relative;
         margin: 0;
         box-sizing: border-box;
@@ -32,7 +32,7 @@ body {
     }
 
     .desktop-header-container {
-        width: 1200px;
+        width: 1220px;
         margin: 0 auto;
         position: relative;
         height: 75px;
@@ -267,7 +267,7 @@ body {
 
 /* ================= CONTENT ДЕСКТОПНАЯ ВЕРСИЯ ================= */
 .inner-container {
-    max-width: 1200px;
+    max-width: 1220px;
     width: 100%;
     margin: 0 auto;
     flex: 1;

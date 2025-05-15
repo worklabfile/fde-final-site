@@ -468,7 +468,7 @@ function renderNews(newsData) {
 
 // Переключение версий
 function toggleVersions() {
-    const isDesktop = window.innerWidth > 1200;
+    const isDesktop = window.innerWidth > 1220;
     document.querySelector(".mobile-version").style.display = isDesktop ? "none" : "block";
     document.querySelector(".desktop-version").style.display = isDesktop ? "block" : "none";
 }
