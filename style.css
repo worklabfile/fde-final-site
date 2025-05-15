@@ -574,6 +574,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
 }
 
 .main-news-date {
@@ -587,6 +592,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
 }
 
 .news-row {
@@ -643,12 +653,22 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
 }
 
 .small-news-text.light {
     color: white;
     font-size: 18px;
     line-height: 18.24px;
+    text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
 }
 
 .small-news-date {
@@ -666,6 +686,11 @@ html, body {
 
 .small-news-date.light {
     color: white;
+    text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
 }
 
 .all-news-link {
@@ -794,6 +819,11 @@ html, body {
         font-size: 32px;
         line-height: 32.43px;
         height: auto;
+        text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
     }
     
     .main-news-date {
@@ -840,6 +870,11 @@ html, body {
         color: white;
         font-size: 32px;
         line-height: 32.43px;
+        text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
     }
     
     .small-news-date {
@@ -851,6 +886,11 @@ html, body {
     
     .small-news-date.light {
         color: white;
+        text-shadow: 
+        0.3px 0.3px 0 #2F4F4F,
+        -0.3px -0.3px 0 #2F4F4F,
+        0.3px -0.3px 0 #2F4F4F,
+        -0.3px 0.3px 0 #2F4F4F;
     }
     
     .all-news-link {
