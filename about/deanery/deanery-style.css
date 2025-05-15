@@ -512,7 +512,7 @@ body {
     letter-spacing: -0.66px;
 }
 
-.footer-column-3 {
+.footer-column-3 { padding-right: 40px;
     margin-right: 120px;
     width: 305px;
     display: flex;
@@ -1001,12 +1001,13 @@ body {
         font-size: 15px;
     }
 
-    .footer-column-3 {
+    .footer-column-3 { padding-right: 40px;
         width: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-size: 16px;
+        padding-right: 40px;
     }
 
     .footer-content {
@@ -1017,7 +1018,7 @@ body {
         order: 1;
     }
 
-    .footer-column-3 {
+    .footer-column-3 { padding-right: 40px;
         order: 2;
     }
 

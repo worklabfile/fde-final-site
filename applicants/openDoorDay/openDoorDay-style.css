@@ -580,7 +580,7 @@ button[type="submit"]::after {
     letter-spacing: -0.66px;
 }
 
-.footer-column-3 {
+.footer-column-3 { padding-right: 40px;
     margin-right: 120px;
     width: 305px;
     display: flex;
@@ -1154,7 +1154,7 @@ button[type="submit"]::after {
     font-size: 15px;
 }
 
-.footer-column-3 {
+.footer-column-3 { padding-right: 40px;
     width: 100%;
     margin: 0;
     padding: 0; 
@@ -1167,7 +1167,7 @@ button[type="submit"]::after {
 }
 
 .footer-column-1 { order: 1; }
-.footer-column-3 { order: 2; }
+.footer-column-3 { padding-right: 40px; order: 2; }
 .footer-column-2 { order: 3; }
 
 .footer-column p,
