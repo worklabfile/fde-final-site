@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Разрешаем индексацию всех изображений
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Указываем расположение sitemap
+Sitemap: https://testcreate.ru/fdebseu7/sitemap.xml 
