@@ -12,4 +12,4 @@ Allow: /*.png$
 Allow: /*.svg$
 
 # Указываем расположение sitemap
-Sitemap: https://testcreate.ru/fdebseu7/sitemap.xml 
+Sitemap: https://testcreate.ru/sitemap.xml 

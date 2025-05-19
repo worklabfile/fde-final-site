@@ -9,23 +9,23 @@
 
     <!-- Главная страница -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/</loc>
+        <loc>https://testcreate.ru/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://testcreate.ru/fdebseu7/images/background.jpg</image:loc>
+            <image:loc>https://testcreate.ru/images/background.jpg</image:loc>
             <image:title>Факультет цифровой экономики БГЭУ</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://testcreate.ru/fdebseu7/logo.png</image:loc>
+            <image:loc>https://testcreate.ru/logo.png</image:loc>
             <image:title>Логотип ФЦЭ БГЭУ</image:title>
         </image:image>
     </url>
 
     <!-- Раздел "О факультете" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/about/</loc>
+        <loc>https://testcreate.ru/about/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -33,7 +33,7 @@
 
     <!-- Раздел "Абитуриентам" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/applicants/</loc>
+        <loc>https://testcreate.ru/applicants/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -41,7 +41,7 @@
 
     <!-- Раздел "Студентам" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/students/</loc>
+        <loc>https://testcreate.ru/students/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -49,7 +49,7 @@
 
     <!-- Раздел "Наука" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/science/</loc>
+        <loc>https://testcreate.ru/science/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -57,7 +57,7 @@
 
     <!-- Раздел "Кафедры" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/departments/</loc>
+        <loc>https://testcreate.ru/departments/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -65,7 +65,7 @@
 
     <!-- Раздел "Новости" -->
     <url>
-        <loc>https://testcreate.ru/fdebseu7/allnews/</loc>
+        <loc>https://testcreate.ru/allnews/</loc>
         <lastmod>2024-03-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
