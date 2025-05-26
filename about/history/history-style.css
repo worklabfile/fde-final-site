@@ -97,6 +97,11 @@ body {
         z-index: 1001 !important;
     }
 
+    .desktop-menu-item:nth-last-child(4) .desktop-submenu{
+        height: 370px!important;
+    } 
+    
+
     .desktop-menu-item:nth-last-child(2) .desktop-submenu,
     .desktop-menu-item:nth-last-child(1) .desktop-submenu {
         left: -20% !important;
