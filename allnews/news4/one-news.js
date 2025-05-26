@@ -113,7 +113,7 @@ const translations = {
         'submenu.brsm': 'БРМС',
         'submenu.faculty_title': 'Факультет Цифровой Экономики',
         'submenu.faculty_description': 'Мы лучшие!',
-        'submenu.schedule': 'Расписание',
+        'submenu.schedule': 'Новости факультета',
         'submenu.materials': 'Учебные материалы',
         'submenu.scholarships': 'Стипендии',
         'submenu.for_students_title': 'Для студентов',
