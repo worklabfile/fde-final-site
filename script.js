@@ -448,7 +448,7 @@ function renderNews(newsData) {
         mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `allnews/news${newsId}/`;
+                window.location.href = `allnews/news1/index.html?id=${newsId}`;
             });
         });
     }
@@ -460,7 +460,7 @@ function renderNews(newsData) {
         desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `allnews/news${newsId}/`;
+                window.location.href = `allnews/news1/index.html?id=${newsId}`;
             });
         });
     }
