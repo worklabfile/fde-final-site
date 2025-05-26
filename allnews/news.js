@@ -2,7 +2,7 @@
 const SHEET_ID = "14vQRC16d9MeYal5p5-0gev208nGdupOrhW9LWDdBqts";
 const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
 const RANGE = "A1:D";
-const MAX_NEWS_COUNT = 10;
+const MAX_NEWS_COUNT = 29;
 
 // Локализация
 const translations = {
@@ -59,7 +59,7 @@ const translations = {
         'submenu.open_days': 'Тэрміны прыёму дакументаў',
         'submenu.open_door_day': 'Дні адкрытых дзвярэй',
         'submenu.introductory_campaign': 'Уступная кампанія',
-        'submenu.directions': 'Навука',
+        'submenu.directions': 'Наука',
         'submenu.economic_informatics': 'Кафедры',
         'submenu.faculty_title': 'Факультэт Лічбавай Эканомікі',
         'submenu.faculty_description': 'Мы лепшыя!',
@@ -424,7 +424,8 @@ function renderNews(newsData) {
         mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `news${newsId}/`;
+                // Изменяем URL для перехода на страницу отдельной новости с ID
+                window.location.href = `news1/index.html?id=${newsId}`;
             });
         });
     }
@@ -437,7 +438,8 @@ function renderNews(newsData) {
         desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
                 const newsId = item.getAttribute('data-news-id');
-                window.location.href = `news${newsId}/`;
+                // Изменяем URL для перехода на страницу отдельной новости с ID
+                window.location.href = `news1/index.html?id=${newsId}`;
             });
         });
     }
