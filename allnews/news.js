@@ -408,7 +408,9 @@ function generateNewsGrid(newsData, version) {
 
 // Рендер новостей
 function renderNews(newsData) {
-    const limitedNewsData = newsData.slice(0, MAX_NEWS_COUNT);
+    // Реверсируем массив новостей для отображения в обратном порядке
+    const reversedNewsData = [...newsData].reverse();
+    const limitedNewsData = reversedNewsData.slice(0, MAX_NEWS_COUNT);
 
     const processedNewsData = limitedNewsData.map(item => {
         if (item[2]) {
@@ -416,7 +418,7 @@ function renderNews(newsData) {
         }
         return item;
     });
-    
+
     // Мобильная версия
     const mobileWrapper = document.getElementById("mobile-news-wrapper");
     if (mobileWrapper) {
