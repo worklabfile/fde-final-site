@@ -1,6 +1,7 @@
 // Конфигурация Google Sheets
-const SHEET_ID = "14vQRC16d9MeYal5p5-0gev208nGdupOrhW9LWDdBqts";
-const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
+// Конфигурация Google Sheets
+const SHEET_ID = "1im3Fhc0zgbmK-POT8zx5-DtcJhkmCCEn_ZkN0c4UCRQ";
+const API_KEY = "AIzaSyBMLJP7krMPDG_Y-OZQuNEDR8Dvu4FhgVs";
 const RANGE = "A1:D";
 const MAX_NEWS_COUNT = 29;
 
