@@ -56,14 +56,20 @@ function renderNewsDetails(newsData) {
     const urlParams = new URLSearchParams(window.location.search);
     const newsId = urlParams.get('id') || "1"; // По умолчанию ID 1
     
-    // Находим новость с нужным ID
-    const newsItem = newsData.find(item => item[4] === newsId);
+    // Находим индекс новости с нужным ID в оригинальном массиве
+    const originalIndex = newsData.findIndex(item => item[4] === newsId);
     
-    if (!newsItem) {
+    if (originalIndex === -1) {
         console.error("Новость не найдена");
         document.querySelector('.inner-container').style.display = 'block';
         return;
     }
+    
+    // Реверсируем массив новостей для отображения в обратном порядке
+    const reversedNewsData = [...newsData].reverse();
+    
+    // Получаем новость из реверсированного массива по тому же индексу
+    const newsItem = reversedNewsData[originalIndex];
     
     // Заполняем данные
     const titleElement = document.querySelector('.inner-title');
