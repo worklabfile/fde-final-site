@@ -1,8 +1,7 @@
 // Конфигурация Google Sheets
-// Конфигурация Google Sheets
 const SHEET_ID = "1im3Fhc0zgbmK-POT8zx5-DtcJhkmCCEn_ZkN0c4UCRQ";
 const API_KEY = "AIzaSyBMLJP7krMPDG_Y-OZQuNEDR8Dvu4FhgVs";
-const RANGE = "A1:D";
+const RANGE = "A1:E";
 const MAX_NEWS_COUNT = 29;
 
 // Локализация
@@ -422,12 +421,11 @@ function renderNews(newsData) {
     // Мобильная версия
     const mobileWrapper = document.getElementById("mobile-news-wrapper");
     if (mobileWrapper) {
-        /*mobileWrapper.innerHTML = generateNewsGrid(limitedNewsData, "mobile");*/
         mobileWrapper.innerHTML = generateNewsGrid(processedNewsData, "mobile");
         mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
-                const newsId = item.getAttribute('data-news-id');
-                // Изменяем URL для перехода на страницу отдельной новости с ID
+                const index = parseInt(item.getAttribute('data-news-id')) - 1;
+                const newsId = processedNewsData[index][4]; // Используем ID из данных
                 window.location.href = `news1/index.html?id=${newsId}`;
             });
         });
@@ -436,37 +434,14 @@ function renderNews(newsData) {
     // Десктопная версия
     const desktopWrapper = document.getElementById("desktop-news-wrapper");
     if (desktopWrapper) {
-        /*desktopWrapper.innerHTML = generateNewsGrid(limitedNewsData, "desktop");*/
         desktopWrapper.innerHTML = generateNewsGrid(processedNewsData, "desktop");
         desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
-                const newsId = item.getAttribute('data-news-id');
-                // Изменяем URL для перехода на страницу отдельной новости с ID
+                const index = parseInt(item.getAttribute('data-news-id')) - 1;
+                const newsId = processedNewsData[index][4]; // Используем ID из данных
                 window.location.href = `news1/index.html?id=${newsId}`;
             });
         });
-    }
-}
-
-async function fetchNews() {
-    try {
-        const response = await fetch(
-            `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`
-        );
-        const data = await response.json();
-        
-        if (data.values?.length > 1) {
-            // Преобразуем ссылки на изображения сразу после получения данных
-            const processedData = data.values.slice(1).map(row => {
-                if (row[2]) {
-                    row[2] = convertGoogleDriveLink(row[2]);
-                }
-                return row;
-            });
-            renderNews(processedData);
-        }
-    } catch (error) {
-        console.error("Ошибка загрузки новостей:", error);
     }
 }
 
