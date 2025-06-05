@@ -41,7 +41,24 @@ const translations = {
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Контакты',
         'footer.address': '220070, г. Минск, пр. Партизанский 26, корпус 1, ауд. 1205',
-        'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ'
+        'footer.copyright': '© 2019-2025 БГЭУ ФЦЭ',
+        'filter.title': 'Фильтр новостей',
+        'filter.year': 'Год',
+        'filter.month': 'Месяц',
+        'filter.button': 'Фильтр',
+        'filter.reset': 'Сбросить фильтры',
+        'filter.months.january': 'Январь',
+        'filter.months.february': 'Февраль',
+        'filter.months.march': 'Март',
+        'filter.months.april': 'Апрель',
+        'filter.months.may': 'Май',
+        'filter.months.june': 'Июнь',
+        'filter.months.july': 'Июль',
+        'filter.months.august': 'Август',
+        'filter.months.september': 'Сентябрь',
+        'filter.months.october': 'Октябрь',
+        'filter.months.november': 'Ноябрь',
+        'filter.months.december': 'Декабрь'
     },
     'be': {
         'menu.about': 'Аб факультэце',
@@ -78,7 +95,24 @@ const translations = {
         'menu.sitemap': 'Карта сайта',
         'footer.contacts': 'Кантакты',
         'footer.address': '220070, г. Мінск, пр. Партызанскі 26, корпус 1, аўд. 1205',
-        'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ'
+        'footer.copyright': '© 2019-2025 БДЭУ ФЦЭ',
+        'filter.title': 'Фільтр навін',
+        'filter.year': 'Год',
+        'filter.month': 'Месяц',
+        'filter.button': 'Фільтр',
+        'filter.reset': 'Скінуць фільтры',
+        'filter.months.january': 'Студзень',
+        'filter.months.february': 'Люты',
+        'filter.months.march': 'Сакавік',
+        'filter.months.april': 'Красавік',
+        'filter.months.may': 'Травень',
+        'filter.months.june': 'Чэрвень',
+        'filter.months.july': 'Ліпень',
+        'filter.months.august': 'Жнівень',
+        'filter.months.september': 'Верасень',
+        'filter.months.october': 'Кастрычнік',
+        'filter.months.november': 'Лістапад',
+        'filter.months.december': 'Снежань'
     },
     'en': {
         'menu.about': 'About Faculty',
@@ -115,7 +149,24 @@ const translations = {
         'menu.sitemap': 'Sitemap',
         'footer.contacts': 'Contacts',
         'footer.address': '220070, Minsk, Partizansky Ave. 26, Building 1, Room 1205',
-        'footer.copyright': '© 2019-2025 BSEU FDE'
+        'footer.copyright': '© 2019-2025 BSEU FDE',
+        'filter.title': 'News Filter',
+        'filter.year': 'Year',
+        'filter.month': 'Month',
+        'filter.button': 'Filter',
+        'filter.reset': 'Reset Filters',
+        'filter.months.january': 'January',
+        'filter.months.february': 'February',
+        'filter.months.march': 'March',
+        'filter.months.april': 'April',
+        'filter.months.may': 'May',
+        'filter.months.june': 'June',
+        'filter.months.july': 'July',
+        'filter.months.august': 'August',
+        'filter.months.september': 'September',
+        'filter.months.october': 'October',
+        'filter.months.november': 'November',
+        'filter.months.december': 'December'
     },
     'zh': {
         'menu.about': '关于学院',
@@ -152,7 +203,24 @@ const translations = {
         'menu.sitemap': '网站地图',
         'footer.contacts': '联系方式',
         'footer.address': '220070, 明斯克, Partizansky 大道 26, 1号楼, 1205室',
-        'footer.copyright': '© 2019-2025 BSEU FDE'
+        'footer.copyright': '© 2019-2025 BSEU FDE',
+        'filter.title': '新闻筛选',
+        'filter.year': '年份',
+        'filter.month': '月份',
+        'filter.button': '筛选',
+        'filter.reset': '重置筛选',
+        'filter.months.january': '一月',
+        'filter.months.february': '二月',
+        'filter.months.march': '三月',
+        'filter.months.april': '四月',
+        'filter.months.may': '五月',
+        'filter.months.june': '六月',
+        'filter.months.july': '七月',
+        'filter.months.august': '八月',
+        'filter.months.september': '九月',
+        'filter.months.october': '十月',
+        'filter.months.november': '十一月',
+        'filter.months.december': '十二月'
     }
 };
 
@@ -405,44 +473,237 @@ function generateNewsGrid(newsData, version) {
     return html;
 }
 
-// Рендер новостей
+// Константы для пагинации
+const NEWS_PER_PAGE = 10;
+let currentPage = 1;
+let filteredNewsData = [];
+let currentFilter = { year: null, month: null };
+
+// Функция для создания меню фильтрации
+function createFilterMenu() {
+    const filterMenu = document.createElement('div');
+    filterMenu.className = 'news-filter-menu';
+    filterMenu.innerHTML = `
+        <div class="filter-menu-header">
+            <h3 data-i18n="filter.title">Фильтр новостей</h3>
+            <button class="close-filter">×</button>
+        </div>
+        <div class="filter-menu-content">
+            <div class="filter-section">
+                <h4 data-i18n="filter.year">Год</h4>
+                <div class="year-buttons"></div>
+            </div>
+            <div class="filter-section">
+                <h4 data-i18n="filter.month">Месяц</h4>
+                <div class="month-buttons"></div>
+            </div>
+            <button class="reset-filter" data-i18n="filter.reset">Сбросить фильтры</button>
+        </div>
+    `;
+    document.body.appendChild(filterMenu);
+
+    // Добавляем кнопку для открытия меню фильтрации
+    const filterButton = document.createElement('button');
+    filterButton.className = 'filter-button';
+    filterButton.innerHTML = `
+        <span data-i18n="filter.button">Фильтр</span>
+        <img src="images/filter.svg" alt="Фильтр">
+    `;
+    document.querySelector('.news-container').insertBefore(filterButton, document.querySelector('.news-title'));
+
+    return filterMenu;
+}
+
+// Функция для обновления меню фильтрации
+function updateFilterMenu(newsData) {
+    const years = new Set();
+    const months = new Set();
+    const currentLang = document.documentElement.lang || 'ru';
+    
+    newsData.forEach(item => {
+        if (item[3]) {
+            const date = new Date(item[3]);
+            if (!isNaN(date.getTime())) {
+                years.add(date.getFullYear());
+                months.add(date.getMonth());
+            }
+        }
+    });
+
+    const yearButtons = document.querySelector('.year-buttons');
+    const monthButtons = document.querySelector('.month-buttons');
+    
+    yearButtons.innerHTML = '';
+    monthButtons.innerHTML = '';
+
+    // Добавляем кнопки годов
+    Array.from(years).sort((a, b) => b - a).forEach(year => {
+        const button = document.createElement('button');
+        button.textContent = year;
+        button.className = currentFilter.year === year ? 'active' : '';
+        button.onclick = () => toggleYearFilter(year);
+        yearButtons.appendChild(button);
+    });
+
+    // Добавляем кнопки месяцев с переводами
+    const monthKeys = [
+        'january', 'february', 'march', 'april', 'may', 'june',
+        'july', 'august', 'september', 'october', 'november', 'december'
+    ];
+    Array.from(months).sort((a, b) => a - b).forEach(month => {
+        const button = document.createElement('button');
+        button.textContent = translations[currentLang][`filter.months.${monthKeys[month]}`];
+        button.className = currentFilter.month === month ? 'active' : '';
+        button.onclick = () => toggleMonthFilter(month);
+        monthButtons.appendChild(button);
+    });
+}
+
+// Функции для переключения фильтров
+function toggleYearFilter(year) {
+    currentFilter.year = currentFilter.year === year ? null : year;
+    applyFilters();
+}
+
+function toggleMonthFilter(month) {
+    currentFilter.month = currentFilter.month === month ? null : month;
+    applyFilters();
+}
+
+// Функция применения фильтров
+function applyFilters() {
+    const originalNewsData = [...document.querySelector('#desktop-news-wrapper').dataset.originalNews || []];
+    filteredNewsData = originalNewsData.filter(item => {
+        if (!item[3]) return false;
+        const date = new Date(item[3]);
+        if (isNaN(date.getTime())) return false;
+        
+        if (currentFilter.year && date.getFullYear() !== currentFilter.year) return false;
+        if (currentFilter.month !== null && date.getMonth() !== currentFilter.month) return false;
+        
+        return true;
+    });
+
+    currentPage = 1;
+    renderNews(filteredNewsData);
+    updateFilterMenu(filteredNewsData);
+}
+
+// Модифицируем функцию renderNews для поддержки пагинации
 function renderNews(newsData) {
+    // Сохраняем оригинальные данные
+    const wrapper = document.querySelector('#desktop-news-wrapper');
+    wrapper.dataset.originalNews = JSON.stringify(newsData);
+
     // Реверсируем массив новостей для отображения в обратном порядке
     const reversedNewsData = [...newsData].reverse();
-    const limitedNewsData = reversedNewsData.slice(0, MAX_NEWS_COUNT);
+    
+    // Вычисляем индексы для текущей страницы
+    const startIndex = (currentPage - 1) * NEWS_PER_PAGE;
+    const endIndex = startIndex + NEWS_PER_PAGE;
+    const currentPageNews = reversedNewsData.slice(startIndex, endIndex);
 
-    const processedNewsData = limitedNewsData.map(item => {
+    // Обрабатываем данные для отображения
+    const processedNewsData = currentPageNews.map(item => {
         if (item[2]) {
             item[2] = convertGoogleDriveLink(item[2]);
         }
         return item;
     });
 
-    // Мобильная версия
+    // Обновляем отображение новостей
     const mobileWrapper = document.getElementById("mobile-news-wrapper");
+    const desktopWrapper = document.getElementById("desktop-news-wrapper");
+    
     if (mobileWrapper) {
         mobileWrapper.innerHTML = generateNewsGrid(processedNewsData, "mobile");
-        mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
-            item.addEventListener('click', () => {
-                const index = parseInt(item.getAttribute('data-news-id')) - 1;
-                const newsId = processedNewsData[index][4]; // Используем ID из данных
-                window.location.href = `news1/index.html?id=${newsId}`;
-            });
-        });
+        addNewsClickHandlers(mobileWrapper, processedNewsData);
     }
 
-    // Десктопная версия
-    const desktopWrapper = document.getElementById("desktop-news-wrapper");
     if (desktopWrapper) {
         desktopWrapper.innerHTML = generateNewsGrid(processedNewsData, "desktop");
-        desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
-            item.addEventListener('click', () => {
-                const index = parseInt(item.getAttribute('data-news-id')) - 1;
-                const newsId = processedNewsData[index][4]; // Используем ID из данных
-                window.location.href = `news1/index.html?id=${newsId}`;
-            });
-        });
+        addNewsClickHandlers(desktopWrapper, processedNewsData);
     }
+
+    // Добавляем пагинацию
+    updatePagination(newsData.length);
+}
+
+// Функция для добавления обработчиков кликов по новостям
+function addNewsClickHandlers(wrapper, newsData) {
+    wrapper.querySelectorAll('[data-news-id]').forEach(item => {
+        item.addEventListener('click', () => {
+            const index = parseInt(item.getAttribute('data-news-id')) - 1;
+            const newsId = newsData[index][4];
+            window.location.href = `news1/index.html?id=${newsId}`;
+        });
+    });
+}
+
+// Функция для обновления пагинации
+function updatePagination(totalNews) {
+    const totalPages = Math.ceil(totalNews / NEWS_PER_PAGE);
+    const paginationContainer = document.querySelector('.pagination-container') || createPaginationContainer();
+    
+    paginationContainer.innerHTML = '';
+    
+    // Кнопка "Назад"
+    const prevButton = document.createElement('button');
+    prevButton.className = 'pagination-button' + (currentPage === 1 ? ' disabled' : '');
+    prevButton.innerHTML = '←';
+    prevButton.onclick = () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderNews(filteredNewsData);
+        }
+    };
+    paginationContainer.appendChild(prevButton);
+
+    // Номера страниц
+    for (let i = 1; i <= totalPages; i++) {
+        if (
+            i === 1 || 
+            i === totalPages || 
+            (i >= currentPage - 1 && i <= currentPage + 1)
+        ) {
+            const pageButton = document.createElement('button');
+            pageButton.className = 'pagination-button' + (i === currentPage ? ' active' : '');
+            pageButton.textContent = i;
+            pageButton.onclick = () => {
+                currentPage = i;
+                renderNews(filteredNewsData);
+            };
+            paginationContainer.appendChild(pageButton);
+        } else if (
+            i === currentPage - 2 || 
+            i === currentPage + 2
+        ) {
+            const ellipsis = document.createElement('span');
+            ellipsis.className = 'pagination-ellipsis';
+            ellipsis.textContent = '...';
+            paginationContainer.appendChild(ellipsis);
+        }
+    }
+
+    // Кнопка "Вперед"
+    const nextButton = document.createElement('button');
+    nextButton.className = 'pagination-button' + (currentPage === totalPages ? ' disabled' : '');
+    nextButton.innerHTML = '→';
+    nextButton.onclick = () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderNews(filteredNewsData);
+        }
+    };
+    paginationContainer.appendChild(nextButton);
+}
+
+// Функция для создания контейнера пагинации
+function createPaginationContainer() {
+    const container = document.createElement('div');
+    container.className = 'pagination-container';
+    document.querySelector('.news-container').appendChild(container);
+    return container;
 }
 
 // Переключение версий
@@ -549,6 +810,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Начальная загрузка русской версии
     translatePage('ru');
+
+    const filterMenu = createFilterMenu();
+    
+    // Обработчики для меню фильтрации
+    document.querySelector('.filter-button').addEventListener('click', () => {
+        filterMenu.classList.add('active');
+    });
+
+    document.querySelector('.close-filter').addEventListener('click', () => {
+        filterMenu.classList.remove('active');
+    });
+
+    document.querySelector('.reset-filter').addEventListener('click', () => {
+        currentFilter = { year: null, month: null };
+        applyFilters();
+    });
+
+    // Закрытие меню при клике вне его
+    document.addEventListener('click', (e) => {
+        if (!filterMenu.contains(e.target) && !e.target.closest('.filter-button')) {
+            filterMenu.classList.remove('active');
+        }
+    });
+
+    // Загружаем данные
+    fetchNews().then(data => {
+        if (data && data.values && data.values.length > 1) {
+            filteredNewsData = data.values.slice(1);
+            updateFilterMenu(filteredNewsData);
+            renderNews(filteredNewsData);
+        }
+    });
 });
 
 // Автообновление каждые 5 минут

@@ -1,7 +1,7 @@
 // Конфигурация Google Sheets
-const SHEET_ID = "14vQRC16d9MeYal5p5-0gev208nGdupOrhW9LWDdBqts";
-const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
-const RANGE = "A1:D";
+const SHEET_ID = "1im3Fhc0zgbmK-POT8zx5-DtcJhkmCCEn_ZkN0c4UCRQ";
+const API_KEY = "AIzaSyBMLJP7krMPDG_Y-OZQuNEDR8Dvu4FhgVs";
+const RANGE = "A1:E";
 const MAX_NEWS_COUNT = 5;
 
 function convertGoogleDriveLink(url) {
@@ -439,7 +439,9 @@ function generateNewsGrid(newsData, version) {
 
 // Рендер новостей
 function renderNews(newsData) {
-    const limitedNewsData = newsData.slice(0, MAX_NEWS_COUNT);
+    // Реверсируем массив новостей для отображения в обратном порядке
+    const reversedNewsData = [...newsData].reverse();
+    const limitedNewsData = reversedNewsData.slice(0, MAX_NEWS_COUNT);
     
     // Мобильная версия
     const mobileWrapper = document.getElementById("mobile-news-wrapper");
@@ -447,7 +449,8 @@ function renderNews(newsData) {
         mobileWrapper.innerHTML = generateNewsGrid(limitedNewsData, "mobile");
         mobileWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
-                const newsId = item.getAttribute('data-news-id');
+                const index = parseInt(item.getAttribute('data-news-id')) - 1;
+                const newsId = limitedNewsData[index][4];
                 window.location.href = `allnews/news1/index.html?id=${newsId}`;
             });
         });
@@ -459,7 +462,8 @@ function renderNews(newsData) {
         desktopWrapper.innerHTML = generateNewsGrid(limitedNewsData, "desktop");
         desktopWrapper.querySelectorAll('[data-news-id]').forEach(item => {
             item.addEventListener('click', () => {
-                const newsId = item.getAttribute('data-news-id');
+                const index = parseInt(item.getAttribute('data-news-id')) - 1;
+                const newsId = limitedNewsData[index][4];
                 window.location.href = `allnews/news1/index.html?id=${newsId}`;
             });
         });
