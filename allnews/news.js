@@ -481,12 +481,17 @@ let currentFilter = { year: null, month: null };
 
 // Функция для создания меню фильтрации
 function createFilterMenu() {
+    // Проверяем ширину экрана
+    if (window.innerWidth <= 999) {
+        return null; // Не создаем меню фильтрации на мобильных и планшетах
+    }
+
     const filterMenu = document.createElement('div');
     filterMenu.className = 'news-filter-menu';
     filterMenu.innerHTML = `
         <div class="filter-menu-header">
             <h3 data-i18n="filter.title">Фильтр новостей</h3>
-            <button class="close-filter">×</button>
+            <button class="close-filter">&times;</button>
         </div>
         <div class="filter-menu-content">
             <div class="filter-section">
@@ -502,7 +507,7 @@ function createFilterMenu() {
     `;
     document.body.appendChild(filterMenu);
 
-    // Добавляем кнопку для открытия меню фильтрации
+    // Добавляем кнопку для открытия меню фильтрации только на десктопе
     const filterButton = document.createElement('button');
     filterButton.className = 'filter-button';
     filterButton.innerHTML = `
@@ -516,6 +521,11 @@ function createFilterMenu() {
 
 // Функция для обновления меню фильтрации
 function updateFilterMenu(newsData) {
+    // Проверяем ширину экрана
+    if (window.innerWidth <= 999) {
+        return; // Не обновляем меню фильтрации на мобильных и планшетах
+    }
+
     const years = new Set();
     const months = new Set();
     const currentLang = document.documentElement.lang || 'ru';
@@ -840,6 +850,36 @@ document.addEventListener('DOMContentLoaded', function() {
             filteredNewsData = data.values.slice(1);
             updateFilterMenu(filteredNewsData);
             renderNews(filteredNewsData);
+        }
+    });
+
+    // Добавляем обработчик изменения размера окна
+    window.addEventListener('resize', () => {
+        const filterMenu = document.querySelector('.news-filter-menu');
+        const filterButton = document.querySelector('.filter-button');
+        
+        if (window.innerWidth <= 999) {
+            // Скрываем и удаляем элементы фильтрации на мобильных и планшетах
+            if (filterMenu) {
+                filterMenu.remove();
+            }
+            if (filterButton) {
+                filterButton.remove();
+            }
+        } else {
+            // Восстанавливаем элементы фильтрации на десктопе
+            if (!filterMenu) {
+                createFilterMenu();
+            }
+            if (!filterButton) {
+                const newFilterButton = document.createElement('button');
+                newFilterButton.className = 'filter-button';
+                newFilterButton.innerHTML = `
+                    <span data-i18n="filter.button">Фильтр</span>
+                    <img src="images/filter.svg" alt="Фильтр">
+                `;
+                document.querySelector('.news-container').insertBefore(newFilterButton, document.querySelector('.news-title'));
+            }
         }
     });
 });
