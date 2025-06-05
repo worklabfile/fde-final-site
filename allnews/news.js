@@ -599,7 +599,7 @@ function applyFilters() {
     updateFilterMenu(filteredNewsData);
 }
 
-// Модифицируем функцию renderNews для поддержки пагинации
+// Модифицируем функцию renderNews для отображения всех новостей
 function renderNews(newsData) {
     // Сохраняем оригинальные данные
     const wrapper = document.querySelector('#desktop-news-wrapper');
@@ -607,14 +607,9 @@ function renderNews(newsData) {
 
     // Реверсируем массив новостей для отображения в обратном порядке
     const reversedNewsData = [...newsData].reverse();
-    
-    // Вычисляем индексы для текущей страницы
-    const startIndex = (currentPage - 1) * NEWS_PER_PAGE;
-    const endIndex = startIndex + NEWS_PER_PAGE;
-    const currentPageNews = reversedNewsData.slice(startIndex, endIndex);
 
     // Обрабатываем данные для отображения
-    const processedNewsData = currentPageNews.map(item => {
+    const processedNewsData = reversedNewsData.map(item => {
         if (item[2]) {
             item[2] = convertGoogleDriveLink(item[2]);
         }
@@ -634,9 +629,6 @@ function renderNews(newsData) {
         desktopWrapper.innerHTML = generateNewsGrid(processedNewsData, "desktop");
         addNewsClickHandlers(desktopWrapper, processedNewsData);
     }
-
-    // Добавляем пагинацию
-    updatePagination(newsData.length);
 }
 
 // Функция для добавления обработчиков кликов по новостям
@@ -648,72 +640,6 @@ function addNewsClickHandlers(wrapper, newsData) {
             window.location.href = `news1/index.html?id=${newsId}`;
         });
     });
-}
-
-// Функция для обновления пагинации
-function updatePagination(totalNews) {
-    const totalPages = Math.ceil(totalNews / NEWS_PER_PAGE);
-    const paginationContainer = document.querySelector('.pagination-container') || createPaginationContainer();
-    
-    paginationContainer.innerHTML = '';
-    
-    // Кнопка "Назад"
-    const prevButton = document.createElement('button');
-    prevButton.className = 'pagination-button' + (currentPage === 1 ? ' disabled' : '');
-    prevButton.innerHTML = '←';
-    prevButton.onclick = () => {
-        if (currentPage > 1) {
-            currentPage--;
-            renderNews(filteredNewsData);
-        }
-    };
-    paginationContainer.appendChild(prevButton);
-
-    // Номера страниц
-    for (let i = 1; i <= totalPages; i++) {
-        if (
-            i === 1 || 
-            i === totalPages || 
-            (i >= currentPage - 1 && i <= currentPage + 1)
-        ) {
-            const pageButton = document.createElement('button');
-            pageButton.className = 'pagination-button' + (i === currentPage ? ' active' : '');
-            pageButton.textContent = i;
-            pageButton.onclick = () => {
-                currentPage = i;
-                renderNews(filteredNewsData);
-            };
-            paginationContainer.appendChild(pageButton);
-        } else if (
-            i === currentPage - 2 || 
-            i === currentPage + 2
-        ) {
-            const ellipsis = document.createElement('span');
-            ellipsis.className = 'pagination-ellipsis';
-            ellipsis.textContent = '...';
-            paginationContainer.appendChild(ellipsis);
-        }
-    }
-
-    // Кнопка "Вперед"
-    const nextButton = document.createElement('button');
-    nextButton.className = 'pagination-button' + (currentPage === totalPages ? ' disabled' : '');
-    nextButton.innerHTML = '→';
-    nextButton.onclick = () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            renderNews(filteredNewsData);
-        }
-    };
-    paginationContainer.appendChild(nextButton);
-}
-
-// Функция для создания контейнера пагинации
-function createPaginationContainer() {
-    const container = document.createElement('div');
-    container.className = 'pagination-container';
-    document.querySelector('.news-container').appendChild(container);
-    return container;
 }
 
 // Переключение версий
