@@ -313,15 +313,19 @@ const NEWS_TEMPLATES = {
 // Форматирование даты
 function formatDate(dateString) {
     if (!dateString) return "";
-    const date = new Date(dateString);
+    
+    // Parse date in DD.MM.YYYY format
+    const [day, month, year] = dateString.split('.');
+    const date = new Date(year, month - 1, day);
+    
     if (isNaN(date.getTime())) return dateString;
     
-    const day = date.getDate();
-    let month = date.toLocaleString('ru-RU', { month: 'long' });
-    month = month.slice(0, -1) + 'я';
-    const year = date.getFullYear();
+    const formattedDay = date.getDate();
+    let formattedMonth = date.toLocaleString('ru-RU', { month: 'long' });
+    formattedMonth = formattedMonth.slice(0, -1) + 'я';
+    const formattedYear = date.getFullYear();
     
-    return `${day} ${month} ${year}`;
+    return `${formattedDay} ${formattedMonth} ${formattedYear}`;
 }
 
 // Загрузка данных
