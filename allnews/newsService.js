@@ -1,5 +1,5 @@
 import { SHEET_ID, API_KEY, RANGE } from './config.js';
-import { convertGoogleDriveLink, formatDate, correctKeyboardLayout } from './utils.js';
+import { convertGoogleDriveLink, formatDate, correctKeyboardLayout, translatePage } from './utils.js';
 import { NEWS_TEMPLATES, GRID_CONFIG } from './config.js';
 
 // Generate news block HTML
@@ -129,18 +129,18 @@ export function renderNews(newsData) {
     }))].sort((a, b) => b - a);
 
     const months = [
-        { value: '1', label: 'Январь' },
-        { value: '2', label: 'Февраль' },
-        { value: '3', label: 'Март' },
-        { value: '4', label: 'Апрель' },
-        { value: '5', label: 'Май' },
-        { value: '6', label: 'Июнь' },
-        { value: '7', label: 'Июль' },
-        { value: '8', label: 'Август' },
-        { value: '9', label: 'Сентябрь' },
-        { value: '10', label: 'Октябрь' },
-        { value: '11', label: 'Ноябрь' },
-        { value: '12', label: 'Декабрь' }
+        { value: '1', label: 'filter.months.january' },
+        { value: '2', label: 'filter.months.february' },
+        { value: '3', label: 'filter.months.march' },
+        { value: '4', label: 'filter.months.april' },
+        { value: '5', label: 'filter.months.may' },
+        { value: '6', label: 'filter.months.june' },
+        { value: '7', label: 'filter.months.july' },
+        { value: '8', label: 'filter.months.august' },
+        { value: '9', label: 'filter.months.september' },
+        { value: '10', label: 'filter.months.october' },
+        { value: '11', label: 'filter.months.november' },
+        { value: '12', label: 'filter.months.december' }
     ];
 
     function createFiltersBar(container) {
@@ -169,11 +169,15 @@ export function renderNews(newsData) {
                     </select>
                     <select class="filter-select month-select" onchange="window.filterByMonth(this.value)">
                         <option value="all" data-i18n="filter.all_months">Все месяцы</option>
-                        ${months.map(month => `<option value="${month.value}">${month.label}</option>`).join('')}
+                        ${months.map(month => `<option value="${month.value}" data-i18n="${month.label}">${month.label}</option>`).join('')}
                     </select>
                 </div>
             </div>
         `;
+
+        // Apply translations to the newly created elements
+        const currentLang = document.documentElement.lang || 'ru';
+        translatePage(currentLang);
     }
 
     function updateNewsDisplay() {
