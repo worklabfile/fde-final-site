@@ -1,6 +1,5 @@
 import { fetchNews, renderNews } from './newsService.js';
 import { translatePage, toggleVersions } from './utils.js';
-import { createFilterMenu, updateFilterMenu, initFilterListeners } from './filterService.js';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
@@ -100,52 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial Russian version
     translatePage('ru');
-
-    // Initialize filter menu
-    const filterMenu = createFilterMenu();
-    if (filterMenu) {
-        initFilterListeners(filterMenu);
-    }
-
-    // Load initial data
-    fetchNews().then(data => {
-        if (data && data.values && data.values.length > 1) {
-            updateFilterMenu(data.values.slice(1));
-        }
-    });
-
-    // Handle window resize for filter menu
-    window.addEventListener('resize', () => {
-        const filterMenu = document.querySelector('.news-filter-menu');
-        const filterButton = document.querySelector('.filter-button');
-        
-        if (window.innerWidth <= 999) {
-            // Hide and remove filter elements on mobile and tablets
-            if (filterMenu) {
-                filterMenu.remove();
-            }
-            if (filterButton) {
-                filterButton.remove();
-            }
-        } else {
-            // Restore filter elements on desktop
-            if (!filterMenu) {
-                const newFilterMenu = createFilterMenu();
-                if (newFilterMenu) {
-                    initFilterListeners(newFilterMenu);
-                }
-            }
-            if (!filterButton) {
-                const newFilterButton = document.createElement('button');
-                newFilterButton.className = 'filter-button';
-                newFilterButton.innerHTML = `
-                    <span data-i18n="filter.button">Фильтр</span>
-                    <img src="images/filter.svg" alt="Фильтр">
-                `;
-                document.querySelector('.news-container').insertBefore(newFilterButton, document.querySelector('.news-title'));
-            }
-        }
-    });
 });
 
 // Auto-update every 5 minutes

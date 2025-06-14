@@ -113,10 +113,6 @@ export async function fetchNews() {
 
 // Render news on the page
 export function renderNews(newsData) {
-    // Save original data
-    const wrapper = document.querySelector('#desktop-news-wrapper');
-    wrapper.dataset.originalNews = JSON.stringify(newsData);
-
     // Reverse news array to display in reverse order
     const reversedNewsData = [...newsData].reverse();
 
