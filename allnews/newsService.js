@@ -124,8 +124,8 @@ export function renderNews(newsData) {
 
     // Get unique years and months from news data
     const years = [...new Set(reversedNewsData.map(item => {
-        const date = new Date(item[3]);
-        return date.getFullYear();
+        const [day, month, year] = item[3].split('.');
+        return parseInt(year);
     }))].sort((a, b) => b - a);
 
     const months = [
@@ -257,9 +257,9 @@ export function renderNews(newsData) {
 
     function applyFilters() {
         filteredNewsData = reversedNewsData.filter(item => {
-            const date = new Date(item[3]);
-            const itemYear = date.getFullYear().toString();
-            const itemMonth = (date.getMonth() + 1).toString();
+            const [day, month, year] = item[3].split('.');
+            const itemYear = year;
+            const itemMonth = parseInt(month).toString(); // Convert to number and back to string to remove leading zeros
             
             const yearMatch = selectedYear === 'all' || itemYear === selectedYear;
             const monthMatch = selectedMonth === 'all' || itemMonth === selectedMonth;
@@ -294,9 +294,9 @@ export function renderNews(newsData) {
 
         // Apply year and month filters
         filteredNewsData = searchResults.filter(item => {
-            const date = new Date(item[3]);
-            const itemYear = date.getFullYear().toString();
-            const itemMonth = (date.getMonth() + 1).toString();
+            const [day, month, year] = item[3].split('.');
+            const itemYear = year;
+            const itemMonth = parseInt(month).toString(); // Convert to number and back to string to remove leading zeros
             
             const yearMatch = selectedYear === 'all' || itemYear === selectedYear;
             const monthMatch = selectedMonth === 'all' || itemMonth === selectedMonth;

@@ -1,5 +1,5 @@
 // Google Sheets configuration
-export const SHEET_ID = "1im3Fhc0zgbmK-POT8zx5-DtcJhkmCCEn_ZkN0c4UCRQ";
+export const SHEET_ID = "1np0lFF0y_c_akOdRUtk9r5WrVzOKPx7VD99zgol3loo";
 export const API_KEY = "AIzaSyBMLJP7krMPDG_Y-OZQuNEDR8Dvu4FhgVs";
 export const RANGE = "A1:E";
 export const MAX_NEWS_COUNT = 29;
