@@ -1115,7 +1115,7 @@ body {
     }
     }
 
-    @media (min-width: 600px) and (max-width: 1220px) {
+    @media (min-width: 601px) and (max-width: 1220px) {
         .news-container {
             width: 100%;
             max-width: 960px;
@@ -1775,33 +1775,34 @@ body {
     .filters-wrapper {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
     .search-wrapper {
-        width: 100%;
-    }
-
-    .search-input {
-        padding: 10px 40px 10px 15px;
-        font-size: 14px;
-    }
-
-    .search-icon {
-        right: 12px;
-        width: 18px;
-        height: 18px;
+        width: 90%;
+        margin: 32px auto 6px auto;
+        display: flex;
+        justify-content: center;
     }
 
     .filters-group {
         width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        display: flex;
     }
 
     .filter-select {
-        flex: 1;
-        min-width: 140px;
+        flex: 1 1 40%;
+        min-width: 120px;
+        max-width: 90%;
+        width: 45%;
+        margin: 0 2.5%;
+        box-sizing: border-box;
         padding: 10px 35px 10px 15px;
         font-size: 14px;
+        text-align: center;
     }
 }
 
@@ -1813,10 +1814,21 @@ body {
     }
 
     .filters-wrapper {
+        flex-direction: row;
         gap: 15px;
+        align-items: center;
+    }
+
+    .search-wrapper {
+        width: 70%;
+        min-width: 220px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     .search-input {
+        width: 100%;
         padding: 12px 45px 12px 20px;
         font-size: 16px;
     }
@@ -1837,7 +1849,16 @@ body {
         gap: 20px;
     }
 
+    .search-wrapper {
+        width: 60%;
+        min-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
     .search-input {
+        width: 100%;
         padding: 14px 50px 14px 25px;
         font-size: 18px;
     }
