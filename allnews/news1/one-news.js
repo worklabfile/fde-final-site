@@ -1,4 +1,4 @@
-const SHEET_ID = "14vQRC16d9MeYal5p5-0gev208nGdupOrhW9LWDdBqts";
+const SHEET_ID = "1np0lFF0y_c_akOdRUtk9r5WrVzOKPx7VD99zgol3loo";
 const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
 const RANGE = "A1:E"; // Добавляем столбец E (ID новости)
 
@@ -40,14 +40,19 @@ async function fetchNews() {
 // Форматирование даты
 function formatDate(dateString) {
     if (!dateString) return "";
-    const date = new Date(dateString);
+    
+    // Parse date in DD.MM.YYYY format
+    const [day, month, year] = dateString.split('.');
+    const date = new Date(year, month - 1, day);
+    
     if (isNaN(date.getTime())) return dateString;
     
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const year = date.getFullYear();
+    const formattedDay = date.getDate();
+    let formattedMonth = date.toLocaleString('ru-RU', { month: 'long' });
+    formattedMonth = formattedMonth.slice(0, -1) + 'я';
+    const formattedYear = date.getFullYear();
     
-    return `${day}.${month}.${year}`;
+    return `${formattedDay} ${formattedMonth} ${formattedYear}`;
 }
 
 // Рендер деталей новости
@@ -56,20 +61,14 @@ function renderNewsDetails(newsData) {
     const urlParams = new URLSearchParams(window.location.search);
     const newsId = urlParams.get('id') || "1"; // По умолчанию ID 1
     
-    // Находим индекс новости с нужным ID в оригинальном массиве
-    const originalIndex = newsData.findIndex(item => item[4] === newsId);
+    // Находим новость с нужным ID
+    const newsItem = newsData.find(item => item[4] === newsId);
     
-    if (originalIndex === -1) {
+    if (!newsItem) {
         console.error("Новость не найдена");
         document.querySelector('.inner-container').style.display = 'block';
         return;
     }
-    
-    // Реверсируем массив новостей для отображения в обратном порядке
-    const reversedNewsData = [...newsData].reverse();
-    
-    // Получаем новость из реверсированного массива по тому же индексу
-    const newsItem = reversedNewsData[originalIndex];
     
     // Заполняем данные
     const titleElement = document.querySelector('.inner-title');
