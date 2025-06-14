@@ -1,5 +1,5 @@
 import { SHEET_ID, API_KEY, RANGE } from './config.js';
-import { convertGoogleDriveLink, formatDate } from './utils.js';
+import { convertGoogleDriveLink, formatDate, correctKeyboardLayout } from './utils.js';
 import { NEWS_TEMPLATES, GRID_CONFIG } from './config.js';
 
 // Generate news block HTML
@@ -273,10 +273,18 @@ export function renderNews(newsData) {
         let searchResults = reversedNewsData;
         
         if (searchTerm !== '') {
+            // Get both original and corrected search terms
+            const correctedSearchTerm = correctKeyboardLayout(searchTerm);
+            
             searchResults = reversedNewsData.filter(item => {
                 const title = (item[0] || '').toLowerCase();
                 const description = (item[1] || '').toLowerCase();
-                return title.includes(searchTerm) || description.includes(searchTerm);
+                
+                // Check both original and corrected search terms
+                return title.includes(searchTerm) || 
+                       description.includes(searchTerm) ||
+                       title.includes(correctedSearchTerm) || 
+                       description.includes(correctedSearchTerm);
             });
         }
 
