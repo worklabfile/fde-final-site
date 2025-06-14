@@ -51,7 +51,11 @@ export const translations = {
         'filter.months.september': 'Сентябрь',
         'filter.months.october': 'Октябрь',
         'filter.months.november': 'Ноябрь',
-        'filter.months.december': 'Декабрь'
+        'filter.months.december': 'Декабрь',
+        'search.placeholder': 'Поиск по новостям...',
+        'filter.all_years': 'Все годы',
+        'filter.all_months': 'Все месяцы',
+        'load_more': 'Еще'
     },
     'be': {
         'menu.about': 'Аб факультэце',
@@ -105,7 +109,11 @@ export const translations = {
         'filter.months.september': 'Верасень',
         'filter.months.october': 'Кастрычнік',
         'filter.months.november': 'Лістапад',
-        'filter.months.december': 'Снежань'
+        'filter.months.december': 'Снежань',
+        'search.placeholder': 'Пошук па навінах...',
+        'filter.all_years': 'Усе гады',
+        'filter.all_months': 'Усе месяцы',
+        'load_more': 'Яшчэ'
     },
     'en': {
         'menu.about': 'About Faculty',
@@ -159,7 +167,11 @@ export const translations = {
         'filter.months.september': 'September',
         'filter.months.october': 'October',
         'filter.months.november': 'November',
-        'filter.months.december': 'December'
+        'filter.months.december': 'December',
+        'search.placeholder': 'Search news...',
+        'filter.all_years': 'All years',
+        'filter.all_months': 'All months',
+        'load_more': 'More'
     },
     'zh': {
         'menu.about': '关于学院',
@@ -213,6 +225,10 @@ export const translations = {
         'filter.months.september': '九月',
         'filter.months.october': '十月',
         'filter.months.november': '十一月',
-        'filter.months.december': '十二月'
+        'filter.months.december': '十二月',
+        'search.placeholder': '搜索新闻...',
+        'filter.all_years': '所有年份',
+        'filter.all_months': '所有月份',
+        'load_more': '更多'
     }
 }; 

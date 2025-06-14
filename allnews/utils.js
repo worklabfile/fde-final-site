@@ -43,6 +43,15 @@ export function translatePage(language) {
             element.textContent = translations[language][key];
         }
     });
+
+    // Handle placeholder translations
+    const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[language] && translations[language][key]) {
+            element.placeholder = translations[language][key];
+        }
+    });
 }
 
 // Toggle between mobile and desktop versions
