@@ -118,19 +118,68 @@ export function renderNews(newsData) {
     const itemsPerPage = 10;
     const totalPages = Math.ceil(reversedNewsData.length / itemsPerPage);
     let currentPage = 1;
+    let filteredNewsData = [...reversedNewsData];
+    let selectedYear = 'all';
+    let selectedMonth = 'all';
 
-    // Process data for display
-    const processedNewsData = reversedNewsData.map(item => {
-        if (item[2]) {
-            item[2] = convertGoogleDriveLink(item[2]);
+    // Get unique years and months from news data
+    const years = [...new Set(reversedNewsData.map(item => {
+        const date = new Date(item[3]);
+        return date.getFullYear();
+    }))].sort((a, b) => b - a);
+
+    const months = [
+        { value: '1', label: 'Январь' },
+        { value: '2', label: 'Февраль' },
+        { value: '3', label: 'Март' },
+        { value: '4', label: 'Апрель' },
+        { value: '5', label: 'Май' },
+        { value: '6', label: 'Июнь' },
+        { value: '7', label: 'Июль' },
+        { value: '8', label: 'Август' },
+        { value: '9', label: 'Сентябрь' },
+        { value: '10', label: 'Октябрь' },
+        { value: '11', label: 'Ноябрь' },
+        { value: '12', label: 'Декабрь' }
+    ];
+
+    function createFiltersBar(container) {
+        if (!container) return;
+        
+        let filtersContainer = container.querySelector(".filters-container");
+        if (!filtersContainer) {
+            filtersContainer = document.createElement("div");
+            filtersContainer.className = "filters-container";
+            container.insertBefore(filtersContainer, container.firstChild);
         }
-        return item;
-    });
+
+        filtersContainer.innerHTML = `
+            <div class="filters-wrapper">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" placeholder="Поиск по новостям..." onkeyup="window.searchNews(this.value)">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#1651A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.5 17.5L13.875 13.875" stroke="#1651A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="filters-group">
+                    <select class="filter-select year-select" onchange="window.filterByYear(this.value)">
+                        <option value="all">Все годы</option>
+                        ${years.map(year => `<option value="${year}">${year}</option>`).join('')}
+                    </select>
+                    <select class="filter-select month-select" onchange="window.filterByMonth(this.value)">
+                        <option value="all">Все месяцы</option>
+                        ${months.map(month => `<option value="${month.value}">${month.label}</option>`).join('')}
+                    </select>
+                </div>
+            </div>
+        `;
+    }
 
     function updateNewsDisplay() {
         const startIndex = 0;
         const endIndex = currentPage * itemsPerPage;
-        const currentPageData = processedNewsData.slice(startIndex, endIndex);
+        const currentPageData = filteredNewsData.slice(startIndex, endIndex);
 
         // Update news display
         const mobileWrapper = document.getElementById("mobile-news-wrapper");
@@ -165,7 +214,8 @@ export function renderNews(newsData) {
                 container.appendChild(loadMoreContainer);
             }
 
-            if (currentPage < totalPages) {
+            const totalFilteredPages = Math.ceil(filteredNewsData.length / itemsPerPage);
+            if (currentPage < totalFilteredPages) {
                 loadMoreContainer.innerHTML = `
                     <button class="load-more-btn" onclick="window.loadMoreNews()">
                         <span class="load-more-text">Еще</span>
@@ -186,11 +236,74 @@ export function renderNews(newsData) {
 
     // Add loadMoreNews function to window object
     window.loadMoreNews = function() {
-        if (currentPage < totalPages) {
-            currentPage++;
-            updateNewsDisplay();
-        }
+        currentPage++;
+        updateNewsDisplay();
     };
+
+    // Add filter functions to window object
+    window.filterByYear = function(year) {
+        selectedYear = year;
+        applyFilters();
+    };
+
+    window.filterByMonth = function(month) {
+        selectedMonth = month;
+        applyFilters();
+    };
+
+    function applyFilters() {
+        filteredNewsData = reversedNewsData.filter(item => {
+            const date = new Date(item[3]);
+            const itemYear = date.getFullYear().toString();
+            const itemMonth = (date.getMonth() + 1).toString();
+            
+            const yearMatch = selectedYear === 'all' || itemYear === selectedYear;
+            const monthMatch = selectedMonth === 'all' || itemMonth === selectedMonth;
+            
+            return yearMatch && monthMatch;
+        });
+
+        currentPage = 1;
+        updateNewsDisplay();
+    }
+
+    // Update search function to work with filters
+    window.searchNews = function(searchTerm) {
+        searchTerm = searchTerm.toLowerCase().trim();
+        let searchResults = reversedNewsData;
+        
+        if (searchTerm !== '') {
+            searchResults = reversedNewsData.filter(item => {
+                const title = (item[0] || '').toLowerCase();
+                const description = (item[1] || '').toLowerCase();
+                return title.includes(searchTerm) || description.includes(searchTerm);
+            });
+        }
+
+        // Apply year and month filters
+        filteredNewsData = searchResults.filter(item => {
+            const date = new Date(item[3]);
+            const itemYear = date.getFullYear().toString();
+            const itemMonth = (date.getMonth() + 1).toString();
+            
+            const yearMatch = selectedYear === 'all' || itemYear === selectedYear;
+            const monthMatch = selectedMonth === 'all' || itemMonth === selectedMonth;
+            
+            return yearMatch && monthMatch;
+        });
+
+        currentPage = 1;
+        updateNewsDisplay();
+    };
+
+    // Add filters bars to all versions
+    const mobileContainer = document.querySelector(".mobile-version");
+    const desktopContainer = document.querySelector(".desktop-version");
+    const tabletContainer = document.querySelector(".tablet-version");
+
+    createFiltersBar(mobileContainer);
+    createFiltersBar(desktopContainer);
+    createFiltersBar(tabletContainer);
 
     // Initial display
     updateNewsDisplay();
