@@ -115,6 +115,9 @@ export async function fetchNews() {
 export function renderNews(newsData) {
     // Reverse news array to display in reverse order
     const reversedNewsData = [...newsData].reverse();
+    const itemsPerPage = 10;
+    const totalPages = Math.ceil(reversedNewsData.length / itemsPerPage);
+    let currentPage = 1;
 
     // Process data for display
     const processedNewsData = reversedNewsData.map(item => {
@@ -124,17 +127,71 @@ export function renderNews(newsData) {
         return item;
     });
 
-    // Update news display
-    const mobileWrapper = document.getElementById("mobile-news-wrapper");
-    const desktopWrapper = document.getElementById("desktop-news-wrapper");
-    
-    if (mobileWrapper) {
-        mobileWrapper.innerHTML = generateNewsGrid(processedNewsData, "mobile");
-        addNewsClickHandlers(mobileWrapper, processedNewsData);
+    function updateNewsDisplay() {
+        const startIndex = 0;
+        const endIndex = currentPage * itemsPerPage;
+        const currentPageData = processedNewsData.slice(startIndex, endIndex);
+
+        // Update news display
+        const mobileWrapper = document.getElementById("mobile-news-wrapper");
+        const desktopWrapper = document.getElementById("desktop-news-wrapper");
+        
+        if (mobileWrapper) {
+            mobileWrapper.innerHTML = generateNewsGrid(currentPageData, "mobile");
+            addNewsClickHandlers(mobileWrapper, currentPageData);
+        }
+
+        if (desktopWrapper) {
+            desktopWrapper.innerHTML = generateNewsGrid(currentPageData, "desktop");
+            addNewsClickHandlers(desktopWrapper, currentPageData);
+        }
+
+        // Update load more button
+        updateLoadMoreButton();
     }
 
-    if (desktopWrapper) {
-        desktopWrapper.innerHTML = generateNewsGrid(processedNewsData, "desktop");
-        addNewsClickHandlers(desktopWrapper, processedNewsData);
+    function updateLoadMoreButton() {
+        const mobileContainer = document.querySelector(".mobile-version");
+        const desktopContainer = document.querySelector(".desktop-version");
+        const tabletContainer = document.querySelector(".tablet-version");
+
+        function createLoadMoreButton(container) {
+            if (!container) return;
+            
+            let loadMoreContainer = container.querySelector(".load-more-container");
+            if (!loadMoreContainer) {
+                loadMoreContainer = document.createElement("div");
+                loadMoreContainer.className = "load-more-container";
+                container.appendChild(loadMoreContainer);
+            }
+
+            if (currentPage < totalPages) {
+                loadMoreContainer.innerHTML = `
+                    <button class="load-more-btn" onclick="window.loadMoreNews()">
+                        <span class="load-more-text">Еще</span>
+                        <svg class="load-more-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 4.16669L15.8333 10L10 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                `;
+            } else {
+                loadMoreContainer.innerHTML = '';
+            }
+        }
+
+        createLoadMoreButton(mobileContainer);
+        createLoadMoreButton(desktopContainer);
+        createLoadMoreButton(tabletContainer);
     }
+
+    // Add loadMoreNews function to window object
+    window.loadMoreNews = function() {
+        if (currentPage < totalPages) {
+            currentPage++;
+            updateNewsDisplay();
+        }
+    };
+
+    // Initial display
+    updateNewsDisplay();
 } 
