@@ -1,5 +1,5 @@
-const SHEET_ID = "1np0lFF0y_c_akOdRUtk9r5WrVzOKPx7VD99zgol3loo";
-const API_KEY = "AIzaSyBvALk1kA3LrACN-KEQKnI9l2o3yDxysWI";
+const SHEET_ID = "1-j3eXzrevdn5KSf0SCFeSsdMu1athvjH9WfSBY9F5UQ";
+const API_KEY = "AIzaSyBUhb0WZJP5J4XvgYshB31SrVenUdBm6go";
 const RANGE = "A1:E"; // Добавляем столбец E (ID новости)
 
 // Функция для преобразования ссылки Google Drive
