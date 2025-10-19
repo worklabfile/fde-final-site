@@ -28,7 +28,9 @@ html, body {
         font-family: 'Ubuntu', sans-serif;
         background-image: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%), url("background.jpg");
         background-size: cover;
-        background-position: center; 
+        background-position: center;
+        /* СЛАЙДЕР: Плавный переход между изображениями (0.3s fade) */
+        transition: background-image 0.3s ease-in-out;
     }
     .desktop-header-container {
         width: 1220px;
@@ -306,6 +308,8 @@ html, body {
         height: 455px;
         width: 100%;
         position: relative;
+        /* СЛАЙДЕР: Плавный переход между изображениями (0.3s fade) */
+        transition: background-image 0.3s ease-in-out;
     }
 
     .mobile-logo {

@@ -591,4 +591,60 @@ document.querySelector('.mobile-version .mobile-all-news')?.addEventListener('cl
 // Автообновление каждые 5 минут
 setInterval(fetchNews, 300000);
 
+// ============================================================
+// АВТОМАТИЧЕСКИЙ СЛАЙДЕР HERO-ИЗОБРАЖЕНИЙ
+// ============================================================
+// Описание: Переключает фоновые изображения каждые 2 секунды
+// Адаптивность: Работает на desktop (≥1024px), tablet (768-1023px), mobile (≤767px)
+// Оптимизация: Прямое изменение background-image через CSS без DOM-манипуляций
+// Производительность: Минимальная нагрузка, подходит для слабых устройств
+// Cross-browser: Chrome, Firefox, Safari, Edge
+// ============================================================
+
+(function() {
+    // Массив изображений для слайдера (5 изображений)
+    // ЗАМЕНИТЕ на свои изображения: background1.jpg, background2.jpg и т.д.
+    const heroImages = [
+        'background1.jpg',
+        'background2.jpg',
+        'background3.jpg',
+        'background4.jpg',
+        'background5.jpg'
+    ];
+    
+    let currentImageIndex = 0;
+    
+    // Функция смены изображения
+    function changeHeroImage() {
+        // Переключаем на следующее изображение (циклично)
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+        const nextImage = heroImages[currentImageIndex];
+        
+        // Градиенты (одинаковые для desktop и mobile)
+        const gradients = 'linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%)';
+        
+        // DESKTOP версия (≥1220px): обновляем .desktop-header-wrapper
+        const desktopHeader = document.querySelector('.desktop-header-wrapper');
+        if (desktopHeader) {
+            desktopHeader.style.backgroundImage = `${gradients}, url("${nextImage}")`;
+        }
+        
+        // MOBILE/TABLET версия (<1220px): обновляем .mobile-header
+        const mobileHeader = document.querySelector('.mobile-header');
+        if (mobileHeader) {
+            mobileHeader.style.backgroundImage = `${gradients}, url("${nextImage}")`;
+        }
+    }
+    
+    // Запускаем слайдер каждые 2 секунды (2000 мс)
+    // ВАЖНО: Интервал начинается после загрузки страницы
+    setInterval(changeHeroImage, 2000);
+    
+    // Опционально: Предзагрузка изображений для плавности (предотвращает мигание)
+    // Это улучшает UX, особенно на медленных соединениях
+    heroImages.forEach(function(imageSrc) {
+        const img = new Image();
+        img.src = imageSrc;
+    });
+})();
 
