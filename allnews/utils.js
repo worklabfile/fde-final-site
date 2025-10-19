@@ -29,9 +29,14 @@ export function formatDate(dateString) {
     
     if (isNaN(date.getTime())) return dateString;
     
+    // Месяцы в родительном падеже
+    const monthsGenitive = [
+        'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+        'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+    ];
+    
     const formattedDay = date.getDate();
-    let formattedMonth = date.toLocaleString('ru-RU', { month: 'long' });
-    formattedMonth = formattedMonth.slice(0, -1) + 'я';
+    const formattedMonth = monthsGenitive[date.getMonth()];
     const formattedYear = date.getFullYear();
     
     return `${formattedDay} ${formattedMonth} ${formattedYear}`;
