@@ -26,11 +26,42 @@ html, body {
         margin: 0;
         box-sizing: border-box;
         font-family: 'Ubuntu', sans-serif;
-        background-image: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%), url("background.jpg");
+        overflow: hidden;
+    }
+    
+    /* Слои для плавного crossfade слайдера */
+    .desktop-header-wrapper .slider-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-size: cover;
         background-position: center;
-        /* СЛАЙДЕР: Плавный переход между изображениями (0.3s fade) */
-        transition: background-image 0.3s ease-in-out;
+        transition: opacity 2.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    
+    .desktop-header-wrapper .slider-layer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%);
+        z-index: 1;
+    }
+    
+    .desktop-header-wrapper .slider-layer-1 {
+        z-index: 2;
+        opacity: 1;
+        background-image: url("background.jpg");
+    }
+    
+    .desktop-header-wrapper .slider-layer-2 {
+        z-index: 1;
+        opacity: 0;
+        background-image: url("background1.jpg");
     }
     .desktop-header-container {
         width: 1220px;
@@ -38,6 +69,7 @@ html, body {
         position: relative;
         height: 75px;
         color: white;
+        z-index: 10;
     }
 
     .desktop-logo {
@@ -302,14 +334,45 @@ html, body {
     }
 
     .mobile-header {
-        background-image: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%), url("background.jpg");
-        background-size: cover;
-        background-position: calc(50% + 70px) center;
         height: 455px;
         width: 100%;
         position: relative;
-        /* СЛАЙДЕР: Плавный переход между изображениями (0.3s fade) */
-        transition: background-image 0.3s ease-in-out;
+        overflow: hidden;
+    }
+    
+    /* Слои для плавного crossfade слайдера */
+    .mobile-header .slider-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: calc(50% + 70px) center;
+        transition: opacity 2.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    
+    .mobile-header .slider-layer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%);
+        z-index: 1;
+    }
+    
+    .mobile-header .slider-layer-1 {
+        z-index: 2;
+        opacity: 1;
+        background-image: url("background.jpg");
+    }
+    
+    .mobile-header .slider-layer-2 {
+        z-index: 1;
+        opacity: 0;
+        background-image: url("background1.jpg");
     }
 
     .mobile-logo {
@@ -1196,6 +1259,7 @@ html, body {
         text-align: left;
         padding-left: 15px;
         box-sizing: border-box;
+        z-index: 10;
     }
     
     .header-title {
@@ -1238,6 +1302,7 @@ html, body {
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
+        z-index: 10;
     }
     
     .header-title {

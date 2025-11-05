@@ -597,19 +597,19 @@ document.querySelector('.mobile-version .mobile-all-news')?.addEventListener('cl
 setInterval(fetchNews, 300000);
 
 // ============================================================
-// АВТОМАТИЧЕСКИЙ СЛАЙДЕР HERO-ИЗОБРАЖЕНИЙ
+// АВТОМАТИЧЕСКИЙ СЛАЙДЕР С НАСТОЯЩИМ CROSSFADE ЭФФЕКТОМ
 // ============================================================
-// Описание: Переключает фоновые изображения каждые 2 секунды
-// Адаптивность: Работает на desktop (≥1024px), tablet (768-1023px), mobile (≤767px)
-// Оптимизация: Прямое изменение background-image через CSS без DOM-манипуляций
-// Производительность: Минимальная нагрузка, подходит для слабых устройств
+// Описание: Переключает фоновые изображения каждые 15 секунд с настоящим crossfade
+// Адаптивность: Работает на desktop (≥1220px) и mobile (<1220px)
+// Анимация: Настоящий crossfade через opacity двух слоев (2.5s cubic-bezier)
+// Производительность: Оптимизировано для всех устройств, GPU-ускорение
 // Cross-browser: Chrome, Firefox, Safari, Edge
 // ============================================================
 
 (function() {
     // Массив изображений для слайдера (5 изображений)
-    // ЗАМЕНИТЕ на свои изображения: background1.jpg, background2.jpg и т.д.
     const heroImages = [
+        'background.jpg',
         'background1.jpg',
         'background2.jpg',
         'background3.jpg',
@@ -618,35 +618,56 @@ setInterval(fetchNews, 300000);
     ];
     
     let currentImageIndex = 0;
+    let isLayer1Active = true; // Отслеживаем какой слой активен
     
-    // Функция смены изображения
+    // Получаем слои для desktop
+    const desktopLayer1 = document.querySelector('.desktop-header-wrapper .slider-layer-1');
+    const desktopLayer2 = document.querySelector('.desktop-header-wrapper .slider-layer-2');
+    
+    // Получаем слои для mobile
+    const mobileLayer1 = document.querySelector('.mobile-header .slider-layer-1');
+    const mobileLayer2 = document.querySelector('.mobile-header .slider-layer-2');
+    
+    // Функция смены изображения с настоящим crossfade
     function changeHeroImage() {
         // Переключаем на следующее изображение (циклично)
         currentImageIndex = (currentImageIndex + 1) % heroImages.length;
         const nextImage = heroImages[currentImageIndex];
         
-        // Градиенты (одинаковые для desktop и mobile)
-        const gradients = 'linear-gradient(180deg, #333 0%, rgba(217, 217, 217, 0.00) 100%), linear-gradient(180deg, rgba(217, 217, 217, 0.00) 50%, #14427F 100%)';
-        
-        // DESKTOP версия (≥1220px): обновляем .desktop-header-wrapper
-        const desktopHeader = document.querySelector('.desktop-header-wrapper');
-        if (desktopHeader) {
-            desktopHeader.style.backgroundImage = `${gradients}, url("${nextImage}")`;
+        if (isLayer1Active) {
+            // Слой 1 активен, загружаем новое изображение в слой 2 и показываем его
+            if (desktopLayer2) {
+                desktopLayer2.style.backgroundImage = `url("${nextImage}")`;
+                desktopLayer2.style.opacity = '1';
+                desktopLayer1.style.opacity = '0';
+            }
+            if (mobileLayer2) {
+                mobileLayer2.style.backgroundImage = `url("${nextImage}")`;
+                mobileLayer2.style.opacity = '1';
+                mobileLayer1.style.opacity = '0';
+            }
+        } else {
+            // Слой 2 активен, загружаем новое изображение в слой 1 и показываем его
+            if (desktopLayer1) {
+                desktopLayer1.style.backgroundImage = `url("${nextImage}")`;
+                desktopLayer1.style.opacity = '1';
+                desktopLayer2.style.opacity = '0';
+            }
+            if (mobileLayer1) {
+                mobileLayer1.style.backgroundImage = `url("${nextImage}")`;
+                mobileLayer1.style.opacity = '1';
+                mobileLayer2.style.opacity = '0';
+            }
         }
         
-        // MOBILE/TABLET версия (<1220px): обновляем .mobile-header
-        const mobileHeader = document.querySelector('.mobile-header');
-        if (mobileHeader) {
-            mobileHeader.style.backgroundImage = `${gradients}, url("${nextImage}")`;
-        }
+        // Переключаем активный слой
+        isLayer1Active = !isLayer1Active;
     }
     
-    // Запускаем слайдер каждые 2 секунды (2000 мс)
-    // ВАЖНО: Интервал начинается после загрузки страницы
-    setInterval(changeHeroImage, 2000);
+    // Запускаем слайдер каждые 15 секунд (15000 мс)
+    setInterval(changeHeroImage, 15000);
     
-    // Опционально: Предзагрузка изображений для плавности (предотвращает мигание)
-    // Это улучшает UX, особенно на медленных соединениях
+    // Предзагрузка изображений для плавности (критично для crossfade)
     heroImages.forEach(function(imageSrc) {
         const img = new Image();
         img.src = imageSrc;
