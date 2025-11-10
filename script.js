@@ -663,8 +663,8 @@ setInterval(fetchNews, 300000);
         isLayer1Active = !isLayer1Active;
     }
     
-    // Запускаем слайдер каждые 10 секунд (10000 мс)
-    setInterval(changeHeroImage, 10000);
+    // Запускаем слайдер каждые 7 секунд (7000 мс)
+    setInterval(changeHeroImage, 7000);
     
     // Предзагрузка изображений для плавности (критично для crossfade)
     heroImages.forEach(function(imageSrc) {
