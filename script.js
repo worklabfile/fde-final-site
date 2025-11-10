@@ -609,7 +609,6 @@ setInterval(fetchNews, 300000);
 (function() {
     // Массив изображений для слайдера (5 изображений)
     const heroImages = [
-        'background.jpg',
         'background1.jpg',
         'background2.jpg',
         'background3.jpg',
